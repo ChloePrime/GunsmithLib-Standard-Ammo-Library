@@ -15,6 +15,8 @@
   "item.gunsmithlib_std_ammo.green_tiberium_crystal": "Tiberium Crystal (Stable)",
   "item.gunsmithlib_std_ammo.blue_tiberium_crystal": "Tiberium Crystal (Volatile)",
   "item.gunsmithlib_std_ammo.tiberium_compound": "Tiberium Compound",
+  "item.gunsmithlib_std_ammo.tiberium_compound.desc.0": "§8Raging spirit gone, binding seal remains.",
+  "item.gunsmithlib_std_ammo.tiberium_compound.desc.1": "§8That which bears no light, in safety reigns.",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot": "Tiberium Alloy Ingot",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.0": "A legendary material engineered to integrate",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.1": "armor-piercing capability similar to metal with",

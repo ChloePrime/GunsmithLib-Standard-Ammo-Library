@@ -15,6 +15,8 @@
   "item.gunsmithlib_std_ammo.green_tiberium_crystal": "稳定泰伯利亚晶体",
   "item.gunsmithlib_std_ammo.blue_tiberium_crystal": "高能泰伯利亚晶体",
   "item.gunsmithlib_std_ammo.tiberium_compound": "泰伯利亚混合物",
+  "item.gunsmithlib_std_ammo.tiberium_compound.desc.0": "§8狂躁之魂已逝，粘剂封印永存",
+  "item.gunsmithlib_std_ammo.tiberium_compound.desc.1": "§8无光之物，即为安宁",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot": "泰伯利亚合金锭",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.0": "一种同时具备金属的穿甲性能，和炸药的高化学能的传奇材料",
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.1": "§8以钢铁之躯贯穿重障，自内心深处毁灭一切",

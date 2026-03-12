@@ -35,5 +35,7 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
         basicItem(GSAItems.GREEN_TIBERIUM_CRYSTAL.get());
         basicItem(GSAItems.BLUE_TIBERIUM_CRYSTAL.get());
         basicItem(GSAItems.N2_DYNAMITE.get());
+        basicItem(GSAItems.TIBERIUM_COMPOUND.get());
+        basicItem(GSAItems.TIBERIUM_ALLOY_INGOT.get());
     }
 }
