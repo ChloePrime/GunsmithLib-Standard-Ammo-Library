@@ -46,6 +46,8 @@ public class GSABlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
                 GSABlocks.PURIFIED_DEBRIS.get(),
                 GSABlocks.END_TIBERIUM_SEED_ORE.get());
+        tag(BlockTags.DRAGON_IMMUNE).add(
+                GSABlocks.END_TIBERIUM_SEED_ORE.get());
 
         tag(Tags.Blocks.ORES).addTags(
                 GSABlockTags.ORES_TUNGSTEN,
