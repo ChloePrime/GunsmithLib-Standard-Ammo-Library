@@ -1,16 +1,10 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data;
 
-import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.data.client.GSABlockStateProvider;
 import cn.chloeprime.gunsmithlib_std_ammo.data.client.GSAItemModelProvider;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-import java.util.concurrent.CompletableFuture;
 
 import static cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod.MOD_ID;
 

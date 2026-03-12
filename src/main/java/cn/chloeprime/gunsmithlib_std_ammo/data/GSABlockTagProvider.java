@@ -1,13 +1,11 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data;
 
-import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlockTags;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import com.google.common.base.Suppliers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -73,7 +71,4 @@ public class GSABlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.LEAVES).add(GSABlocks.TIBERIUM_LEAVES.get());
     }
 
-    private static TagKey<Block> commonTag(String path) {
-        return BlockTags.create(GunsmithLibStdAmmoMod.loc("forge", path));
-    }
 }

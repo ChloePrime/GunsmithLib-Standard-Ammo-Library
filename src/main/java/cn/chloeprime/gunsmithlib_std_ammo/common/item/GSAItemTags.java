@@ -4,7 +4,6 @@ import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 
 public class GSAItemTags {

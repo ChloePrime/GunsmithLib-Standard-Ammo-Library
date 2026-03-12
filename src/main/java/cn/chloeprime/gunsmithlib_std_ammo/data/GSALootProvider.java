@@ -6,9 +6,6 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.block.InfectiousLeavesBlock;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import com.google.common.base.Suppliers;
-import com.tacz.guns.init.ModItems;
-import net.minecraft.advancements.critereon.BlockPredicate;
-import net.minecraft.advancements.critereon.LocationPredicate;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -33,7 +30,6 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Function;

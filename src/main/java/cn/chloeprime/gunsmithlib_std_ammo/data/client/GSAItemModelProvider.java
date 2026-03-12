@@ -3,13 +3,10 @@ package cn.chloeprime.gunsmithlib_std_ammo.data.client;
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-
-import java.util.Objects;
 
 public class GSAItemModelProvider extends ItemModelProvider implements DatagenRegistryHelper {
     public GSAItemModelProvider(

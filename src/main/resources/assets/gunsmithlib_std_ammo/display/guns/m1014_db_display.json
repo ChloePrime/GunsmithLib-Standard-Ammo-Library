@@ -49,7 +49,6 @@
     "melee_push": "tacz:melee_stock/melee_stock_02",
     "melee_stock": "tacz:melee_stock/melee_stock_03"
   },
-  // 副手枪械显示
   "offhand_show": {
     "pos": [1, 20, 3.5],
     "rotate": [0, 0, 60],
