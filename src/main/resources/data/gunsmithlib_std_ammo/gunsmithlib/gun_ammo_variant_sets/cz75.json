@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:cz75",
+        "gunsmithlib_std_ammo:cz75_ap",
+        "gunsmithlib_std_ammo:cz75_pp"
+      ]
+    }
+  ]
+}

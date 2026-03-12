@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:glock_17",
+        "gunsmithlib_std_ammo:glock_17_ap",
+        "gunsmithlib_std_ammo:glock_17_pp"
+      ]
+    }
+  ]
+}

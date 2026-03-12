@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:gems/tiberium/green"
+    },
+    {
+      "tag": "forge:gems/tiberium/green"
+    },
+    {
+      "tag": "forge:gems/tiberium/green"
+    },
+    {
+      "tag": "forge:gems/tiberium/blue"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    }
+  ],
+  "result": {
+    "item": "gunsmithlib_std_ammo:tiberium_compound"
+  }
+}

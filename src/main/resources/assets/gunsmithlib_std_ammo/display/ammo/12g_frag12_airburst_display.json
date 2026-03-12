@@ -1,0 +1,27 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/12g_frag12_airburst",
+  "shell": {
+    "model": "tacz:shell/12g_shell",
+    "texture": "gunsmithlib_std_ammo:shell/12g_frag12_airburst_shell"
+  },
+  "tracer_color": "#C0C0C0",
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "gunsmithlib_std_ammo:block/tiberium_leaves"
+  }
+}

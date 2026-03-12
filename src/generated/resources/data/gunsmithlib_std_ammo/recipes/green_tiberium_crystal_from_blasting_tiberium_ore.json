@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "green_tiberium_crystal_ore",
+  "ingredient": {
+    "item": "gunsmithlib_std_ammo:tiberium_ore"
+  },
+  "result": "gunsmithlib_std_ammo:green_tiberium_crystal"
+}

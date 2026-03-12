@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:aa12",
+        "gunsmithlib_std_ammo:aa12_birdshot",
+        "gunsmithlib_std_ammo:aa12_ap",
+        "gunsmithlib_std_ammo:aa12_db",
+        "gunsmithlib_std_ammo:aa12_he",
+        "gunsmithlib_std_ammo:aa12_frag12_airburst"
+      ]
+    }
+  ]
+}

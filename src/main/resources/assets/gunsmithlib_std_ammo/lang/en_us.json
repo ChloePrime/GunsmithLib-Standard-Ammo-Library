@@ -1,0 +1,43 @@
+{
+  "item.gunsmithlib_std_ammo.steel_ingot": "Steel Ingot",
+
+  "item.gunsmithlib_std_ammo.nitration_mixture": "Nitrating Acid Mixture",
+  "block.gunsmithlib_std_ammo.purified_debris": "Purified Ancient Debris",
+  "item.gunsmithlib_std_ammo.raw_tungsten": "Raw Tungsten",
+  "item.gunsmithlib_std_ammo.tungsten_ingot": "Tungsten Ingot",
+
+  "block.gunsmithlib_std_ammo.tiberium_ore": "Tiberium Ore",
+  "block.gunsmithlib_std_ammo.deepslate_tiberium_ore": "Deepslate Tiberium Ore",
+  "block.gunsmithlib_std_ammo.nether_tiberium_ore": "Nether Tiberium Ore",
+  "block.gunsmithlib_std_ammo.end_tiberium_seed_ore": "End Tiberium Ore",
+  "item.gunsmithlib_std_ammo.tiberium_seed": "Tiberium Seed",
+  "block.gunsmithlib_std_ammo.tiberium_leaves": "Tiberium Leaves",
+  "item.gunsmithlib_std_ammo.green_tiberium_crystal": "Tiberium Crystal (Stable)",
+  "item.gunsmithlib_std_ammo.blue_tiberium_crystal": "Tiberium Crystal (Volatile)",
+  "item.gunsmithlib_std_ammo.tiberium_compound": "Tiberium Compound",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot": "Tiberium Alloy Ingot",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.0": "A legendary material engineered to integrate",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.1": "armor-piercing capability similar to metal with",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.2": "high-yield chemical explosive energy.",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.3": "§8Shatter the armor, then annihilate from the core.",
+  "item.gunsmithlib_std_ammo.n2_dynamite": "Nuclear-Grade Non-Nuclear Dynamite",
+
+  "effect.gunsmithlib_std_ammo.armor_meltdown": "Armor Meltdown",
+
+  "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
+  "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
+  "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
+  "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",
+  "gunsmithlib_std_ammo.ammo.9mm_ap.name": "§a9mm AP Bullet",
+  "gunsmithlib_std_ammo.ammo.9mm_pp.name": "§a9mm +P Bullet",
+  "gunsmithlib_std_ammo.ammo.9mm_pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
+  "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 Gauge Birdshot",
+  "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "Shoots more but smaller pellets",
+  "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4mm (12 Gauge) AP Shot",
+  "gunsmithlib_std_ammo.ammo.12g_ap.desc": "This is how Chinese deal with tungsten",
+  "gunsmithlib_std_ammo.ammo.12g_db.name": "§912 Gauge Dragon Breath Shot",
+  "gunsmithlib_std_ammo.ammo.12g_db.desc": "Smelts targets' armor.",
+  "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4mm (12 Gauge) HEDP Bullet",
+  "gunsmithlib_std_ammo.ammo.12g_he.desc": "Am I a qualified space marine?",
+  "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB Airburst Shot"
+}

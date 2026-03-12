@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "gunsmithlib_std_ammo:end_tiberium_seed_ore"
+  ],
+  "step": "underground_ores"
+}

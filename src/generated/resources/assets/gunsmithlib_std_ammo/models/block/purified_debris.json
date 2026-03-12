@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "gunsmithlib_std_ammo:block/purified_debris_end",
+    "side": "gunsmithlib_std_ammo:block/purified_debris_side"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "particle_id": "minecraft:lava",
+        "speed": 1,
+        "count": 4
+      }
+    ]
+  },
+  "name": "gunsmithlib_std_ammo.ammo.12g_db.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.12g_db.desc",
+  "display": "gunsmithlib_std_ammo:12g_db_display",
+  "stack_size": 36
+}

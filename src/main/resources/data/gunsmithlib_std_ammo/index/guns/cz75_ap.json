@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.cz75.name",
+  "display": "tacz:cz75_display",
+  "data": "gunsmithlib_std_ammo:cz75_ap_data",
+  "tooltip": "tacz.gun.cz75.desc",
+  "type": "pistol"
+}

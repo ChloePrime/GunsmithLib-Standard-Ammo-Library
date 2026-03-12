@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m870",
+        "gunsmithlib_std_ammo:m870_birdshot",
+        "gunsmithlib_std_ammo:m870_ap",
+        "gunsmithlib_std_ammo:m870_db",
+        "gunsmithlib_std_ammo:m870_he",
+        "gunsmithlib_std_ammo:m870_frag12_airburst"
+      ]
+    }
+  ]
+}

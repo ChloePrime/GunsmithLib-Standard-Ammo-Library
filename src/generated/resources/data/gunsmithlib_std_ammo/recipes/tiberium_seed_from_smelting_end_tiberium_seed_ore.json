@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 25.0,
+  "group": "tiberium_seed",
+  "ingredient": {
+    "item": "gunsmithlib_std_ammo:end_tiberium_seed_ore"
+  },
+  "result": "gunsmithlib_std_ammo:tiberium_seed"
+}

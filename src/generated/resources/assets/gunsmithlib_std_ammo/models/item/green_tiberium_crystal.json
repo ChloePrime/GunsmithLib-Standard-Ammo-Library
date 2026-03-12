@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gunsmithlib_std_ammo:item/green_tiberium_crystal"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tacz.gun.m1014.name",
+  "display": "gunsmithlib_std_ammo:m1014_db_display",
+  "data": "gunsmithlib_std_ammo:m1014_db_data",
+  "tooltip": "gunsmithlib_std_ammo.gun.m1014_db.desc",
+  "type": "shotgun",
+  "item_type": "modern_kinetic",
+  "sort": 1
+}

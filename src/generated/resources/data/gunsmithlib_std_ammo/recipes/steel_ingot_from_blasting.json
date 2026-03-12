@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 6400,
+  "experience": 6.4,
+  "ingredient": {
+    "tag": "forge:ingots/iron"
+  },
+  "result": "gunsmithlib_std_ammo:steel_ingot"
+}

@@ -1,0 +1,27 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/12g_he",
+  "shell": {
+    "model": "tacz:shell/12g_shell",
+    "texture": "gunsmithlib_std_ammo:shell/12g_he_shell"
+  },
+  "tracer_color": "#FFE040",
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  }
+}

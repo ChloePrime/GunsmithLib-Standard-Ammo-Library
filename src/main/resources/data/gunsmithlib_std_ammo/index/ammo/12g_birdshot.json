@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.12g_birdshot.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.12g_birdshot.desc",
+  "display": "gunsmithlib_std_ammo:12g_birdshot_display",
+  "stack_size": 36
+}

@@ -1,0 +1,43 @@
+{
+  "item.gunsmithlib_std_ammo.steel_ingot": "钢锭",
+
+  "item.gunsmithlib_std_ammo.nitration_mixture": "硝酸混酸",
+  "block.gunsmithlib_std_ammo.purified_debris": "经过提纯的远古残骸",
+  "item.gunsmithlib_std_ammo.raw_tungsten": "粗钨",
+  "item.gunsmithlib_std_ammo.tungsten_ingot": "钨锭",
+
+  "block.gunsmithlib_std_ammo.tiberium_ore": "泰伯利亚矿石",
+  "block.gunsmithlib_std_ammo.deepslate_tiberium_ore": "深层泰伯利亚矿石",
+  "block.gunsmithlib_std_ammo.nether_tiberium_ore": "下界泰伯利亚矿石",
+  "block.gunsmithlib_std_ammo.end_tiberium_seed_ore": "末地泰伯利亚矿石",
+  "item.gunsmithlib_std_ammo.tiberium_seed": "泰伯利亚种子",
+  "block.gunsmithlib_std_ammo.tiberium_leaves": "泰伯利亚树叶",
+  "item.gunsmithlib_std_ammo.green_tiberium_crystal": "稳定泰伯利亚晶体",
+  "item.gunsmithlib_std_ammo.blue_tiberium_crystal": "高能泰伯利亚晶体",
+  "item.gunsmithlib_std_ammo.tiberium_compound": "泰伯利亚混合物",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot": "泰伯利亚合金锭",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.0": "一种同时具备金属的穿甲性能，和炸药的高化学能的传奇材料",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.1": "§8以钢铁之躯贯穿重障，自内心深处毁灭一切",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.2": "",
+  "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.3": "",
+  "item.gunsmithlib_std_ammo.n2_dynamite": "核级非核炸药",
+
+  "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
+
+  "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
+  "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
+  "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
+  "gunsmithlib_std_ammo.type.ammo.name": "特殊子弹",
+  "gunsmithlib_std_ammo.ammo.9mm_ap.name": "§a9mm 穿甲手枪弹",
+  "gunsmithlib_std_ammo.ammo.9mm_pp.name": "§a9mm 高压手枪弹",
+  "gunsmithlib_std_ammo.ammo.9mm_pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",
+  "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 号口径鸟弹",
+  "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "发射更多但更小的弹丸",
+  "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4 毫米钨芯穿甲霰弹",
+  "gunsmithlib_std_ammo.ammo.12g_ap.desc": "中国人处理钨的方式",
+  "gunsmithlib_std_ammo.ammo.12g_db.name": "§912 号口径龙息弹",
+  "gunsmithlib_std_ammo.ammo.12g_db.desc": "融化目标的护甲",
+  "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4 毫米多用途高爆弹",
+  "gunsmithlib_std_ammo.ammo.12g_he.desc": "星际战士竟是我自己",
+  "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB 可编程空爆榴弹"
+}

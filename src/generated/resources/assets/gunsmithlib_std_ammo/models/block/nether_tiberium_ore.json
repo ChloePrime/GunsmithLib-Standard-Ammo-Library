@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gunsmithlib_std_ammo:block/nether_tiberium_ore"
+  }
+}

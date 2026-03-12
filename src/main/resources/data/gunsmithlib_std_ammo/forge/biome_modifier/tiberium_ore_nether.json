@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "gunsmithlib_std_ammo:ore_tiberium_nether"
+  ],
+  "step": "underground_ores"
+}

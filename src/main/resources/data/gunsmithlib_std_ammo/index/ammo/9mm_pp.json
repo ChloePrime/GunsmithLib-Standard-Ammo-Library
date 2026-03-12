@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.9mm_pp.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.9mm_pp.desc",
+  "display": "gunsmithlib_std_ammo:9mm_pp_display",
+  "stack_size": 60
+}

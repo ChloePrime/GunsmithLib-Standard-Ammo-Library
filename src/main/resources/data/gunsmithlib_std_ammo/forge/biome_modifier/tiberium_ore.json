@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "gunsmithlib_std_ammo:ore_tiberium",
+    "gunsmithlib_std_ammo:ore_tiberium_small"
+  ],
+  "step": "underground_ores"
+}

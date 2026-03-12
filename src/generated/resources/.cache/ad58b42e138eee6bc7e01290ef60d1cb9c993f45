@@ -1,0 +1,23 @@
+// 1.20.1	2026-03-12T18:16:20.0437625	Tags for minecraft:item mod id gunsmithlib_std_ammo
+d1fbcc3352872ddb122fa92b10c45bab49e47743 data/forge/tags/items/gems.json
+211a1366df39131952a762b7f291b9c4d6257a35 data/forge/tags/items/gems/tiberium/blue.json
+43bf80cf57d206c771d4bc12087bede6fc410424 data/forge/tags/items/gems/tiberium/green.json
+eb5d15c0c2e37d061b9b098bebe9bcc9bbfc2885 data/forge/tags/items/gems/tiberium_seed.json
+47b272921d5667c438099a4a2bc167dd891deef0 data/forge/tags/items/ingots.json
+c25378dd7623a9b2143a651ae2e3ffc6381d490d data/forge/tags/items/ingots/steel.json
+a80fe3bfcd40e13fba20f6b26495db4da7dea9e2 data/forge/tags/items/ingots/tiberium_alloy.json
+589e02cbbe17e6a0bee5ddabf0a0634e586a1e76 data/forge/tags/items/ingots/tungsten.json
+8a1742337eaa47ec4d3dac7fef3cd1f3b9ad25ca data/forge/tags/items/ores.json
+adfede93692d54e9b41469617aee0c2c0935baa6 data/forge/tags/items/ores/tiberium/green.json
+d3a87704ce93255a97939fd91ac707df22c93516 data/forge/tags/items/ores/tiberium_seed.json
+7e5ca4b68ff849bbfe7079399253b5e4c314bb6c data/forge/tags/items/ores/tungsten.json
+5bbff48bb698ea161053a57fa2923fed79d710b1 data/forge/tags/items/ores_in_ground/deepslate.json
+d3a87704ce93255a97939fd91ac707df22c93516 data/forge/tags/items/ores_in_ground/end_stone.json
+d757b4cafe95b9be26d626bd64bb25eacdfbf072 data/forge/tags/items/ores_in_ground/netherrack.json
+21e534644d0b342094002e603b574ec385a714cd data/forge/tags/items/ores_in_ground/stone.json
+d757b4cafe95b9be26d626bd64bb25eacdfbf072 data/forge/tags/items/ore_rates/dense.json
+53ca9343ebb6cbd0659ad254061c2089bd285128 data/forge/tags/items/ore_rates/singular.json
+87a8e0733b3db5c4c2aeed40054095d4846e0e68 data/forge/tags/items/raw_materials.json
+15fb76e749575b2bec31b4a5a8be5594a1c7ef5c data/forge/tags/items/raw_materials/tungsten.json
+eb5d15c0c2e37d061b9b098bebe9bcc9bbfc2885 data/forge/tags/items/seeds.json
+227e960317506b7e194b578725e89530e48d9159 data/minecraft/tags/items/leaves.json

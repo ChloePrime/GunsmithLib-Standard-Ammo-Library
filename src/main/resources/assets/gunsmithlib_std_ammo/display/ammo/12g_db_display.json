@@ -1,0 +1,38 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/12g_db",
+  "shell": {
+    "model": "tacz:shell/12g_shell",
+    "texture": "gunsmithlib_std_ammo:shell/12g_db_shell"
+  },
+  "tracer_color": "#FFE040",
+  "particle": {
+    "name": "minecraft:small_flame",
+    "delta": [
+      0,
+      0,
+      0
+    ],
+    "speed": 0.01,
+    "life_time": 20,
+    "count": 10
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  }
+}

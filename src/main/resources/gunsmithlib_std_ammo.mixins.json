@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.chloeprime.gunsmithlib_std_ammo.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "gunsmithlib_std_ammo.refmap.json",
+  "mixins": [
+    "MixinCommonNetworkCache"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

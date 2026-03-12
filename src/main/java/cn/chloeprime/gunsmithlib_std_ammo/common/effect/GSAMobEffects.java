@@ -1,0 +1,25 @@
+package cn.chloeprime.gunsmithlib_std_ammo.common.effect;
+
+import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
+
+@Mod.EventBusSubscriber
+public final class GSAMobEffects {
+    private static final DeferredRegister<MobEffect> DFR = DeferredRegister.create(Registries.MOB_EFFECT, GunsmithLibStdAmmoMod.MOD_ID);
+    public static final Supplier<MobEffect> ARMOR_MELTDOWN = DFR.register("armor_meltdown", ArmorMeltdownEffect::bootstrap);
+
+    public static void init(IEventBus bus) {
+        DFR.register(bus);
+    }
+
+    private GSAMobEffects() {
+    }
+}

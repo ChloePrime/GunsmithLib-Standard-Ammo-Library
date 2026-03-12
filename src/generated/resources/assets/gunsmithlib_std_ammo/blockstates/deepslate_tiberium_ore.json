@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gunsmithlib_std_ammo:block/deepslate_tiberium_ore"
+    }
+  }
+}

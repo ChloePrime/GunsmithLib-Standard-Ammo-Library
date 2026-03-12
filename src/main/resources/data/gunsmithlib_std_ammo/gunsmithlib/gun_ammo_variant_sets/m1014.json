@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m1014",
+        "gunsmithlib_std_ammo:m1014_birdshot",
+        "gunsmithlib_std_ammo:m1014_ap",
+        "gunsmithlib_std_ammo:m1014_db",
+        "gunsmithlib_std_ammo:m1014_he",
+        "gunsmithlib_std_ammo:m1014_frag12_airburst"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "pack.gunsmithlib_std_ammo.name",
+  "desc": "pack.gunsmithlib_std_ammo.desc",
+  "license": "MIT, CC-BY-NC-ND for gunpack related models and textures",
+  "authors": [
+    "ChloePrime"
+  ],
+  "date": "2026-3-8",
+  "url": "https://github.com/ChloePrime/GunsmithLib",
+  "dependencies": {
+    "tacz": "[1.1.7,)"
+  }
+}
