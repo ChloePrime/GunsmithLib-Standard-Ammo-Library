@@ -12,7 +12,7 @@
   "bolt": "closed_bolt",
   "rpm": 200,
   "bullet": {
-    "life": 0.6,
+    "life": 0.8,
     "bullet_amount": 8,
     "damage": 40,
     "tracer_count_interval": 0,
