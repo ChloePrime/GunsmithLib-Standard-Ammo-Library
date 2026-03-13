@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "gunsmithlib_std_ammo.refmap.json",
   "mixins": [
+    "BulletAccessor",
     "MixinCommonNetworkCache",
     "MixinGunData"
   ],

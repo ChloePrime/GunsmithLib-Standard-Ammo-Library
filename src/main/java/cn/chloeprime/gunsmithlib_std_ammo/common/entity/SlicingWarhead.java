@@ -1,17 +1,16 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.entity;
 
 import cn.chloeprime.gunsmithlib_std_ammo.client.entity.SlicingWarheadClient;
+import cn.chloeprime.gunsmithlib_std_ammo.common.util.AmmoIdHolder;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.Basis;
 import com.google.gson.annotations.SerializedName;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.tacz.guns.api.GunProperties;
-import com.tacz.guns.api.entity.IGunOperator;
-import com.tacz.guns.resource.pojo.data.gun.ExtraDamage;
-import mod.chloeprime.gunsmithlib.api.util.GunInfo;
+import com.tacz.guns.api.DefaultAssets;
 import net.minecraft.MethodsReturnNonnullByDefault;
+import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.nbt.Tag;
@@ -20,6 +19,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -40,32 +40,21 @@ import java.util.UUID;
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
-public class SlicingWarhead extends MarkerPetBase {
+public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
     public record Properties(
             @SerializedName("damage")           float damage,
             @SerializedName("armor_piercing")   float armorPiercing,
             @SerializedName("period")           int period,
-            @SerializedName("times")            int times
+            @SerializedName("times")            int times,
+            @SerializedName("bullet_length")    float bulletLength
     ) {
         public static final Codec<Properties> CODEC = RecordCodecBuilder.create(instance -> instance.group(
                 Codec.FLOAT.fieldOf("damage").forGetter(Properties::damage),
                 Codec.FLOAT.fieldOf("armor_piercing").forGetter(Properties::armorPiercing),
                 Codec.INT.fieldOf("period").forGetter(Properties::period),
-                Codec.INT.fieldOf("times").forGetter(Properties::times)
+                Codec.INT.fieldOf("times").forGetter(Properties::times),
+                Codec.FLOAT.fieldOf("bullet_length").forGetter(Properties::bulletLength)
         ).apply(instance, Properties::new));
-
-        public static Properties fromGunshot(
-                GunInfo gun, LivingEntity shooter,
-                float damage, int period, int times
-        ) {
-            var dataHolder = IGunOperator.fromLivingEntity(shooter).getDataHolder();
-            var iGun = gun.gunItem();
-            var origAp = Optional.ofNullable(gun.index().getBulletData().getExtraDamage())
-                    .map(ExtraDamage::getArmorIgnore)
-                    .orElse(0F);
-            var ap = iGun.modifyProperty(dataHolder, gun.gunStack(), shooter, GunProperties.ARMOR_IGNORE, Float.class, origAp);
-            return new Properties(damage, ap, period, times);
-        }
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -79,6 +68,8 @@ public class SlicingWarhead extends MarkerPetBase {
     private static final EntityDataAccessor<Integer> DATA_TARGET = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Vector3f> DATA_RELATIVE_POS = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.VECTOR3);
     private static final EntityDataAccessor<Vector3f> DATA_NORMAL = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.VECTOR3);
+    private static final EntityDataAccessor<String> DATA_GUN_ID = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<String> DATA_AMMO_ID = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.STRING);
     private int attackCount;
     private @Nullable UUID targetId;
     private @Nullable Properties properties;
@@ -102,6 +93,26 @@ public class SlicingWarhead extends MarkerPetBase {
     public SlicingWarhead(EntityType<? extends SlicingWarhead> type, Level level, Properties properties) {
         super(type, level);
         this.properties = properties;
+    }
+
+    @Override
+    public ResourceLocation getGunId() {
+        return Objects.requireNonNull(ResourceLocation.tryParse(entityData.get(DATA_GUN_ID)));
+    }
+
+    @Override
+    public ResourceLocation getAmmoId() {
+        return Objects.requireNonNull(ResourceLocation.tryParse(entityData.get(DATA_AMMO_ID)));
+    }
+
+    public void setGunId(ResourceLocation value) {
+        Objects.requireNonNull(value);
+        entityData.set(DATA_GUN_ID, value.toString());
+    }
+
+    public void setAmmoId(ResourceLocation value) {
+        Objects.requireNonNull(value);
+        entityData.set(DATA_AMMO_ID, value.toString());
     }
 
     public Optional<Entity> getSlicingTarget() {
@@ -134,7 +145,7 @@ public class SlicingWarhead extends MarkerPetBase {
 
     public void setHitInfo(Entity target, Vec3 hitPos, Vec3 normal) {
         if (level().isClientSide()) {
-            setPos(hitPos);
+            updatePosAndNormal(hitPos, normal);
             return;
         }
         var basis = Basis.fromEntityBody(target);
@@ -142,6 +153,12 @@ public class SlicingWarhead extends MarkerPetBase {
         var relNorm = basis.toLocal(normal);
         entityData.set(DATA_RELATIVE_POS, new Vector3f((float) relPos.x(), (float) relPos.y(), (float) relPos.z()));
         entityData.set(DATA_NORMAL, new Vector3f((float) relNorm.x(), (float) relNorm.y(), (float) relNorm.z()));
+    }
+
+    private void updatePosAndNormal(Vec3 hitPos, Vec3 normal) {
+        var length = properties == null ? 0.2 : properties.bulletLength();
+        setPos(hitPos.add(normal.scale(length / 2)));
+        lookAt(EntityAnchorArgument.Anchor.FEET, position().subtract(normal));
     }
 
     public Optional<UUID> getSlicingTargetId() {
@@ -178,8 +195,9 @@ public class SlicingWarhead extends MarkerPetBase {
         var target = getSlicingTarget().orElse(null);
         if (target != null) {
             var basis = Basis.fromEntityBody(target);
-            var data = entityData.get(DATA_RELATIVE_POS);
-            setPos(target.position().add(basis.toGlobal(new Vec3(data.x(), data.y(), data.z()))));
+            var relPos = entityData.get(DATA_RELATIVE_POS);
+            var pos = target.position().add(basis.toGlobal(new Vec3(relPos.x(), relPos.y(), relPos.z())));
+            updatePosAndNormal(pos, getHitNormal());
         }
         if (level.isClientSide()) {
             SlicingWarheadClient.onClientTick(this, getHitNormal());
@@ -242,6 +260,12 @@ public class SlicingWarhead extends MarkerPetBase {
         if (dataSource.hasUUID("target_id")) {
             setSlicingTargetId(dataSource.getUUID("target_id"));
         }
+        if (dataSource.contains("gun_id", Tag.TAG_STRING)) {
+            entityData.set(DATA_GUN_ID, dataSource.getString("gun_id"));
+        }
+        if (dataSource.contains("ammo_id", Tag.TAG_STRING)) {
+            entityData.set(DATA_AMMO_ID, dataSource.getString("ammo_id"));
+        }
     }
 
     @Override
@@ -253,6 +277,8 @@ public class SlicingWarhead extends MarkerPetBase {
                 .ifPresent(serialized -> outTarget.put("properties", serialized));
         outTarget.putInt("attack_count", this.attackCount);
         getSlicingTargetId().ifPresent(targetId -> outTarget.putUUID("target_id", targetId));
+        outTarget.putString("gun_id", entityData.get(DATA_GUN_ID));
+        outTarget.putString("ammo_id", entityData.get(DATA_AMMO_ID));
     }
 
     protected void defineSynchedData() {
@@ -260,6 +286,8 @@ public class SlicingWarhead extends MarkerPetBase {
         entityData.define(DATA_TARGET, 0);
         entityData.define(DATA_RELATIVE_POS, new Vector3f(0, 0, 0));
         entityData.define(DATA_NORMAL, new Vector3f(0, 0, 0));
+        entityData.define(DATA_GUN_ID, DefaultAssets.EMPTY_GUN_ID.toString());
+        entityData.define(DATA_AMMO_ID, DefaultAssets.EMPTY_AMMO_ID.toString());
     }
 
     @Override

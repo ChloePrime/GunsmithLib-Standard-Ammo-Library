@@ -2,6 +2,7 @@ package cn.chloeprime.gunsmithlib_std_ammo.common;
 
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.SlicingWarhead;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.GSAGunpackExtension;
+import cn.chloeprime.gunsmithlib_std_ammo.mixin.BulletAccessor;
 import com.tacz.guns.api.event.common.EntityHurtByGunEvent;
 import mod.chloeprime.gunsmithlib.api.util.Gunsmith;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,6 +33,10 @@ public class SlicingShotSystem {
         var hitPos = victim.getBoundingBox()
                 .clip(bullet.position(), bullet.position().add(bullet.getDeltaMovement()))
                 .orElseGet(() -> bullet.position().lerp(victim.getEyePosition(), 0.8));
+        if (bullet instanceof BulletAccessor accessor) {
+            slicer.setGunId(accessor.getGunId());
+            slicer.setAmmoId(accessor.getAmmoId());
+        }
         slicer.setSlicingTarget(victim);
         slicer.setPos(hitPos);
         slicer.setHitInfo(victim, hitPos, bullet.getDeltaMovement().normalize().scale(-1));

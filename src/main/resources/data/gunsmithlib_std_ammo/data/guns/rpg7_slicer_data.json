@@ -4,7 +4,8 @@
       "damage": 20,
       "armor_piercing": 25,
       "period": 10,
-      "times": 6
+      "times": 6,
+      "bullet_length": 1.8
     }
   },
   "ammo": "gunsmithlib_std_ammo:rpg_rocket_slicer",
