@@ -8,6 +8,7 @@
         "is_ambient": true,
         "chance": 0.25,
         "max_stack_level": 20,
+        "force": true,
 
         "area_cloud_chance": 1,
         "area_cloud_level": 5

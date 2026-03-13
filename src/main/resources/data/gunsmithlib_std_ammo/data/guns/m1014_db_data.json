@@ -8,6 +8,7 @@
         "is_ambient": true,
         "chance": 0.25,
         "max_stack_level": 20,
+        "force": true,
 
         "area_cloud_chance": 1,
         "area_cloud_level": 6
@@ -29,7 +30,7 @@
     "life": 0.6,
     "bullet_amount": 8,
     "damage": 28,
-    "tracer_count_interval": 0,
+    "tracer_count_interval": -1,
     "extra_damage": {
       "armor_ignore": 0.25,
       "head_shot_multiplier": 1.33,
