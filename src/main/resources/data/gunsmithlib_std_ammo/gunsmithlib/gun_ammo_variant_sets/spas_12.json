@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:spas_12",
+        "gunsmithlib_std_ammo:spas_12_birdshot",
+        "gunsmithlib_std_ammo:spas_12_ap",
+        "gunsmithlib_std_ammo:spas_12_db",
+        "gunsmithlib_std_ammo:spas_12_he",
+        "gunsmithlib_std_ammo:spas_12_frag12_airburst"
+      ]
+    }
+  ]
+}
