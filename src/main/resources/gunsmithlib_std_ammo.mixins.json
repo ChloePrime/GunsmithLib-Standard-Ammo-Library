@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "gunsmithlib_std_ammo.refmap.json",
   "mixins": [
-    "MixinCommonNetworkCache"
+    "MixinCommonNetworkCache",
+    "MixinGunData"
   ],
   "client": [
   ],

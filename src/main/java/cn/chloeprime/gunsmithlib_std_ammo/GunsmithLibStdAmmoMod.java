@@ -2,6 +2,7 @@ package cn.chloeprime.gunsmithlib_std_ammo;
 
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAMobEffects;
+import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.particle.GSAParticleTypes;
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +18,7 @@ public class GunsmithLibStdAmmoMod {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
         GSABlocks.init(bus);
         GSAItems.init(bus);
+        GSAEntities.init(bus);
         GSAMobEffects.init(bus);
         GSAParticleTypes.init(bus);
     }
