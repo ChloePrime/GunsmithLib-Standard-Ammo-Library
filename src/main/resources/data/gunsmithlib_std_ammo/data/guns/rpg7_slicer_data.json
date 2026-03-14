@@ -1,11 +1,23 @@
 {
+  "gunsmithlib_extension": {
+    "gun_explosive": {
+      "prevent_destroying_loot_items": true
+    },
+    "hidden": true
+  },
   "gunsmithlib_std_ammo_extension": {
     "slicing_shot": {
       "damage": 20,
       "armor_piercing": 25,
       "period": 10,
       "times": 6,
-      "bullet_length": 1.8
+      "bullet_length": 1.8,
+      "finalize_explosion": {
+        "explode": true,
+        "radius": 2.5,
+        "damage": 50,
+        "knockback": true
+      }
     }
   },
   "ammo": "gunsmithlib_std_ammo:rpg_rocket_slicer",

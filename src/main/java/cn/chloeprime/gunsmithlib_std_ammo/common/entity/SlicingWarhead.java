@@ -9,6 +9,8 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.tacz.guns.api.DefaultAssets;
+import com.tacz.guns.resource.pojo.data.gun.ExplosionData;
+import com.tacz.guns.util.ExplodeUtil;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.nbt.CompoundTag;
@@ -21,6 +23,7 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.ExtraCodecs;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -38,22 +41,30 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 
+import static com.tacz.guns.resource.CommonAssetsManager.GSON;
+
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
     public record Properties(
-            @SerializedName("damage")           float damage,
-            @SerializedName("armor_piercing")   float armorPiercing,
-            @SerializedName("period")           int period,
-            @SerializedName("times")            int times,
-            @SerializedName("bullet_length")    float bulletLength
+            @SerializedName("damage")                       float damage,
+            @SerializedName("armor_piercing")               float armorPiercing,
+            @SerializedName("period")                       int period,
+            @SerializedName("times")                        int times,
+            @SerializedName("bullet_length")                float bulletLength,
+            @SerializedName("finalize_explosion") @Nullable ExplosionData finalizeExplosion
     ) {
+        public static final Codec<ExplosionData> EXPLOSION_CODEC = ExtraCodecs.JSON.xmap(
+                json -> GSON.fromJson(json, ExplosionData.class),
+                GSON::toJsonTree);
+
         public static final Codec<Properties> CODEC = RecordCodecBuilder.create(instance -> instance.group(
                 Codec.FLOAT.fieldOf("damage").forGetter(Properties::damage),
                 Codec.FLOAT.fieldOf("armor_piercing").forGetter(Properties::armorPiercing),
                 Codec.INT.fieldOf("period").forGetter(Properties::period),
                 Codec.INT.fieldOf("times").forGetter(Properties::times),
-                Codec.FLOAT.fieldOf("bullet_length").forGetter(Properties::bulletLength)
+                Codec.FLOAT.fieldOf("bullet_length").forGetter(Properties::bulletLength),
+                EXPLOSION_CODEC.optionalFieldOf("finalize_explosion", null).forGetter(Properties::finalizeExplosion)
         ).apply(instance, Properties::new));
     }
 
@@ -213,6 +224,7 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
             }
             attackCount++;
             if (attackCount > props.times()) {
+                Optional.ofNullable(props.finalizeExplosion()).ifPresent(this::boom);
                 discard();
                 return;
             }
@@ -221,6 +233,10 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
                 gsaAttack(target, props);
             }
         }
+    }
+
+    private void boom(ExplosionData data) {
+        ExplodeUtil.createExplosion(getOwner(), this, data.getDamage(), data.getRadius(), data.isKnockback(), data.isDestroyBlock(), this.position());
     }
 
     private void gsaAttack(Entity target, Properties props) {
