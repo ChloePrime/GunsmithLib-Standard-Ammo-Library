@@ -1,4 +1,5 @@
 {
+  "master": "gunsmithlib_std_ammo:rpg7_slicer",
   "parts": [
     {
       "name": "main",
