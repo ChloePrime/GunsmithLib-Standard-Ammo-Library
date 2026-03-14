@@ -12,7 +12,7 @@
       "armor_piercing": 25,
       "period": 15,
       "times": 6,
-      "bullet_length": 1.12,
+      "bullet_length": 1.7,
       "finalize_explosion": {
         "explode": true,
         "radius": 2.5,

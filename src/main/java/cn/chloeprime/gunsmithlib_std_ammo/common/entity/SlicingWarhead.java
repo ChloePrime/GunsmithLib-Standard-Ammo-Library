@@ -183,7 +183,7 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
                 entityData.set(DATA_AMMO_LENGTH, (float) length);
             }
         }
-        setPos(hitPos.add(normal.scale(length / 2)));
+        setPos(hitPos.add(normal.scale(length / 1.4285714285714285714285714285714 / 2)));
         lookAt(EntityAnchorArgument.Anchor.FEET, position().subtract(normal));
     }
 
