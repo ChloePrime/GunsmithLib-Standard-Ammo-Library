@@ -6,12 +6,13 @@
     "hidden": true
   },
   "gunsmithlib_std_ammo_extension": {
+    "slicing_shot_model_override": "gunsmithlib_std_ammo:rpg_rocket_slicer_activated",
     "slicing_shot": {
       "damage": 20,
       "armor_piercing": 25,
       "period": 10,
       "times": 6,
-      "bullet_length": 1.8,
+      "bullet_length": 1.12,
       "finalize_explosion": {
         "explode": true,
         "radius": 2.5,

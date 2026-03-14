@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc",
+  "display": "gunsmithlib_std_ammo:rpg_rocket_slicer_activated_display",
+  "stack_size": 6
+}

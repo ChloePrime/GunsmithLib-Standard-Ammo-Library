@@ -81,6 +81,7 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
     private static final EntityDataAccessor<Vector3f> DATA_NORMAL = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.VECTOR3);
     private static final EntityDataAccessor<String> DATA_GUN_ID = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.STRING);
     private static final EntityDataAccessor<String> DATA_AMMO_ID = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<Float> DATA_AMMO_LENGTH = SynchedEntityData.defineId(SlicingWarhead.class, EntityDataSerializers.FLOAT);
     private int attackCount;
     private @Nullable UUID targetId;
     private @Nullable Properties properties;
@@ -167,7 +168,15 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
     }
 
     private void updatePosAndNormal(Vec3 hitPos, Vec3 normal) {
-        var length = properties == null ? 0.2 : properties.bulletLength();
+        double length;
+        if (level().isClientSide()) {
+            length = entityData.get(DATA_AMMO_LENGTH);
+        } else {
+            length = properties == null ? 0.2 : properties.bulletLength();
+            if (Math.abs(entityData.get(DATA_AMMO_LENGTH) - length) >= 1e-4) {
+                entityData.set(DATA_AMMO_LENGTH, (float) length);
+            }
+        }
         setPos(hitPos.add(normal.scale(length / 2)));
         lookAt(EntityAnchorArgument.Anchor.FEET, position().subtract(normal));
     }
@@ -304,6 +313,7 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
         entityData.define(DATA_NORMAL, new Vector3f(0, 0, 0));
         entityData.define(DATA_GUN_ID, DefaultAssets.EMPTY_GUN_ID.toString());
         entityData.define(DATA_AMMO_ID, DefaultAssets.EMPTY_AMMO_ID.toString());
+        entityData.define(DATA_AMMO_LENGTH, 0.2F);
     }
 
     @Override

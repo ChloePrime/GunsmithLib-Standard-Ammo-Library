@@ -21,11 +21,14 @@ public class SlicingShotSystem {
         if (shooter == null || victim == null || bullet == null) {
             return;
         }
-        var props = Gunsmith.getGunInfo(shooter.getMainHandItem())
+        var ext = Gunsmith.getGunInfo(shooter.getMainHandItem())
                 .map(gun -> gun.index().getGunData())
                 .flatMap(GSAGunpackExtension::of)
-                .flatMap(GSAGunpackExtension::getSlicingShotProperties)
                 .orElse(null);
+        if (ext == null) {
+            return;
+        }
+        var props = ext.getSlicingShotProperties().orElse(null);
         if (props == null) {
             return;
         }
@@ -35,7 +38,7 @@ public class SlicingShotSystem {
                 .orElseGet(() -> bullet.position().lerp(victim.getEyePosition(), 0.8));
         if (bullet instanceof BulletAccessor accessor) {
             slicer.setGunId(accessor.getGunId());
-            slicer.setAmmoId(accessor.getAmmoId());
+            slicer.setAmmoId(ext.getSlicingShotModelOverride().orElseGet(accessor::getAmmoId));
         }
         slicer.setSlicingTarget(victim);
         slicer.setPos(hitPos);

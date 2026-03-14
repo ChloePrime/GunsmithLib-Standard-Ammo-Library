@@ -42,5 +42,7 @@
   "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4 毫米多用途高爆弹",
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "星际战士竟是我自己",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB 可编程空爆榴弹",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭推进式重型斩裂弹"
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭推进式重型斩裂弹",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "激活的斩裂火箭弹",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取"
 }
