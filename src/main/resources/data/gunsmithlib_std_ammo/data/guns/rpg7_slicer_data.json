@@ -10,7 +10,7 @@
     "slicing_shot": {
       "damage": 20,
       "armor_piercing": 25,
-      "period": 10,
+      "period": 15,
       "times": 6,
       "bullet_length": 1.12,
       "finalize_explosion": {
