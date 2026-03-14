@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
+import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
 import javax.annotation.Nonnull;
@@ -27,6 +28,11 @@ public class TintedFlashParticle extends FireworkParticles.OverlayParticle {
         this.scale = scale;
         this.quadSize *= scale;
         this.lifetime = this.maxLife = life;
+    }
+
+    @Override
+    public @NotNull ParticleRenderType getRenderType() {
+        return ParticleRenderType.PARTICLE_SHEET_LIT;
     }
 
     @Override

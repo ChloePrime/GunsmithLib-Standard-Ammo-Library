@@ -26,6 +26,11 @@ public class TintedSparkParticle extends FireworkParticles.SparkParticle {
         this.lifetime = (int) (life * (1 + 0.25 * random.nextDouble())) + random.nextInt(10);
     }
 
+    @Override
+    public @Nonnull ParticleRenderType getRenderType() {
+        return ParticleRenderType.PARTICLE_SHEET_LIT;
+    }
+
     public record Provider(
           SpriteSet sprites
     ) implements ParticleProvider<TintedSparkParticleOption> {

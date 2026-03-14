@@ -13,7 +13,7 @@ public class GSAParticleInitializer {
         event.registerSpriteSet(GSAParticleTypes.TINTED_FIREWORK_SPARK.get(), TintedSparkParticle.Provider::new);
         event.registerSpriteSet(GSAParticleTypes.TINTED_ELECTRIC_SPARK.get(), TintedSparkParticle.Provider::new);
         event.registerSpriteSet(GSAParticleTypes.TINTED_FLASH.get(), TintedFlashParticle.Provider::new);
-        event.registerSpriteSet(GSAParticleTypes.BLOOD.get(), BloodParticle.Provider::new);
-        event.registerSpriteSet(GSAParticleTypes.SPARK.get(), BloodParticle.Provider::new);
+        event.registerSpriteSet(GSAParticleTypes.BLOOD.get(), ParticlePrime.Provider::new);
+        event.registerSpriteSet(GSAParticleTypes.SPARK.get(), DarkeningParticle.Provider::new);
     }
 }

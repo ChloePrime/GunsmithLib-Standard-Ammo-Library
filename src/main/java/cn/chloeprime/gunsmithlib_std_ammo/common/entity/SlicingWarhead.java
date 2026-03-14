@@ -46,6 +46,7 @@ import static com.tacz.guns.resource.CommonAssetsManager.GSON;
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
+
     public record Properties(
             @SerializedName("damage")                       float damage,
             @SerializedName("armor_piercing")               float armorPiercing,
@@ -167,12 +168,17 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
         entityData.set(DATA_NORMAL, new Vector3f((float) relNorm.x(), (float) relNorm.y(), (float) relNorm.z()));
     }
 
-    private void updatePosAndNormal(Vec3 hitPos, Vec3 normal) {
-        double length;
+    public double getAmmoLength() {
         if (level().isClientSide()) {
-            length = entityData.get(DATA_AMMO_LENGTH);
+            return entityData.get(DATA_AMMO_LENGTH);
         } else {
-            length = properties == null ? 0.2 : properties.bulletLength();
+            return properties == null ? 0.2 : properties.bulletLength();
+        }
+    }
+
+    private void updatePosAndNormal(Vec3 hitPos, Vec3 normal) {
+        var length = getAmmoLength();
+        if (!level().isClientSide()) {
             if (Math.abs(entityData.get(DATA_AMMO_LENGTH) - length) >= 1e-4) {
                 entityData.set(DATA_AMMO_LENGTH, (float) length);
             }

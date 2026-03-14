@@ -24,25 +24,17 @@ public final class SlicingWarheadClient {
             var particle = hasArmor
                     ? GSAParticleTypes.SPARK.get()
                     : GSAParticleTypes.BLOOD.get();
-            var speed = hasArmor
-                    ? 0.75
-                    : 0.5;
-            var count = 4;
+            var speed = hasArmor ? 0.75 : 0.5;
+            var count = hasArmor ? 16 : 4;
+            var hitPos = warhead.position().add(warhead.getHitNormal().scale(-warhead.getAmmoLength() / 2));
             for (int i = 0; i < count; i++) {
-                var pos = new Vec3(
-                        RNG.nextDouble(0.125) - RNG.nextDouble(0.125),
-                        RNG.nextDouble(0.125) - RNG.nextDouble(0.125),
-                        RNG.nextDouble(0.125) - RNG.nextDouble(0.125)
-                ).add(warhead.position());
-                var velocity = new Vec3(
-                        hitNormal.x() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1),
-                        hitNormal.y() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1),
-                        hitNormal.z() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1)
-                ).scale(speed);
-                level.addParticle(
-                        particle,
-                        pos.x(), pos.y(), pos.z(),
-                        velocity.x(), velocity.y(), velocity.z());
+                var x = hitPos.x() + RNG.nextDouble(0.125) - RNG.nextDouble(0.125);
+                var y = hitPos.y() + RNG.nextDouble(0.125) - RNG.nextDouble(0.125);
+                var z = hitPos.z() + RNG.nextDouble(0.125) - RNG.nextDouble(0.125);
+                var dx = speed * (hitNormal.x() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1));
+                var dy = speed * (hitNormal.y() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1));
+                var dz = speed * (hitNormal.z() + RNG.nextDouble(0.1) - RNG.nextDouble(0.1));
+                level.addParticle(particle, x, y, z, dx, dy, dz);
             }
         }
     }

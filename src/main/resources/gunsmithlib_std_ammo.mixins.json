@@ -11,6 +11,7 @@
     "MixinItemEntity"
   ],
   "client": [
+    "client.ParticleAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

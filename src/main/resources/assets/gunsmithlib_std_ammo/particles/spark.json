@@ -1,5 +1,8 @@
 {
   "textures": [
-    "minecraft:flame"
+    "gunsmithlib_std_ammo:spark_0",
+    "gunsmithlib_std_ammo:spark_1",
+    "gunsmithlib_std_ammo:spark_2",
+    "gunsmithlib_std_ammo:spark_3"
   ]
 }
