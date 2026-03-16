@@ -25,6 +25,11 @@
   "item.gunsmithlib_std_ammo.n2_dynamite": "核级非核炸药",
 
   "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
+  "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
+  "effect.gunsmithlib_std_ammo.suffocating": "窒息",
+  "effect.gunsmithlib_std_ammo.suffocating.description": "使用枪械变得极度困难，怪物随机失去攻击目标",
+  "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
+  "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
@@ -42,7 +47,8 @@
   "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4 毫米多用途高爆弹",
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "星际战士竟是我自己",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB 可编程空爆榴弹",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭推进式重型斩裂弹",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 火箭温压弹",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭重型斩裂弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "激活的斩裂火箭弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取"
 }

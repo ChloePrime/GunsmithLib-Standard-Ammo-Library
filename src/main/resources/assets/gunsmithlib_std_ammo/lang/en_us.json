@@ -25,6 +25,11 @@
   "item.gunsmithlib_std_ammo.n2_dynamite": "Nuclear-Grade Non-Nuclear Dynamite",
 
   "effect.gunsmithlib_std_ammo.armor_meltdown": "Armor Meltdown",
+  "effect.gunsmithlib_std_ammo.armor_meltdown.description": "Decrease armor and armor toughness",
+  "effect.gunsmithlib_std_ammo.suffocating": "Suffocating",
+  "effect.gunsmithlib_std_ammo.suffocating.description": "Using guns become much harder. Randomly lose attack target for mobs",
+  "effect.gunsmithlib_std_ammo.burning": "Thermite Stained",
+  "effect.gunsmithlib_std_ammo.burning.description": "Unstoppable burning and increase burning damage received",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
@@ -42,6 +47,7 @@
   "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4mm (12 Gauge) HEDP Bullet",
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "Am I a qualified space marine?",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB Airburst Shot",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 Thermobaric Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 Heavy Slicing Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "Activated Slicing Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "Technical item, not obtainable"

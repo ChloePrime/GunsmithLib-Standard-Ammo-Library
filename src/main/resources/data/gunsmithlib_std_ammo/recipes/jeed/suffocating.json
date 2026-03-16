@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "jeed"
+    }
+  ],
+  "type": "jeed:effect_provider",
+  "effect": {
+    "id": "gunsmithlib_std_ammo:suffocating"
+  },
+  "providers": [
+    {
+      "type": "forge:partial_nbt",
+      "item": "tacz:ammo",
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:rpg_rocket_thrm\"}"
+    }
+  ]
+}

@@ -6,9 +6,11 @@
   "refmap": "gunsmithlib_std_ammo.refmap.json",
   "mixins": [
     "BulletAccessor",
+    "EntityAccessor",
     "MixinCommonNetworkCache",
     "MixinGunData",
-    "MixinItemEntity"
+    "MixinItemEntity",
+    "MixinLivingEntity"
   ],
   "client": [
     "client.ParticleAccessor"
