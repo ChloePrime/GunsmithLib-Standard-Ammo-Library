@@ -1,0 +1,30 @@
+{
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "particle_id": "minecraft:explosion",
+        "dx": 0.8,
+        "dy": 0.8,
+        "dz": 0.8,
+        "speed": 0,
+        "count": 6,
+        "explosive_particle_alternate": true
+      },
+      {
+        "particle_id": "gunsmithlib_std_ammo:tinted_electric_spark 1 1 0.9 1 2 5 false false",
+        "speed": 0.2,
+        "count": 40,
+        "explosive_particle_alternate": true
+      },
+      {
+        "particle_id": "gunsmithlib_std_ammo:tinted_electric_spark 1 0.9 0.4 1 2 15 false false",
+        "speed": 0.3,
+        "count": 120,
+        "explosive_particle_alternate": true
+      }
+    ]
+  },
+  "name": "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name",
+  "display": "gunsmithlib_std_ammo:rpg_rocket_hedp_display",
+  "stack_size": 6
+}
