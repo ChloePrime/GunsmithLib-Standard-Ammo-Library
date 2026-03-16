@@ -5,6 +5,7 @@
       "name": "main",
       "variants": [
         "tacz:rpg7",
+        "gunsmithlib_std_ammo:rpg7_hedp",
         "gunsmithlib_std_ammo:rpg7_thrm",
         "gunsmithlib_std_ammo:rpg7_slicer"
       ]
