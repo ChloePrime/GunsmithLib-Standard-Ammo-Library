@@ -27,6 +27,7 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
                 .texture("layer1", GunsmithLibStdAmmoMod.loc("minecraft", "item/potion"));
         basicItem(GSAItems.RAW_TUNGSTEN.get());
         basicItem(GSAItems.TUNGSTEN_INGOT.get());
+        basicItem(GSAItems.TUNGSTEN_BLADE.get());
 
         basicItem(GSAItems.TIBERIUM_SEED.get());
         basicItem(GSAItems.GREEN_TIBERIUM_CRYSTAL.get());

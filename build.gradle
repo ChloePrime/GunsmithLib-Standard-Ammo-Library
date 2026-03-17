@@ -197,6 +197,7 @@ dependencies {
     // 测试用
     runtimeOnly fg.deobf("curse.maven:ftb-library-forge-404465:7296748")
     runtimeOnly fg.deobf("curse.maven:ftb-ultimine-forge-386134:6899418")
+    runtimeOnly fg.deobf("maven.modrinth:farmers-delight:1.20.1-1.2.10")
 
     // MixinExtras
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))

@@ -61,7 +61,15 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         // 烧钨
         gsaOreSmelting(output, List.of(PURIFIED_DEBRIS.get(), RAW_TUNGSTEN.get()), RecipeCategory.MISC, TUNGSTEN_INGOT.get(), 1.5F, 200, "tungsten");
         gsaOreBlasting(output, List.of(PURIFIED_DEBRIS.get(), RAW_TUNGSTEN.get()), RecipeCategory.MISC, TUNGSTEN_INGOT.get(), 1.5F, 100, "tungsten");
-
+        // 钨刀片
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, TUNGSTEN_BLADE.get())
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('X', GSAItemTags.INGOTS_TUNGSTEN)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .unlockedBy("has_tungsten_ingot", has(GSAItemTags.INGOTS_TUNGSTEN))
+                .save(output);
         // 烧泰伯利亚矿系列
         var greenTibOres = Stream.of(TIBERIUM_ORE, DEEPSLATE_TIBERIUM_ORE, NETHER_TIBERIUM_ORE).map(Supplier::get).toList();
         gsaOreSmelting(output, greenTibOres, RecipeCategory.MISC, GREEN_TIBERIUM_CRYSTAL.get(), 0.5F, 200, "green_tiberium_crystal_ore");

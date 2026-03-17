@@ -18,7 +18,7 @@ public final class GSAItems {
     private static final DeferredRegister<Item> DFR = DeferredRegister.create(Registries.ITEM, GunsmithLibStdAmmoMod.MOD_ID);
 
     // 炼钢
-    public static final Supplier<Item> STEEL_INGOT =  simpleItem("steel_ingot");
+    public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
 
     // 钨处理
     public static final Supplier<Item> NITRATION_MIXTURE = DFR.register("nitration_mixture", () -> new SimpleItem(new Item
@@ -27,6 +27,10 @@ public final class GSAItems {
     public static final Supplier<BlockItem> PURIFIED_DEBRIS = blockItem("purified_debris", Rarity.UNCOMMON, GSABlocks.PURIFIED_DEBRIS);
     public static final Supplier<Item> RAW_TUNGSTEN = simpleItem("raw_tungsten", Rarity.UNCOMMON);
     public static final Supplier<Item> TUNGSTEN_INGOT = simpleItem("tungsten_ingot", Rarity.UNCOMMON);
+    public static final Supplier<Item> TUNGSTEN_BLADE = DFR.register("tungsten_blade", ()-> new SwordItem(Tiers.NETHERITE, 3, -2.4F, new Item
+            .Properties()
+            .rarity(Rarity.UNCOMMON)
+            .fireResistant()));
 
     // 绿泰矿
     public static final Supplier<BlockItem> TIBERIUM_ORE = blockItem("tiberium_ore", GSABlocks.TIBERIUM_ORE);
@@ -90,6 +94,10 @@ public final class GSAItems {
             event.accept(NITRATION_MIXTURE);
             event.accept(N2_DYNAMITE);
             event.accept(TIBERIUM_COMPOUND);
+            event.accept(TUNGSTEN_BLADE);
+        }
+        if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) {
+            event.accept(TUNGSTEN_BLADE);
         }
     }
 

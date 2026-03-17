@@ -52,6 +52,9 @@ public class GSAItemTagProvider extends ItemTagsProvider {
         tag(GSAItemTags.INGOTS).addTag(GSAItemTags.INGOTS_TUNGSTEN);
         tag(GSAItemTags.INGOTS_TUNGSTEN).add(GSAItems.TUNGSTEN_INGOT.get());
 
+        tag(GSAItemTags.KNIVES).add(GSAItems.TUNGSTEN_BLADE.get());
+        tag(GSAItemTags.KNIVES_FD).add(GSAItems.TUNGSTEN_BLADE.get());
+
         tag(Tags.Items.SEEDS).add(GSAItems.TIBERIUM_SEED.get());
         tag(GSAItemTags.GEMS).addTags(
                 GSAItemTags.GEMS_TIB_SEED,

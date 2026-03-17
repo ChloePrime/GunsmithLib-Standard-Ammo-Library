@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/iron"
+    },
+    "X": {
+      "tag": "forge:ingots/tungsten"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "gunsmithlib_std_ammo:tungsten_blade"
+  },
+  "show_notification": true
+}

@@ -25,6 +25,9 @@ public class GSAItemTags {
     public static final TagKey<Item> GEMS_TIB_GREEN = commonTag("gems/tiberium/green");
     public static final TagKey<Item> GEMS_TIB_BLUE = commonTag("gems/tiberium/blue");
 
+    public static final TagKey<Item> KNIVES = commonTag("tools/knives");
+    public static final TagKey<Item> KNIVES_FD = ItemTags.create(GunsmithLibStdAmmoMod.loc("farmersdelight", "tools/knives"));
+
     private static TagKey<Item> commonTag(String path) {
         return ItemTags.create(GunsmithLibStdAmmoMod.loc("forge", path));
     }
