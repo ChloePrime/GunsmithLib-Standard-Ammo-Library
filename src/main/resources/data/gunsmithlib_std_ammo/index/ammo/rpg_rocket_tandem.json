@@ -1,0 +1,22 @@
+{
+  "gunsmithlib_extension": {
+    "damage_source_control": {
+      "inject_is": [
+        "#minecraft:bypasses_cooldown",
+        "#minecraft:bypasses_resistance",
+        "#minecraft:bypasses_enchantments",
+        "#minecraft:avoids_guardian_thorns",
+        "#minecraft:always_hurts_ender_dragons"
+      ]
+    },
+    "raytrace_control": {
+      "obstructs": [
+        "#gunsmithlib_std_ammo:obstructs_large_bullets"
+      ]
+    }
+  },
+  "name": "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.desc",
+  "display": "gunsmithlib_std_ammo:rpg_rocket_tandem_display",
+  "stack_size": 6
+}
