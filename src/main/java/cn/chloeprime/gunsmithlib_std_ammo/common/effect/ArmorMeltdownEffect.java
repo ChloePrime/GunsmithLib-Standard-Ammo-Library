@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
-public final class ArmorMeltdownEffect extends MobEffect {
+public final class ArmorMeltdownEffect extends MobEffectBaseUtility {
     public static final String MODIFIER_ID = "6e76f69d-ecd0-47cd-828d-0b949b19557f";
 
     public ArmorMeltdownEffect(MobEffectCategory category, int color) {
