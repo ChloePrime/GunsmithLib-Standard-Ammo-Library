@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.rpg7.name",
+  "display": "gunsmithlib_std_ammo:rpg7_frag_display",
+  "data": "gunsmithlib_std_ammo:rpg7_frag_data",
+  "tooltip": "tacz.gun.rpg7.desc",
+  "type": "rpg"
+}
