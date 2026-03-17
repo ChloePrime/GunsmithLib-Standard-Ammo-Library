@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.entity;
 
+import cn.chloeprime.commons.rpg.DamageSources;
 import cn.chloeprime.gunsmithlib_std_ammo.client.entity.SlicingWarheadClient;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.AmmoIdHolder;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.Basis;
@@ -23,12 +24,14 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.ExtraCodecs;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.entity.PartEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -256,25 +259,34 @@ public class SlicingWarhead extends MarkerPetBase implements AmmoIdHolder {
 
     private void gsaAttack(Entity target, Properties props) {
         var source = damageSources().mobAttack(this);
-        if (target instanceof LivingEntity victim) {
-            var armor = victim.getAttribute(Attributes.ARMOR);
-            var tough = victim.getAttribute(Attributes.ARMOR_TOUGHNESS);
-            if (armor != null && tough != null) {
-                var modifier = new AttributeModifier(AP_MODIFIER_ID, "Armor Piercing", props.armorPiercing - 1, AttributeModifier.Operation.MULTIPLY_TOTAL);
-                try {
-                    armor.addTransientModifier(modifier);
-                    tough.addTransientModifier(modifier);
-                    victim.invulnerableTime = 0;
-                    victim.hurt(source, props.damage());
-                    return;
-                } finally {
-                    armor.removeModifier(modifier);
-                    tough.removeModifier(modifier);
-                    victim.invulnerableTime = 0;
-                }
-            }
+        DamageSources.injectIs(source, DamageTypeTags.ALWAYS_HURTS_ENDER_DRAGONS);
+
+        LivingEntity victim;
+        if (target instanceof LivingEntity le) {
+            victim = le;
+        } else if (target instanceof PartEntity<?> part && part.getParent() instanceof LivingEntity core) {
+            victim = core;
+        } else {
+            target.hurt(source, props.damage());
+            return;
         }
-        target.hurt(source, props.damage());
+        var armor = victim.getAttribute(Attributes.ARMOR);
+        var tough = victim.getAttribute(Attributes.ARMOR_TOUGHNESS);
+        if (armor != null && tough != null) {
+            var modifier = new AttributeModifier(AP_MODIFIER_ID, "Armor Piercing", props.armorPiercing - 1, AttributeModifier.Operation.MULTIPLY_TOTAL);
+            try {
+                armor.addTransientModifier(modifier);
+                tough.addTransientModifier(modifier);
+                victim.invulnerableTime = 0;
+                target.hurt(source, props.damage());
+            } finally {
+                armor.removeModifier(modifier);
+                tough.removeModifier(modifier);
+                victim.invulnerableTime = 0;
+            }
+        } else {
+            target.hurt(source, props.damage());
+        }
     }
 
     @Override
