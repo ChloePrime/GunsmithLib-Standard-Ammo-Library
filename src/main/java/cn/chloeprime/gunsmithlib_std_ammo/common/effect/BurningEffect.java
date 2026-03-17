@@ -161,6 +161,9 @@ public class BurningEffect extends MobEffectBaseUtility {
         if (IS_INTERNAL_HURT_CALL.get().getValue() > 0) {
             return;
         }
+        if (!event.getSource().is(DamageTypes.ON_FIRE)) {
+            return;
+        }
         var victim = event.getEntity();
         // 防止切换入水出水后，由于原版系统和水中伤害系统基准时间差异
         // 导致的两次连续伤害
@@ -179,9 +182,6 @@ public class BurningEffect extends MobEffectBaseUtility {
 
         var level = getLevelFor(victim);
         if (level <= 0) {
-            return;
-        }
-        if (!event.getSource().is(DamageTypes.ON_FIRE)) {
             return;
         }
         // 1 级时：
