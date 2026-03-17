@@ -71,6 +71,11 @@ public class GSABlockTagProvider extends BlockTagsProvider {
         tag(Tags.Blocks.ORE_RATES_SINGULAR).add(GSABlocks.END_TIBERIUM_SEED_ORE.get());
 
         tag(BlockTags.LEAVES).add(GSABlocks.TIBERIUM_LEAVES.get());
+
+        addGunpackRelatedTags();
     }
 
+    private void addGunpackRelatedTags() {
+        tag(GSABlockTags.OBSTRUCTS_LARGE_BULLET).add(Blocks.IRON_BARS);
+    }
 }

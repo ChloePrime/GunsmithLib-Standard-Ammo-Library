@@ -1,5 +1,10 @@
 {
   "gunsmithlib_extension": {
+    "raytrace_control": {
+      "obstructs": [
+        "#gunsmithlib_std_ammo:obstructs_large_bullets"
+      ]
+    },
     "hit_particles": [
       {
         "particle_id": "minecraft:explosion",

@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-13T04:29:17.5108402	Tags for minecraft:block mod id gunsmithlib_std_ammo
+// 1.20.1	2026-03-16T23:14:48.6950021	Tags for minecraft:block mod id gunsmithlib_std_ammo
 8a1742337eaa47ec4d3dac7fef3cd1f3b9ad25ca data/forge/tags/blocks/ores.json
 adfede93692d54e9b41469617aee0c2c0935baa6 data/forge/tags/blocks/ores/tiberium/green.json
 d3a87704ce93255a97939fd91ac707df22c93516 data/forge/tags/blocks/ores/tiberium_seed.json
@@ -10,6 +10,7 @@ d757b4cafe95b9be26d626bd64bb25eacdfbf072 data/forge/tags/blocks/ores_in_ground/n
 d757b4cafe95b9be26d626bd64bb25eacdfbf072 data/forge/tags/blocks/ore_rates/dense.json
 53ca9343ebb6cbd0659ad254061c2089bd285128 data/forge/tags/blocks/ore_rates/singular.json
 9994f212884e8264af96eaba34aa7e89696d8994 data/gunsmithlib_std_ammo/tags/blocks/end_tiberium_seed_ore_placeable.json
+cffcdac0c57dcecbcbf6b213e4a0a1b5c8ccadde data/gunsmithlib_std_ammo/tags/blocks/obstructs_large_bullets.json
 d3a87704ce93255a97939fd91ac707df22c93516 data/minecraft/tags/blocks/dragon_immune.json
 227e960317506b7e194b578725e89530e48d9159 data/minecraft/tags/blocks/leaves.json
 278dbe5eef84bf16b8da1c50b593541154e8b2b4 data/minecraft/tags/blocks/mineable/pickaxe.json

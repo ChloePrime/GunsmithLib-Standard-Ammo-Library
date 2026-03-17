@@ -10,6 +10,7 @@ public final class GSABlockTags {
     public static final TagKey<Block> ORES_TIBERIUM = commonTag("ores/tiberium/green");
     public static final TagKey<Block> ORES_TIB_SEED = commonTag("ores/tiberium_seed");
     public static final TagKey<Block> ORE_IN_GROUND_ENDSTONE = commonTag("ores_in_ground/end_stone");
+    public static final TagKey<Block> OBSTRUCTS_LARGE_BULLET = BlockTags.create(GunsmithLibStdAmmoMod.loc("obstructs_large_bullets"));
 
     public static final TagKey<Block> TIB_ORE_PLACEABLE = BlockTags.create(GunsmithLibStdAmmoMod.loc("end_tiberium_seed_ore_placeable"));
 
