@@ -48,12 +48,12 @@
   "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4mm (12 Gauge) HEDP Bullet",
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "Am I a qualified space marine?",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB Airburst Shot",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name": "§dRPG-7 HEDP Rocket",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name": "§PG-7VL HEDP Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.name": "§dPG-7VR Tandem-Charge Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.desc": "Penetrates magic protection, but less effective to ordinary armor",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_frag.name": "§dOG-7V Anti-Personnel Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 Thermobaric Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 Heavy Slicing Rocket",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "Activated Slicing Rocket",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "Activated Slicer",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "Technical item, not obtainable"
 }
