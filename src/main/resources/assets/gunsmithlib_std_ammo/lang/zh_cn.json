@@ -39,6 +39,8 @@
   "gunsmithlib_std_ammo.ammo.9mm_ap.name": "§a9mm 穿甲手枪弹",
   "gunsmithlib_std_ammo.ammo.9mm_pp.name": "§a9mm 高压手枪弹",
   "gunsmithlib_std_ammo.ammo.9mm_pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",
+  "gunsmithlib_std_ammo.ammo.50ae_smart.name": "§c.50 AE 智能手枪弹",
+  "gunsmithlib_std_ammo.ammo.50ae_smart.desc": "协议三：保护射手",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 号口径鸟弹",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "发射更多但更小的弹丸",
   "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4 毫米钨芯穿甲霰弹",

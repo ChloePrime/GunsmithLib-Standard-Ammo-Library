@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.timeless50.name",
+  "display": "gunsmithlib_std_ammo:timeless50_smart_display",
+  "data": "gunsmithlib_std_ammo:timeless50_smart_data",
+  "tooltip": "tacz.gun.timeless50.desc",
+  "type": "pistol"
+}

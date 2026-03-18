@@ -1,0 +1,8 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/50ae_smart",
+  "shell": {
+    "model": "tacz:shell/50ae_shell",
+    "texture": "tacz:shell/50ae_shell"
+  },
+  "tracer_color": "#99FFFF"
+}

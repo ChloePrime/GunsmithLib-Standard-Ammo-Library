@@ -1,0 +1,11 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:timeless50",
+        "gunsmithlib_std_ammo:timeless50_smart"
+      ]
+    }
+  ]
+}

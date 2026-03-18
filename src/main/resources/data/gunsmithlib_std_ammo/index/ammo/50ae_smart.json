@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.50ae_smart.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.50ae_smart.desc",
+  "display": "gunsmithlib_std_ammo:50ae_smart_display",
+  "stack_size": 16
+}

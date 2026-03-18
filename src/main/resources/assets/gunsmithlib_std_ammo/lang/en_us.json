@@ -39,6 +39,8 @@
   "gunsmithlib_std_ammo.ammo.9mm_ap.name": "§a9mm AP Bullet",
   "gunsmithlib_std_ammo.ammo.9mm_pp.name": "§a9mm +P Bullet",
   "gunsmithlib_std_ammo.ammo.9mm_pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
+  "gunsmithlib_std_ammo.ammo.50ae_smart.name": "§a.50 AE Smart Pistol Bullet",
+  "gunsmithlib_std_ammo.ammo.50ae_smart.desc": "§aProtocol 3: Protect the Shooter",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 Gauge Birdshot",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "Shoots more but smaller pellets",
   "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4mm (12 Gauge) AP Shot",
