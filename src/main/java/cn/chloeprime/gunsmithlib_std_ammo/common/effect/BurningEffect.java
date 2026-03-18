@@ -165,25 +165,29 @@ public class BurningEffect extends MobEffectBaseUtility {
             return;
         }
         var victim = event.getEntity();
+
+        // 客户端会单独进行火焰伤害，
+        // 上面的代码需要在客户端也执行，来减少被禁用伤害的反馈。
+        if (victim.level().isClientSide()) {
+            // 客户端无法获取效果等级，
+            // 所以要在判断是否有效果之前就判断连续伤害保险
+            if (isInHurtSafeInsurance(victim)) {
+                event.setCanceled(true);
+            }
+            return;
+        }
+
+        var level = getLevelFor(victim);
+        if (level <= 0) {
+            return;
+        }
         // 防止切换入水出水后，由于原版系统和水中伤害系统基准时间差异
         // 导致的两次连续伤害
         if (isInHurtSafeInsurance(victim)) {
             event.setCanceled(true);
             return;
         }
-
-        // 客户端会单独进行火焰伤害，
-        // 上面的代码需要在客户端也执行，来减少被禁用伤害的反馈。
-        if (victim.level().isClientSide()) {
-            return;
-        }
-        // 而这个方法只能在服务端调用
         setLastHurtByFire(victim);
-
-        var level = getLevelFor(victim);
-        if (level <= 0) {
-            return;
-        }
         // 1 级时：
         // f(20) = 1
         // f(300) = 6
