@@ -4,28 +4,26 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 6
+      "count": 3
     },
     {
       "item": {
-        "type": "forge:partial_nbt",
-        "item": "gunsmithlib_std_ammo:tungsten_blade",
-        "nbt": "{Damage:0}"
+        "item": "minecraft:blaze_powder"
       },
-      "count": 3
+      "count": 30
     },
     {
       "item": {
         "tag": "forge:gunpowder"
       },
-      "count": 18
+      "count": 12
     }
   ],
   "result": {
     "type": "ammo",
     "group": "gunsmithlib_std_ammo:ammo",
-    "id": "gunsmithlib_std_ammo:rpg_rocket_slicer",
-    "count": 6
+    "id": "gunsmithlib_std_ammo:rpg_rocket_thrm",
+    "count": 3
   },
   "type": "tacz:gun_smith_table_crafting"
 }
