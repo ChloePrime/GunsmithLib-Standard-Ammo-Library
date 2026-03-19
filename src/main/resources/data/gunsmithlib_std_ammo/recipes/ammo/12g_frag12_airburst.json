@@ -20,9 +20,9 @@
     },
     {
       "item": {
-        "item": "minecraft:observer"
+        "item": "gunsmithlib_std_ammo:sensor"
       },
-      "count": 1
+      "count": 18
     },
     {
       "item": {
