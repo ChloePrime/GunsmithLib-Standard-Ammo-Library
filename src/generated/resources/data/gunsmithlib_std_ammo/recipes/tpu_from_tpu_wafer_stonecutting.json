@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "gunsmithlib_std_ammo:tpu_wafer"
+  },
+  "result": "gunsmithlib_std_ammo:tpu"
+}

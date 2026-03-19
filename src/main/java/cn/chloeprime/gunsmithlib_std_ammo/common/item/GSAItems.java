@@ -27,6 +27,8 @@ public final class GSAItems {
     public static final Supplier<Item> SOC = simpleItem("soc");
     public static final Supplier<Item> SENSOR_WAFER = simpleItem("sensor_wafer");
     public static final Supplier<Item> SENSOR = simpleItem("sensor");
+    public static final Supplier<Item> TPU_WAFER = simpleItem("tpu_wafer", Rarity.EPIC);
+    public static final Supplier<Item> TPU = simpleItem("tpu", Rarity.EPIC);
 
     // 钨处理
     public static final Supplier<Item> NITRATION_MIXTURE = DFR.register("nitration_mixture", () -> new SimpleItem(new Item
@@ -103,8 +105,10 @@ public final class GSAItems {
             event.accept(WAFER);
             event.accept(SOC_WAFER);
             event.accept(SENSOR_WAFER);
+            event.accept(TPU_WAFER);
             event.accept(SOC);
             event.accept(SENSOR);
+            event.accept(TPU);
             event.accept(NITRATION_MIXTURE);
             event.accept(N2_DYNAMITE);
             event.accept(TIBERIUM_COMPOUND);

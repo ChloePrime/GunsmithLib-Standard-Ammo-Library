@@ -3,22 +3,23 @@
   "category": "misc",
   "key": {
     "C": {
-      "tag": "forge:glass/colorless"
+      "tag": "forge:ingots/tungsten"
     },
     "D": {
-      "tag": "forge:gems/quartz"
+      "tag": "forge:ingots/tiberium_alloy"
     },
     "S": {
       "item": "gunsmithlib_std_ammo:wafer"
     }
   },
   "pattern": [
-    "C",
-    "D",
-    "S"
+    "CCC",
+    "DDD",
+    "SSS"
   ],
   "result": {
-    "item": "gunsmithlib_std_ammo:sensor_wafer"
+    "count": 3,
+    "item": "gunsmithlib_std_ammo:tpu_wafer"
   },
   "show_notification": true
 }

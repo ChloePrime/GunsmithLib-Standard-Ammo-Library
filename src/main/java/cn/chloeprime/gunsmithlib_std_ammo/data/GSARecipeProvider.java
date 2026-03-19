@@ -60,8 +60,11 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         photolithography(output, SOC_WAFER, Tags.Items.INGOTS_COPPER, Tags.Items.DUSTS_REDSTONE);
         gsaStonecutterResultFromBase(output, RecipeCategory.MISC, SOC.get(), SOC_WAFER.get(), 16);
 
-        photolithography(output, SENSOR_WAFER, Tags.Items.GLASS, Tags.Items.GEMS_QUARTZ);
+        photolithography(output, SENSOR_WAFER, Tags.Items.GLASS_COLORLESS, Tags.Items.GEMS_QUARTZ);
         gsaStonecutterResultFromBase(output, RecipeCategory.MISC, SENSOR.get(), SENSOR_WAFER.get(), 16);
+
+        photolithography(output, TPU_WAFER, GSAItemTags.INGOTS_TUNGSTEN, GSAItemTags.INGOTS_TIB_ALLOY);
+        gsaStonecutterResultFromBase(output, RecipeCategory.MISC, TPU.get(), TPU_WAFER.get(), 4);
         // 硝酸混酸
         ShapelessRecipeBuilder
                 .shapeless(RecipeCategory.MISC, NITRATION_MIXTURE.get(), 4)
@@ -128,11 +131,13 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         gsaOreBlasting(output, List.of(TIBERIUM_COMPOUND.get()), RecipeCategory.MISC, TIBERIUM_ALLOY_INGOT.get(), 0.5F, 100, "tiberium_alloy");
     }
 
+    @SuppressWarnings("SameParameterValue")
     @ParametersAreNonnullByDefault
     protected static void gsaOreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<? extends ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         gsaOreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
     }
 
+    @SuppressWarnings("SameParameterValue")
     @ParametersAreNonnullByDefault
     protected static void gsaOreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<? extends ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
         gsaOreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
@@ -145,6 +150,7 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         }
     }
 
+    @SuppressWarnings("SameParameterValue")
     protected static void gsaStonecutterResultFromBase(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pResult, ItemLike pMaterial, int pResultCount) {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(pMaterial), pCategory, pResult, pResultCount).unlockedBy(getHasName(pMaterial), has(pMaterial)).save(pFinishedRecipeConsumer, GunsmithLibStdAmmoMod.loc(getConversionRecipeName(pResult, pMaterial) + "_stonecutting"));
     }
