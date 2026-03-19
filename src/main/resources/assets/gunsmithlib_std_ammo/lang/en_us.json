@@ -1,6 +1,11 @@
 {
   "item.gunsmithlib_std_ammo.steel_ingot": "Steel Ingot",
 
+  "item.gunsmithlib_std_ammo.monocrystalline_silicon": "Monocrystalline Silicon",
+  "item.gunsmithlib_std_ammo.wafer": "Wafer",
+  "item.gunsmithlib_std_ammo.soc_wafer": "SoC Wafer",
+  "item.gunsmithlib_std_ammo.soc": "SoC Chip",
+
   "item.gunsmithlib_std_ammo.nitration_mixture": "Nitrating Acid Mixture",
   "block.gunsmithlib_std_ammo.purified_debris": "Purified Ancient Debris",
   "item.gunsmithlib_std_ammo.raw_tungsten": "Raw Tungsten",

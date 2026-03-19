@@ -32,6 +32,11 @@
   "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
   "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
 
+  "item.gunsmithlib_std_ammo.monocrystalline_silicon": "单晶硅",
+  "item.gunsmithlib_std_ammo.wafer": "晶圆",
+  "item.gunsmithlib_std_ammo.soc_wafer": "SoC 晶圆",
+  "item.gunsmithlib_std_ammo.soc": "SoC 芯片",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",

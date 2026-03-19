@@ -37,6 +37,41 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                         6400)
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output, GunsmithLibStdAmmoMod.loc("steel_ingot_from_blasting"));
+        // 芯片制造
+        var quartzBlocks = Ingredient.fromValues(Stream.of(
+                new Ingredient.TagValue(Tags.Items.STORAGE_BLOCKS_QUARTZ),
+                new Ingredient.ItemValue(Items.QUARTZ_BRICKS.getDefaultInstance()),
+                new Ingredient.ItemValue(Items.QUARTZ_PILLAR.getDefaultInstance()),
+                new Ingredient.ItemValue(Items.CHISELED_QUARTZ_BLOCK.getDefaultInstance())
+        ));
+        SimpleCookingRecipeBuilder.blasting(
+                        quartzBlocks,
+                        RecipeCategory.MISC,
+                        MONOCRYSTALLINE_SILICON.get(),
+                        9,
+                        9000)
+                .unlockedBy("has_quartz_block", has(Tags.Items.STORAGE_BLOCKS_QUARTZ))
+                .save(output, GunsmithLibStdAmmoMod.loc("monocrystalline_silicon_from_blasting"));
+        stonecutterResultFromBase(output, RecipeCategory.MISC, WAFER.get(), MONOCRYSTALLINE_SILICON.get(), 16);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SOC_WAFER.get())
+                .define('C', Tags.Items.INGOTS_COPPER)
+                .define('D', Tags.Items.DUSTS_REDSTONE)
+                .define('S', WAFER.get())
+                .pattern("C")
+                .pattern("D")
+                .pattern("S")
+                .unlockedBy("has_wafer", has(WAFER.get()))
+                .save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SOC_WAFER.get(), 3)
+                .define('C', Tags.Items.INGOTS_COPPER)
+                .define('D', Tags.Items.DUSTS_REDSTONE)
+                .define('S', WAFER.get())
+                .pattern("CCC")
+                .pattern("DDD")
+                .pattern("SSS")
+                .unlockedBy("has_wafer", has(WAFER.get()))
+                .save(output, GunsmithLibStdAmmoMod.loc("soc_wafer_batched"));
+        stonecutterResultFromBase(output, RecipeCategory.MISC, SOC.get(), SOC_WAFER.get(), 16);
         // 硝酸混酸
         ShapelessRecipeBuilder
                 .shapeless(RecipeCategory.MISC, NITRATION_MIXTURE.get(), 4)

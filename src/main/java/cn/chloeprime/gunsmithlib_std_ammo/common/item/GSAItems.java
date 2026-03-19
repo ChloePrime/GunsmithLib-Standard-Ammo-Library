@@ -20,6 +20,12 @@ public final class GSAItems {
     // 炼钢
     public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
 
+    // 芯片制造
+    public static final Supplier<Item> MONOCRYSTALLINE_SILICON = simpleItem("monocrystalline_silicon");
+    public static final Supplier<Item> WAFER = simpleItem("wafer");
+    public static final Supplier<Item> SOC_WAFER = simpleItem("soc_wafer");
+    public static final Supplier<Item> SOC = simpleItem("soc");
+
     // 钨处理
     public static final Supplier<Item> NITRATION_MIXTURE = DFR.register("nitration_mixture", () -> new SimpleItem(new Item
             .Properties()
@@ -91,6 +97,10 @@ public final class GSAItems {
             event.accept(STEEL_INGOT);
             event.accept(TUNGSTEN_INGOT);
             event.accept(TIBERIUM_ALLOY_INGOT);
+            event.accept(MONOCRYSTALLINE_SILICON);
+            event.accept(WAFER);
+            event.accept(SOC_WAFER);
+            event.accept(SOC);
             event.accept(NITRATION_MIXTURE);
             event.accept(N2_DYNAMITE);
             event.accept(TIBERIUM_COMPOUND);

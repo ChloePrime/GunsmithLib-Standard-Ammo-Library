@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_monocrystalline_silicon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmithlib_std_ammo:monocrystalline_silicon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wafer_from_monocrystalline_silicon_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_monocrystalline_silicon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wafer_from_monocrystalline_silicon_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 9000,
+  "experience": 9.0,
+  "ingredient": [
+    {
+      "tag": "forge:storage_blocks/quartz"
+    },
+    {
+      "item": "minecraft:quartz_bricks"
+    },
+    {
+      "item": "minecraft:quartz_pillar"
+    },
+    {
+      "item": "minecraft:chiseled_quartz_block"
+    }
+  ],
+  "result": "gunsmithlib_std_ammo:monocrystalline_silicon"
+}

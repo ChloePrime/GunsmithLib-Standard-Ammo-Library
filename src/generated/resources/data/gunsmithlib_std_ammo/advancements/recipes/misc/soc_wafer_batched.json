@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gunsmithlib_std_ammo:soc_wafer_batched"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wafer": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gunsmithlib_std_ammo:wafer"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wafer",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gunsmithlib_std_ammo:soc_wafer_batched"
+    ]
+  },
+  "sends_telemetry_event": false
+}
