@@ -1,0 +1,8 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/357mag_ag",
+  "shell": {
+    "model": "tacz:shell/357mag_shell",
+    "texture": "tacz:shell/357mag_shell"
+  },
+  "tracer_color": "#ffe09e"
+}

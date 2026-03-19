@@ -1,0 +1,16 @@
+{
+  "gunsmithlib_extension": {
+    "damage_source_control": {
+      "inject_is": [
+        "#minecraft:bypasses_resistance",
+        "#minecraft:bypasses_enchantments",
+        "#minecraft:avoids_guardian_thorns",
+        "#minecraft:always_hurts_ender_dragons"
+      ]
+    }
+  },
+  "name": "gunsmithlib_std_ammo.ammo.357mag_ag.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.357mag_ag.desc",
+  "display": "gunsmithlib_std_ammo:357mag_ag_display",
+  "stack_size": 48
+}
