@@ -42,6 +42,7 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                 new Ingredient.TagValue(Tags.Items.STORAGE_BLOCKS_QUARTZ),
                 new Ingredient.ItemValue(Items.QUARTZ_BRICKS.getDefaultInstance()),
                 new Ingredient.ItemValue(Items.QUARTZ_PILLAR.getDefaultInstance()),
+                new Ingredient.ItemValue(Items.SMOOTH_QUARTZ.getDefaultInstance()),
                 new Ingredient.ItemValue(Items.CHISELED_QUARTZ_BLOCK.getDefaultInstance())
         ));
         SimpleCookingRecipeBuilder.blasting(

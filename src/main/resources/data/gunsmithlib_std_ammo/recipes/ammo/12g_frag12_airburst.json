@@ -26,15 +26,9 @@
     },
     {
       "item": {
-        "item": "minecraft:repeater"
+        "item": "gunsmithlib_std_ammo:soc"
       },
-      "count": 3
-    },
-    {
-      "item": {
-        "item": "minecraft:comparator"
-      },
-      "count": 1
+      "count": 18
     },
     {
       "item": {
