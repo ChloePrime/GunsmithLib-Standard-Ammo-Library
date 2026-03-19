@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:soc_from_soc_wafer_stonecutting"
+        "recipe": "gunsmithlib_std_ammo:soc_from_soc_wafer_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:soc_from_soc_wafer_stonecutting"
+      "gunsmithlib_std_ammo:soc_from_soc_wafer_stonecutting"
     ]
   },
   "sends_telemetry_event": false

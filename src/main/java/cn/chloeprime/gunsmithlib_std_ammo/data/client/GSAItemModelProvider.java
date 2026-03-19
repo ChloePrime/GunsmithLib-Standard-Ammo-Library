@@ -21,6 +21,13 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
     protected void registerModels() {
         basicItem(GSAItems.STEEL_INGOT.get());
 
+        basicItem(GSAItems.MONOCRYSTALLINE_SILICON.get());
+        basicItem(GSAItems.WAFER.get());
+        basicItem(GSAItems.SOC_WAFER.get());
+        basicItem(GSAItems.SOC.get());
+        basicItem(GSAItems.SENSOR_WAFER.get());
+        basicItem(GSAItems.SENSOR.get());
+
         getBuilder(getKey(GSAItems.NITRATION_MIXTURE.get()).toString())
                 .parent(new ModelFile.UncheckedModelFile("item/generated"))
                 .texture("layer0", GunsmithLibStdAmmoMod.loc("item/nit_mix_overlay"))

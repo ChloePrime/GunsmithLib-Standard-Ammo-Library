@@ -5,6 +5,8 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItemTags;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -53,26 +55,13 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                         9000)
                 .unlockedBy("has_quartz_block", has(Tags.Items.STORAGE_BLOCKS_QUARTZ))
                 .save(output, GunsmithLibStdAmmoMod.loc("monocrystalline_silicon_from_blasting"));
-        stonecutterResultFromBase(output, RecipeCategory.MISC, WAFER.get(), MONOCRYSTALLINE_SILICON.get(), 16);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SOC_WAFER.get())
-                .define('C', Tags.Items.INGOTS_COPPER)
-                .define('D', Tags.Items.DUSTS_REDSTONE)
-                .define('S', WAFER.get())
-                .pattern("C")
-                .pattern("D")
-                .pattern("S")
-                .unlockedBy("has_wafer", has(WAFER.get()))
-                .save(output);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SOC_WAFER.get(), 3)
-                .define('C', Tags.Items.INGOTS_COPPER)
-                .define('D', Tags.Items.DUSTS_REDSTONE)
-                .define('S', WAFER.get())
-                .pattern("CCC")
-                .pattern("DDD")
-                .pattern("SSS")
-                .unlockedBy("has_wafer", has(WAFER.get()))
-                .save(output, GunsmithLibStdAmmoMod.loc("soc_wafer_batched"));
-        stonecutterResultFromBase(output, RecipeCategory.MISC, SOC.get(), SOC_WAFER.get(), 16);
+        gsaStonecutterResultFromBase(output, RecipeCategory.MISC, WAFER.get(), MONOCRYSTALLINE_SILICON.get(), 16);
+
+        photolithography(output, SOC_WAFER, Tags.Items.INGOTS_COPPER, Tags.Items.DUSTS_REDSTONE);
+        gsaStonecutterResultFromBase(output, RecipeCategory.MISC, SOC.get(), SOC_WAFER.get(), 16);
+
+        photolithography(output, SENSOR_WAFER, Tags.Items.GLASS, Tags.Items.GEMS_QUARTZ);
+        gsaStonecutterResultFromBase(output, RecipeCategory.MISC, SENSOR.get(), SENSOR_WAFER.get(), 16);
         // 硝酸混酸
         ShapelessRecipeBuilder
                 .shapeless(RecipeCategory.MISC, NITRATION_MIXTURE.get(), 4)
@@ -154,5 +143,36 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         for(ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike)).save(pFinishedRecipeConsumer, GunsmithLibStdAmmoMod.loc(getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike)));
         }
+    }
+
+    protected static void gsaStonecutterResultFromBase(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pResult, ItemLike pMaterial, int pResultCount) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(pMaterial), pCategory, pResult, pResultCount).unlockedBy(getHasName(pMaterial), has(pMaterial)).save(pFinishedRecipeConsumer, GunsmithLibStdAmmoMod.loc(getConversionRecipeName(pResult, pMaterial) + "_stonecutting"));
+    }
+
+    protected static void photolithography(
+            Consumer<FinishedRecipe> output,
+            Supplier<? extends ItemLike> result,
+            TagKey<Item> top,
+            TagKey<Item> middle
+    ) {
+        ItemLike resultItem = result.get();
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, resultItem)
+                .define('C', top)
+                .define('D', middle)
+                .define('S', WAFER.get())
+                .pattern("C")
+                .pattern("D")
+                .pattern("S")
+                .unlockedBy("has_wafer", has(WAFER.get()))
+                .save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, resultItem, 3)
+                .define('C', top)
+                .define('D', middle)
+                .define('S', WAFER.get())
+                .pattern("CCC")
+                .pattern("DDD")
+                .pattern("SSS")
+                .unlockedBy("has_wafer", has(WAFER.get()))
+                .save(output, GunsmithLibStdAmmoMod.loc(getItemName(resultItem) + "_batched"));
     }
 }

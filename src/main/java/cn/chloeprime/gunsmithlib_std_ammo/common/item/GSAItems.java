@@ -25,6 +25,8 @@ public final class GSAItems {
     public static final Supplier<Item> WAFER = simpleItem("wafer");
     public static final Supplier<Item> SOC_WAFER = simpleItem("soc_wafer");
     public static final Supplier<Item> SOC = simpleItem("soc");
+    public static final Supplier<Item> SENSOR_WAFER = simpleItem("sensor_wafer");
+    public static final Supplier<Item> SENSOR = simpleItem("sensor");
 
     // 钨处理
     public static final Supplier<Item> NITRATION_MIXTURE = DFR.register("nitration_mixture", () -> new SimpleItem(new Item
@@ -100,7 +102,9 @@ public final class GSAItems {
             event.accept(MONOCRYSTALLINE_SILICON);
             event.accept(WAFER);
             event.accept(SOC_WAFER);
+            event.accept(SENSOR_WAFER);
             event.accept(SOC);
+            event.accept(SENSOR);
             event.accept(NITRATION_MIXTURE);
             event.accept(N2_DYNAMITE);
             event.accept(TIBERIUM_COMPOUND);

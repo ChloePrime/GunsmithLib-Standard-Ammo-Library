@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "forge:glass"
+    },
+    "D": {
+      "tag": "forge:gems/quartz"
+    },
+    "S": {
+      "item": "gunsmithlib_std_ammo:wafer"
+    }
+  },
+  "pattern": [
+    "C",
+    "D",
+    "S"
+  ],
+  "result": {
+    "item": "gunsmithlib_std_ammo:sensor_wafer"
+  },
+  "show_notification": true
+}

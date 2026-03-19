@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 16,
+  "ingredient": {
+    "item": "gunsmithlib_std_ammo:sensor_wafer"
+  },
+  "result": "gunsmithlib_std_ammo:sensor"
+}

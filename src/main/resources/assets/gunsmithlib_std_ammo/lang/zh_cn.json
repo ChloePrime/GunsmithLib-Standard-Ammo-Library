@@ -36,6 +36,8 @@
   "item.gunsmithlib_std_ammo.wafer": "晶圆",
   "item.gunsmithlib_std_ammo.soc_wafer": "SoC 晶圆",
   "item.gunsmithlib_std_ammo.soc": "SoC 芯片",
+  "item.gunsmithlib_std_ammo.sensor_wafer": "传感器晶圆",
+  "item.gunsmithlib_std_ammo.sensor": "传感器芯片",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
