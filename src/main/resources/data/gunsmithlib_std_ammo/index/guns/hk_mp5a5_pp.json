@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.hk_mp5a5.name",
+  "display": "tacz:hk_mp5a5_display",
+  "data": "gunsmithlib_std_ammo:hk_mp5a5_pp_data",
+  "tooltip": "tacz.gun.hk_mp5a5.desc",
+  "type": "smg"
+}

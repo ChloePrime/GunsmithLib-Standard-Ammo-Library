@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.uzi.name",
+  "display": "tacz:uzi_display",
+  "data": "gunsmithlib_std_ammo:uzi_ap_data",
+  "tooltip": "tacz.gun.uzi.desc",
+  "type": "smg"
+}

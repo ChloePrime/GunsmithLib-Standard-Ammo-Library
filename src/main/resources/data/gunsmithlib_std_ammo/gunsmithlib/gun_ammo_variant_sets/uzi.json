@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:uzi",
+        "gunsmithlib_std_ammo:uzi_ap",
+        "gunsmithlib_std_ammo:uzi_pp"
+      ]
+    }
+  ]
+}
