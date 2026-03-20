@@ -1,9 +1,9 @@
 {
-  "model": "gunsmithlib_std_ammo:ammo_entity/rpg_rocket_frag_geo",
+  "model": "gunsmithlib_std_ammo:ammo_entity/rpg_rocket_recolorable",
   "texture": "tacz:ammo_entity/rpg_rocket",
-  "slot": "tacz:ammo/slot/rpg_rocket",
+  "slot": "gunsmithlib_std_ammo:ammo/slot/rpg_rocket_tandem",
   "entity": {
-    "model": "gunsmithlib_std_ammo:ammo_entity/rpg_rocket_frag_geo",
+    "model": "gunsmithlib_std_ammo:ammo_entity/rpg_rocket_recolorable",
     "texture": "tacz:ammo_entity/rpg_rocket"
   },
   "particle": {
