@@ -177,7 +177,7 @@ dependencies {
 
     // TACZ
     implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:7401617-sources-7401626')
-    implementation fg.deobf('mod.chloeprime:gunsmithlib:5.8.0-alpha.7+mc1.20.1+tacz1.1.7')
+    implementation fg.deobf('mod.chloeprime:gunsmithlib:5.8.0+mc1.20.1+tacz1.1.7')
 
     // 个人前置
     compileOnly fg.deobf('cn.chloeprime.kuroutils2:kuroutils2:2001.2.3.0')
