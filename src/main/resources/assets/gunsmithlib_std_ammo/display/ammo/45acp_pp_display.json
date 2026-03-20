@@ -1,0 +1,29 @@
+{
+  "model": "tacz:ammo/45acp",
+  "texture": "gunsmithlib_std_ammo:ammo/uv/45acp_pp",
+  "slot": "gunsmithlib_std_ammo:ammo/slot/45acp_pp",
+  "tracer_color": "#ffb373",
+  "shell": {
+    "model": "tacz:shell/45acp_shell",
+    "texture": "tacz:shell/45acp_shell"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  }
+}

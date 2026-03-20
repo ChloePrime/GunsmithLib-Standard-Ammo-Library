@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.45acp_pp.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.generic.pp.desc",
+  "display": "gunsmithlib_std_ammo:45acp_pp_display",
+  "stack_size": 60
+}
