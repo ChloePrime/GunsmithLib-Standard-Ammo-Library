@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-19T18:18:41.104971	Item Models: gunsmithlib_std_ammo
+// 1.20.1	2026-03-20T16:45:36.0354527	Item Models: gunsmithlib_std_ammo
 43e2270bddb0368d8b078a2ddac03ef93fde03c2 assets/gunsmithlib_std_ammo/models/item/blue_tiberium_crystal.json
 5157466edce68147978f2fb100179345a0b32345 assets/gunsmithlib_std_ammo/models/item/green_tiberium_crystal.json
 6f163e9640403548edf9e03466ec3219ada54492 assets/gunsmithlib_std_ammo/models/item/monocrystalline_silicon.json
@@ -13,6 +13,8 @@ b4937359d2fd74e535013aec45de2b97aa08c1fd assets/gunsmithlib_std_ammo/models/item
 495ed974952a3be0b0560dcd03f72b7c66353775 assets/gunsmithlib_std_ammo/models/item/tiberium_alloy_ingot.json
 62322faa00347f2746dca4515ff92073d71fd549 assets/gunsmithlib_std_ammo/models/item/tiberium_compound.json
 ed3efcf7b09b6c08dc3874a93f8bc122b355914b assets/gunsmithlib_std_ammo/models/item/tiberium_seed.json
+ad5441a1cff8ebc87b107d677dbc02d11b1c51e0 assets/gunsmithlib_std_ammo/models/item/tpu.json
+e617bc54de6530b470901306c21891fe4ded6399 assets/gunsmithlib_std_ammo/models/item/tpu_wafer.json
 bd184cae26f2c4f61ff0abc5199f8fa5783b3905 assets/gunsmithlib_std_ammo/models/item/tungsten_blade.json
 8bcec03b8cae4e47aa9217fb7afa3d601dc473f5 assets/gunsmithlib_std_ammo/models/item/tungsten_ingot.json
 20826d1e3bf6831bc50a0fd5cb64bbf9662fccc6 assets/gunsmithlib_std_ammo/models/item/wafer.json

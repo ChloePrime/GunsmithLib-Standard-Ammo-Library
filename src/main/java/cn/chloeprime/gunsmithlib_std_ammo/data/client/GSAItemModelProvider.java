@@ -27,6 +27,8 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
         basicItem(GSAItems.SOC.get());
         basicItem(GSAItems.SENSOR_WAFER.get());
         basicItem(GSAItems.SENSOR.get());
+        basicItem(GSAItems.TPU_WAFER.get());
+        basicItem(GSAItems.TPU.get());
 
         getBuilder(getKey(GSAItems.NITRATION_MIXTURE.get()).toString())
                 .parent(new ModelFile.UncheckedModelFile("item/generated"))
