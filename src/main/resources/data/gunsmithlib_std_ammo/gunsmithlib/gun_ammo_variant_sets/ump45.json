@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:ump45",
+        "gunsmithlib_std_ammo:ump45_ap",
+        "gunsmithlib_std_ammo:ump45_pp"
+      ]
+    }
+  ]
+}

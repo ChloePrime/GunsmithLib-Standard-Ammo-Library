@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.p320.name",
+  "tooltip": "tacz.gun.p320.desc",
+  "data": "gunsmithlib_std_ammo:p320_pp_data",
+  "display": "tacz:p320_display",
+  "type": "pistol"
+}

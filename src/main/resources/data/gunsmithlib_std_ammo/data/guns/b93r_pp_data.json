@@ -51,7 +51,7 @@
     },
     "speed": 240,
     "gravity": 0.125,
-    "knockback": 0,
+    "knockback": 0.1,
     "friction": 0.025,
     "ignite": false,
     "pierce": 1

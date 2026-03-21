@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:vector45",
+        "gunsmithlib_std_ammo:vector45_ap",
+        "gunsmithlib_std_ammo:vector45_pp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:p320",
+        "gunsmithlib_std_ammo:p320_ap",
+        "gunsmithlib_std_ammo:p320_pp"
+      ]
+    }
+  ]
+}

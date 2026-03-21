@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m1911",
+        "gunsmithlib_std_ammo:m1911_ap",
+        "gunsmithlib_std_ammo:m1911_pp"
+      ]
+    }
+  ]
+}

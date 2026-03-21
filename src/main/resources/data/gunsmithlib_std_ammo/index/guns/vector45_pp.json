@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.vector45.name",
+  "tooltip": "tacz.gun.vector45.desc",
+  "data": "gunsmithlib_std_ammo:vector45_pp_data",
+  "display": "tacz:vector45_display",
+  "type": "smg"
+}

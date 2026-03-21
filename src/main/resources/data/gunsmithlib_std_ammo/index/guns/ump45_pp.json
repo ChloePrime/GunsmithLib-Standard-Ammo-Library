@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.ump45.name",
+  "tooltip": "tacz.gun.ump45.desc",
+  "data": "gunsmithlib_std_ammo:ump45_pp_data",
+  "display": "tacz:ump45_display",
+  "type": "smg"
+}
