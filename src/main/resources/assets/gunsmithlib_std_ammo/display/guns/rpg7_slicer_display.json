@@ -1,4 +1,9 @@
 {
+  "gunsmithlib_extension": {
+    "descriptional_affixes": {
+      "before": ["gunsmithlib_std_ammo.affix.slicer"]
+    }
+  },
   "model": "gunsmithlib_std_ammo:gun/rpg7_recolorable_geo",
   "texture": "gunsmithlib_std_ammo:gun/uv/rpg7_slicer",
   "hud": "tacz:gun/hud/rpg7",

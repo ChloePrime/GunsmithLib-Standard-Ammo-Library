@@ -47,6 +47,7 @@
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
+  "gunsmithlib_std_ammo.affix.slicer": "Slicer",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
   "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
