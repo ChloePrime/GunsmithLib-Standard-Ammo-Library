@@ -1,0 +1,8 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/exhaustive",
+  "shell": {
+    "model": "tacz:shell/762x39_shell",
+    "texture": "tacz:shell/762x39_shell"
+  },
+  "tracer_color": "#FF9999"
+}

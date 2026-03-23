@@ -1,0 +1,7 @@
+{
+  "name": "gunsmithlib_std_ammo.gun.rpg7_leon.name",
+  "display": "tacz:rpg7_display",
+  "data": "gunsmithlib_std_ammo:rpg7_leon_data",
+  "tooltip": "gunsmithlib_std_ammo.gun.rpg7_leon.desc",
+  "type": "rpg"
+}

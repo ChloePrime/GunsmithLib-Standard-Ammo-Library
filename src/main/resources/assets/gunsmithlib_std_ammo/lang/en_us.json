@@ -48,9 +48,14 @@
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
   "gunsmithlib_std_ammo.affix.slicer": "Slicer",
-  "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
   "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
+
+  "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
+  "gunsmithlib_std_ammo.gun.rpg7_leon.name": "Uncle Leon's RPG-7 Rocket",
+  "gunsmithlib_std_ammo.gun.rpg7_leon.desc": "What does the creator desire?",
+
+  "gunsmithlib_std_ammo.ammo.exhaustive.name": "§cExhaustive weapon, not reloadable",
 
   "gunsmithlib_std_ammo.ammo.9mm_ap.name": "§a9mm AP Bullet",
   "gunsmithlib_std_ammo.ammo.9mm_pp.name": "§a9mm +P Bullet",
