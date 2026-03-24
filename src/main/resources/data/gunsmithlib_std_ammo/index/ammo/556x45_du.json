@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.556x45_du.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.556x45_du.desc",
+  "display": "gunsmithlib_std_ammo:556x45_du_display",
+  "stack_size": 60
+}

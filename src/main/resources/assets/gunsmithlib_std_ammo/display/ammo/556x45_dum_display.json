@@ -1,0 +1,8 @@
+{
+  "slot": "gunsmithlib_std_ammo:ammo/slot/556x45_dum",
+  "shell": {
+    "model": "tacz:shell/556x45_shell",
+    "texture": "tacz:shell/556x45_shell"
+  },
+  "tracer_color": "#FF8888"
+}

@@ -22,6 +22,7 @@ public final class GSADatagen {
             generator.addProvider(true, new GSAItemTagProvider(packOutput, lookupProvider, bp.contentsGetter(), MOD_ID, existingFileHelper));
             generator.addProvider(true, new GSALootProvider(packOutput));
             generator.addProvider(true, new GSARecipeProvider(packOutput));
+            generator.addProvider(true, new GSADamageTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
         }
         if (event.includeClient()) {
             generator.addProvider(true, new GSABlockStateProvider(packOutput, MOD_ID, existingFileHelper));

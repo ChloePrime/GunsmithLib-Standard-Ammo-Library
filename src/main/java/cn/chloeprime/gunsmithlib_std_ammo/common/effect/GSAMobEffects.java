@@ -16,6 +16,7 @@ public final class GSAMobEffects {
     public static final Supplier<MobEffect> ARMOR_MELTDOWN = DFR.register("armor_meltdown", ArmorMeltdownEffect::bootstrap);
     public static final Supplier<MobEffect> SUFFOCATING = DFR.register("suffocating", SuffocatingEffect::bootstrap);
     public static final Supplier<MobEffect> BURNING = DFR.register("burning", BurningEffect::bootstrap);
+    public static final Supplier<MobEffect> CANCER = DFR.register("cancer", CancerEffect::bootstrap);
 
     public static void init(IEventBus bus) {
         DFR.register(bus);

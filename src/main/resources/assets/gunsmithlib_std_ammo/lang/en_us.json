@@ -44,6 +44,8 @@
   "effect.gunsmithlib_std_ammo.suffocating.description": "Using guns become much harder. Randomly lose attack target for mobs",
   "effect.gunsmithlib_std_ammo.burning": "Thermite Stained",
   "effect.gunsmithlib_std_ammo.burning.description": "Unstoppable burning and increase burning damage received",
+  "effect.gunsmithlib_std_ammo.cancer": "Cancer",
+  "effect.gunsmithlib_std_ammo.cancer.description": "Receive damage and reduce max health over time",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
@@ -65,6 +67,14 @@
   "gunsmithlib_std_ammo.ammo.357mag_ag.desc": "Penetrates magic protection.\n§8The ultimate solution for software engineering.",
   "gunsmithlib_std_ammo.ammo.50ae_smart.name": "§a.50 AE Smart Pistol Bullet",
   "gunsmithlib_std_ammo.ammo.50ae_smart.desc": "§aProtocol 3: Protect the Shooter",
+
+  "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 Enhanced Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 AP Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_m995.desc": "Cannons roar, gold pour",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Dum Dum Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm White Phosphorus Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm Depleted Uranium Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_du.desc": "§cHAZARDOUS:\n§eCarcinogenic\n§fCaused by:\n§fGot shot by it",
 
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 Gauge Birdshot",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "Shoots more but smaller pellets",
