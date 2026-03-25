@@ -73,7 +73,7 @@
   "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 强化弹",
   "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 穿甲弹",
   "gunsmithlib_std_ammo.ammo.556x45_m995.desc": "大炮一响，黄金万两",
-  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm 达姆弹",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm 达姆弹（被甲空尖弹）",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm 贫铀弹",
   "gunsmithlib_std_ammo.ammo.556x45_du.desc": "§c§L危险物质：\n§e致癌\n§f由此导致：\n§f被命中",

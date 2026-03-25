@@ -73,7 +73,7 @@
   "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 Enhanced Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 AP Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_m995.desc": "Cannons roar, gold pour",
-  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Dumdum Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Dumdum (JHP) Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm White Phosphorus Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm Depleted Uranium Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_du.desc": "§cHAZARDOUS:\n§eCarcinogenic\n§fCaused by:\n§fGot shot by it",
