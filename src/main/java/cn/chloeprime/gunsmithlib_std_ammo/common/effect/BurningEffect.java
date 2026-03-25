@@ -45,7 +45,7 @@ public class BurningEffect extends MobEffectBaseUtility {
     @Override
     public void applyEffectTick(@Nonnull LivingEntity victim, int amplifier) {
         super.applyEffectTick(victim, amplifier);
-        extendFireTicksFor(victim);
+        extendFireTicksFor(victim, amplifier + 1);
     }
 
     public float getCoefficientFor(LivingEntity victim) {
@@ -70,7 +70,7 @@ public class BurningEffect extends MobEffectBaseUtility {
         return 1;
     }
 
-    private void extendFireTicksFor(LivingEntity victim) {
+    private void extendFireTicksFor(LivingEntity victim, int level) {
         if (victim.level().isClientSide()) {
             return;
         }
@@ -80,12 +80,12 @@ public class BurningEffect extends MobEffectBaseUtility {
         }
         // 在水中时造成火焰伤害，但是伤害量大幅降低
         if (victim.isInWaterOrRain()) {
-            tryDamageForFireImmuneOnes(victim, false);
+            tryDamageForFireImmuneOnes(victim, level, false);
             return;
         }
         // 免疫火焰伤害时转而魔法伤害
         if (victim.fireImmune() || victim.isInvulnerableTo(victim.damageSources().onFire())) {
-            tryDamageForFireImmuneOnes(victim, true);
+            tryDamageForFireImmuneOnes(victim, level, true);
             return;
         }
         // 续火
@@ -94,11 +94,10 @@ public class BurningEffect extends MobEffectBaseUtility {
         }
     }
 
-    private void tryDamageForFireImmuneOnes(LivingEntity victim, boolean isIntrinsic) {
+    private void tryDamageForFireImmuneOnes(LivingEntity victim, int level, boolean isIntrinsic) {
         if (victim.level().getGameTime() % 20 >= 10) {
             return;
         }
-        var level = getLevelFor(victim);
         if (level <= 0) {
             return;
         }

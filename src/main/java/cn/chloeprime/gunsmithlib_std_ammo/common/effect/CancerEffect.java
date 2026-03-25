@@ -10,7 +10,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.MobEffectEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +27,7 @@ public class CancerEffect extends MobEffectBaseUtility {
 
     public CancerEffect(MobEffectCategory category, int color) {
         super(category, color);
+        MinecraftForge.EVENT_BUS.addListener(this::clearModifierOnEffectCured);
     }
 
     @Override
@@ -48,12 +51,23 @@ public class CancerEffect extends MobEffectBaseUtility {
         reduceMaxHealth(victim, actualDamage);
     }
 
-    @SubscribeEvent(priority = EventPriority.LOWEST)
-    public static void clearModifierOnPlayerDeath(LivingDeathEvent event) {
-        if (event.getEntity().level().isClientSide()) {
+    public void clearModifierOnEffectCured(MobEffectEvent.Remove event) {
+        if (event.getEffect() != this) {
             return;
         }
+        clearModifierFor(event.getEntity());
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void clearModifierOnPlayerDeath(LivingDeathEvent event) {
         if (!(event.getEntity() instanceof Player victim)) {
+            return;
+        }
+        clearModifierFor(victim);
+    }
+
+    public static void clearModifierFor(LivingEntity victim) {
+        if (victim.level().isClientSide()) {
             return;
         }
         Optional.ofNullable(victim.getAttribute(Attributes.MAX_HEALTH)).ifPresent(inst -> inst.removeModifier(MAX_HEALTH_MODIFIER_ID));
