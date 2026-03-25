@@ -33,6 +33,8 @@
   "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
   "effect.gunsmithlib_std_ammo.cancer": "癌症",
   "effect.gunsmithlib_std_ammo.cancer.description": "持续受到伤害并减少最大生命值",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "急性重金属中毒",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的弹头填充，降低最大生命值",
 
   "item.gunsmithlib_std_ammo.monocrystalline_silicon": "单晶硅",
   "item.gunsmithlib_std_ammo.wafer": "晶圆",

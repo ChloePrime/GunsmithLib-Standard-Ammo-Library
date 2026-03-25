@@ -46,6 +46,8 @@
   "effect.gunsmithlib_std_ammo.burning.description": "Unstoppable burning and increase burning damage received",
   "effect.gunsmithlib_std_ammo.cancer": "Cancer",
   "effect.gunsmithlib_std_ammo.cancer.description": "Receive damage and reduce max health over time",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "Acute Metal Poisoning",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "Body fulfilled by expanded warhead, thus reduces max health",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
