@@ -1,4 +1,16 @@
 {
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "particle_id": "minecraft:dust 0 1 0 1",
+        "dx": 0.125,
+        "dy": 0.125,
+        "dz": 0.125,
+        "speed": 0,
+        "count": 4
+      }
+    ]
+  },
   "name": "gunsmithlib_std_ammo.ammo.556x45_du.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.556x45_du.desc",
   "display": "gunsmithlib_std_ammo:556x45_du_display",
