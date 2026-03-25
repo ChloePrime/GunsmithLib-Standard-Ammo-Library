@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:g36k",
+        "gunsmithlib_std_ammo:g36k_m855a1",
+        "gunsmithlib_std_ammo:g36k_m995",
+        "gunsmithlib_std_ammo:g36k_dum",
+        "gunsmithlib_std_ammo:g36k_wp",
+        "gunsmithlib_std_ammo:g36k_du"
+      ]
+    }
+  ]
+}

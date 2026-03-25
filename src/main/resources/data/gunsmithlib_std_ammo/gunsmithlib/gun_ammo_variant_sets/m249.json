@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m249",
+        "gunsmithlib_std_ammo:m249_m855a1",
+        "gunsmithlib_std_ammo:m249_m995",
+        "gunsmithlib_std_ammo:m249_dum",
+        "gunsmithlib_std_ammo:m249_wp",
+        "gunsmithlib_std_ammo:m249_du"
+      ]
+    }
+  ]
+}

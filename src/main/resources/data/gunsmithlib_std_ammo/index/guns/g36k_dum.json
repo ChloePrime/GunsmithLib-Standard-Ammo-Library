@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.g36k.name",
+  "tooltip": "tacz.gun.g36k.desc",
+  "data": "gunsmithlib_std_ammo:g36k_dum_data",
+  "display": "tacz:g36k_display",
+  "type": "rifle",
+  "sort": 10
+}

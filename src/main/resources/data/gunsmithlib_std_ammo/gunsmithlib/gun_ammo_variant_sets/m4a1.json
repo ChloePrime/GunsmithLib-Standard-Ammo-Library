@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m4a1",
+        "gunsmithlib_std_ammo:m4a1_m855a1",
+        "gunsmithlib_std_ammo:m4a1_m995",
+        "gunsmithlib_std_ammo:m4a1_dum",
+        "gunsmithlib_std_ammo:m4a1_wp",
+        "gunsmithlib_std_ammo:m4a1_du"
+      ]
+    }
+  ]
+}

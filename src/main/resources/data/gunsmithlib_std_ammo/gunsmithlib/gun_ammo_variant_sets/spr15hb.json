@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:spr15hb",
+        "gunsmithlib_std_ammo:spr15hb_m855a1",
+        "gunsmithlib_std_ammo:spr15hb_m995",
+        "gunsmithlib_std_ammo:spr15hb_dum",
+        "gunsmithlib_std_ammo:spr15hb_wp",
+        "gunsmithlib_std_ammo:spr15hb_du"
+      ]
+    }
+  ]
+}

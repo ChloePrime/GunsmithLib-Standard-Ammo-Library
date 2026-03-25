@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.m4a1.name",
+  "tooltip": "tacz.gun.m4a1.desc",
+  "data": "gunsmithlib_std_ammo:m4a1_dum_data",
+  "display": "tacz:m4a1_display",
+  "type": "rifle",
+  "sort": 2
+}

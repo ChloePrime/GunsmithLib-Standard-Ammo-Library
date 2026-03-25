@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.m16a4.name",
+  "tooltip": "tacz.gun.m16a4.desc",
+  "data": "gunsmithlib_std_ammo:m16a4_dum_data",
+  "display": "tacz:m16a4_display",
+  "type": "rifle",
+  "sort": 4
+}

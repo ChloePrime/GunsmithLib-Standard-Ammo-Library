@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:aug",
+        "gunsmithlib_std_ammo:aug_m855a1",
+        "gunsmithlib_std_ammo:aug_m995",
+        "gunsmithlib_std_ammo:aug_dum",
+        "gunsmithlib_std_ammo:aug_wp",
+        "gunsmithlib_std_ammo:aug_du"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.m249.name",
+  "tooltip": "tacz.gun.m249.desc",
+  "data": "gunsmithlib_std_ammo:m249_m995_data",
+  "display": "tacz:m249_display",
+  "type": "mg",
+  "sort": 1
+}

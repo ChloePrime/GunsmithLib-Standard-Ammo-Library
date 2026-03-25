@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m16a4",
+        "gunsmithlib_std_ammo:m16a4_m855a1",
+        "gunsmithlib_std_ammo:m16a4_m995",
+        "gunsmithlib_std_ammo:m16a4_dum",
+        "gunsmithlib_std_ammo:m16a4_wp",
+        "gunsmithlib_std_ammo:m16a4_du"
+      ]
+    }
+  ]
+}

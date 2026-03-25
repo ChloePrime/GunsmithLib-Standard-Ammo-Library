@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.aug.name",
+  "tooltip": "tacz.gun.aug.desc",
+  "data": "gunsmithlib_std_ammo:aug_m855a1_data",
+  "display": "tacz:aug_display",
+  "type": "rifle",
+  "sort": 10
+}

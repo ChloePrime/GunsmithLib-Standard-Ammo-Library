@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:hk416d",
+        "gunsmithlib_std_ammo:hk416d_m855a1",
+        "gunsmithlib_std_ammo:hk416d_m995",
+        "gunsmithlib_std_ammo:hk416d_dum",
+        "gunsmithlib_std_ammo:hk416d_wp",
+        "gunsmithlib_std_ammo:hk416d_du"
+      ]
+    }
+  ]
+}
