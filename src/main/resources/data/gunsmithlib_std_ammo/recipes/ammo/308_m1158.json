@@ -1,0 +1,35 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/tungsten"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "item": "minecraft:fire_charge"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:308_m1158",
+    "count": 60
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -7,12 +7,12 @@
         "dy": 0.125,
         "dz": 0.125,
         "speed": 0,
-        "count": 4
+        "count": 6
       }
     ]
   },
-  "name": "gunsmithlib_std_ammo.ammo.556x45_du.name",
+  "name": "gunsmithlib_std_ammo.ammo.308_du.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc",
-  "display": "gunsmithlib_std_ammo:556x45_du_display",
+  "display": "gunsmithlib_std_ammo:308_du_display",
   "stack_size": 60
 }

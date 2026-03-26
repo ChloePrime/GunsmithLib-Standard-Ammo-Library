@@ -7,13 +7,18 @@
   ],
   "type": "jeed:effect_provider",
   "effect": {
-    "id": "gunsmithlib_std_ammo:dum_hurt"
+    "id": "gunsmithlib_std_ammo:burning"
   },
   "providers": [
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_dum\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_wp\"}"
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "tacz:ammo",
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:308_wp\"}"
     }
   ]
 }

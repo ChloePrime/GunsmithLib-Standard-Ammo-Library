@@ -7,13 +7,18 @@
   ],
   "type": "jeed:effect_provider",
   "effect": {
-    "id": "gunsmithlib_std_ammo:burning"
+    "id": "gunsmithlib_std_ammo:cancer"
   },
   "providers": [
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_wp\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_du\"}"
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "tacz:ammo",
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:308_du\"}"
     }
   ]
 }

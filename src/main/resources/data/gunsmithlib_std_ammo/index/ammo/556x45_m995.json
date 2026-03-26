@@ -1,6 +1,6 @@
 {
   "name": "gunsmithlib_std_ammo.ammo.556x45_m995.name",
-  "tooltip": "gunsmithlib_std_ammo.ammo.556x45_m995.desc",
+  "tooltip": "gunsmithlib_std_ammo.ammo.generic.expensive.desc",
   "display": "gunsmithlib_std_ammo:556x45_m995_display",
   "stack_size": 60
 }
