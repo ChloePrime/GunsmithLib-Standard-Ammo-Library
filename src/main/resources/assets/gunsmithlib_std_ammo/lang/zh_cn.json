@@ -31,10 +31,10 @@
   "effect.gunsmithlib_std_ammo.suffocating.description": "使用枪械变得极度困难，怪物随机失去攻击目标",
   "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
   "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "急性扩张弹头中毒",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的弹头填充，降低最大生命值",
   "effect.gunsmithlib_std_ammo.cancer": "癌症",
   "effect.gunsmithlib_std_ammo.cancer.description": "持续受到伤害并减少最大生命值",
-  "effect.gunsmithlib_std_ammo.dum_hurt": "急性重金属中毒",
-  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的弹头填充，降低最大生命值",
 
   "item.gunsmithlib_std_ammo.monocrystalline_silicon": "单晶硅",
   "item.gunsmithlib_std_ammo.wafer": "晶圆",
@@ -55,6 +55,7 @@
   "gunsmithlib_std_ammo.type.ammo.name": "特殊子弹",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "大炮一响，黄金万两",
+  "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "终极达姆弹",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§c§L危险物质：\n§e致癌\n§f由此导致：\n§f被命中",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
@@ -75,12 +76,12 @@
 
   "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 强化弹",
   "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 穿甲弹",
-  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm 达姆弹（被甲空尖弹）",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm SST 超级扩张弹",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm 贫铀弹",
   "gunsmithlib_std_ammo.ammo.308_m61.name": "§b.308 M61 经济型穿甲弹",
   "gunsmithlib_std_ammo.ammo.308_m1158.name": "§b.308 M1158 高端穿甲弹",
-  "gunsmithlib_std_ammo.ammo.308_dum.name": "§b.308 达姆弹（被甲空尖弹）",
+  "gunsmithlib_std_ammo.ammo.308_dum.name": "§b.308 SST 超级扩张弹",
   "gunsmithlib_std_ammo.ammo.308_wp.name": "§b.308 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.308_du.name": "§b.308 贫铀弹",
 

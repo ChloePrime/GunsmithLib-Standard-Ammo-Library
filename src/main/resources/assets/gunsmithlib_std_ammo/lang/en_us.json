@@ -44,10 +44,10 @@
   "effect.gunsmithlib_std_ammo.suffocating.description": "Using guns become much harder. Randomly lose attack target for mobs",
   "effect.gunsmithlib_std_ammo.burning": "Thermite Stained",
   "effect.gunsmithlib_std_ammo.burning.description": "Unstoppable burning and increase burning damage received",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "Acute Expanding Warhead Poisoning",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "Body fulfilled by expanded warhead, thus reduces max health",
   "effect.gunsmithlib_std_ammo.cancer": "Cancer",
   "effect.gunsmithlib_std_ammo.cancer.description": "Receive damage and reduce max health over time",
-  "effect.gunsmithlib_std_ammo.dum_hurt": "Acute Metal Poisoning",
-  "effect.gunsmithlib_std_ammo.dum_hurt.description": "Body fulfilled by expanded warhead, thus reduces max health",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
@@ -55,6 +55,7 @@
   "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "Cannons roar, gold pour",
+  "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "The ultimate Dumdum bullet",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§cHAZARDOUS:\n§eCarcinogenic\n§fCaused by:\n§fGot shot",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
@@ -75,12 +76,12 @@
 
   "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 Enhanced Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 AP Bullet",
-  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Dumdum (JHP) Bullet",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Super Shock Tip Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm White Phosphorus Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm Depleted Uranium Bullet",
   "gunsmithlib_std_ammo.ammo.308_m61.name": "§e.308 Win M61 AP Bullet",
   "gunsmithlib_std_ammo.ammo.308_m1158.name": "§e.308 Win M1158 Advanced AP Bullet",
-  "gunsmithlib_std_ammo.ammo.308_dum.name": "§e.308 Win Dumdum (JHP) Bullet",
+  "gunsmithlib_std_ammo.ammo.308_dum.name": "§e.308 Win Super Shock Tip Bullet",
   "gunsmithlib_std_ammo.ammo.308_wp.name": "§e.308 Win White Phosphorus Bullet",
   "gunsmithlib_std_ammo.ammo.308_du.name": "§e.308 Win Depleted Uranium Bullet",
 

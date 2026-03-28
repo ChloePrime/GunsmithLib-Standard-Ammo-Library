@@ -1,5 +1,6 @@
 {
   "name": "gunsmithlib_std_ammo.ammo.556x45_dum.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc",
   "display": "gunsmithlib_std_ammo:556x45_dum_display",
   "stack_size": 60
 }
