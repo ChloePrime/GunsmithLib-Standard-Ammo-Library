@@ -5,7 +5,8 @@
       "variants": [
         "tacz:b93r",
         "gunsmithlib_std_ammo:b93r_ap",
-        "gunsmithlib_std_ammo:b93r_pp"
+        "gunsmithlib_std_ammo:b93r_pp",
+        "gunsmithlib_std_ammo:b93r_7n31_2"
       ]
     }
   ]

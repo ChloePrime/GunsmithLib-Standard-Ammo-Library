@@ -5,7 +5,8 @@
       "variants": [
         "tacz:glock_17",
         "gunsmithlib_std_ammo:glock_17_ap",
-        "gunsmithlib_std_ammo:glock_17_pp"
+        "gunsmithlib_std_ammo:glock_17_pp",
+        "gunsmithlib_std_ammo:glock_17_7n31_2"
       ]
     }
   ]

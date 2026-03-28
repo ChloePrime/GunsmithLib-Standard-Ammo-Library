@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.glock_17.name",
+  "display": "gunsmithlib_std_ammo:glock_17_7n31_2_display",
+  "data": "gunsmithlib_std_ammo:glock_17_7n31_2_data",
+  "tooltip": "tacz.gun.glock_17.desc",
+  "type": "pistol"
+}
