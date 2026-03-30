@@ -5,6 +5,14 @@
         "particle_id": "minecraft:lava",
         "speed": 1,
         "count": 4
+      },
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/blue",
+        "aaa_particle_data": {
+          "scale": 0.1
+        },
+        "explosive_particle_alternate": true
       }
     ]
   },
