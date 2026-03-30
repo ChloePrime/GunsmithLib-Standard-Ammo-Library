@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:fn_fal",
+        "gunsmithlib_std_ammo:fn_fal_m61",
+        "gunsmithlib_std_ammo:fn_fal_m1158",
+        "gunsmithlib_std_ammo:fn_fal_dum",
+        "gunsmithlib_std_ammo:fn_fal_wp",
+        "gunsmithlib_std_ammo:fn_fal_du"
+      ]
+    }
+  ]
+}

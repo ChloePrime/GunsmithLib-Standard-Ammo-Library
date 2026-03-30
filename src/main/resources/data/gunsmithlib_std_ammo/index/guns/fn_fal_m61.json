@@ -1,0 +1,9 @@
+{
+  "name": "tacz.gun.fn_fal.name",
+  "tooltip": "tacz.gun.fn_fal.desc",
+  "data": "gunsmithlib_std_ammo:fn_fal_m61_data",
+  "display": "tacz:fn_fal_display",
+  "type": "rifle",
+  "item_type": "modern_kinetic",
+  "sort": 11
+}

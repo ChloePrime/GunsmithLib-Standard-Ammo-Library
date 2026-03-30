@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:scar_h",
+        "gunsmithlib_std_ammo:scar_h_m61",
+        "gunsmithlib_std_ammo:scar_h_m1158",
+        "gunsmithlib_std_ammo:scar_h_dum",
+        "gunsmithlib_std_ammo:scar_h_wp",
+        "gunsmithlib_std_ammo:scar_h_du"
+      ]
+    }
+  ]
+}

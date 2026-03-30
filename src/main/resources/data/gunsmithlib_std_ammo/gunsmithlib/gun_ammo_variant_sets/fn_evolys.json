@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:fn_evolys",
+        "gunsmithlib_std_ammo:fn_evolys_m61",
+        "gunsmithlib_std_ammo:fn_evolys_m1158",
+        "gunsmithlib_std_ammo:fn_evolys_dum",
+        "gunsmithlib_std_ammo:fn_evolys_wp",
+        "gunsmithlib_std_ammo:fn_evolys_du"
+      ]
+    }
+  ]
+}

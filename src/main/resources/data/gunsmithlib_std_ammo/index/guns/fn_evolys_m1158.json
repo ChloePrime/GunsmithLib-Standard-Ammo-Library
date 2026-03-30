@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.fn_evolys.name",
+  "tooltip": "tacz.gun.fn_evolys.desc",
+  "data": "gunsmithlib_std_ammo:fn_evolys_m1158_data",
+  "display": "tacz:fn_evolys_display",
+  "type": "mg",
+  "sort": 4
+}

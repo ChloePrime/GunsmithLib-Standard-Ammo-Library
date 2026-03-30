@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:hk_g3",
+        "gunsmithlib_std_ammo:hk_g3_m61",
+        "gunsmithlib_std_ammo:hk_g3_m1158",
+        "gunsmithlib_std_ammo:hk_g3_dum",
+        "gunsmithlib_std_ammo:hk_g3_wp",
+        "gunsmithlib_std_ammo:hk_g3_du"
+      ]
+    }
+  ]
+}

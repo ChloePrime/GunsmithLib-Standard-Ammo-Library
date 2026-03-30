@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.scar_h.name",
+  "tooltip": "tacz.gun.scar_h.desc",
+  "data": "gunsmithlib_std_ammo:scar_h_dum_data",
+  "display": "tacz:scar_h_display",
+  "type": "rifle",
+  "sort": 4
+}

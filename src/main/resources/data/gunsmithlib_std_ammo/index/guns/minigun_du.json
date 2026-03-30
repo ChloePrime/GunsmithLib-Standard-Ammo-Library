@@ -1,0 +1,9 @@
+{
+  "name": "tacz.gun.minigun.name",
+  "tooltip": "tacz.gun.minigun.desc",
+  "data": "gunsmithlib_std_ammo:minigun_du_data",
+  "display": "tacz:minigun_display",
+  "type": "mg",
+  "item_type": "modern_kinetic",
+  "sort": 1
+}

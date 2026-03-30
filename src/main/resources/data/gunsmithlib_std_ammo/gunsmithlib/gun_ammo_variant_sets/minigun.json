@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:minigun",
+        "gunsmithlib_std_ammo:minigun_m61",
+        "gunsmithlib_std_ammo:minigun_m1158",
+        "gunsmithlib_std_ammo:minigun_dum",
+        "gunsmithlib_std_ammo:minigun_wp",
+        "gunsmithlib_std_ammo:minigun_du"
+      ]
+    }
+  ]
+}

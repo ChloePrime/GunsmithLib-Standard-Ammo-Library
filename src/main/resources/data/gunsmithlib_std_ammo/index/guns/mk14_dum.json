@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.mk14.name",
+  "tooltip": "tacz.gun.mk14.desc",
+  "data": "gunsmithlib_std_ammo:mk14_dum_data",
+  "display": "tacz:mk14_display",
+  "type": "rifle",
+  "sort": 4
+}

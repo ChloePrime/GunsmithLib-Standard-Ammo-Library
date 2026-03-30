@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:mk14",
+        "gunsmithlib_std_ammo:mk14_m61",
+        "gunsmithlib_std_ammo:mk14_m1158",
+        "gunsmithlib_std_ammo:mk14_dum",
+        "gunsmithlib_std_ammo:mk14_wp",
+        "gunsmithlib_std_ammo:mk14_du"
+      ]
+    }
+  ]
+}

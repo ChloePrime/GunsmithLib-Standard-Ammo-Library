@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.hk_g3.name",
+  "tooltip": "tacz.gun.hk_g3.desc",
+  "data": "gunsmithlib_std_ammo:hk_g3_wp_data",
+  "display": "tacz:hk_g3_display",
+  "type": "rifle",
+  "sort": 3
+}
