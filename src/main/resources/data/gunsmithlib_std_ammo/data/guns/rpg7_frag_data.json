@@ -6,9 +6,9 @@
     "hit_particles": [
       {
         "is_aaa_particle": true,
-        "particle_id": "gunsmithlib_std_ammo:explosion",
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
         "aaa_particle_data": {
-          "scale": 1.6
+          "scale": 0.8
         },
         "explosive_particle_alternate": true
       }

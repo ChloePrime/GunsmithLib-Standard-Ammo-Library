@@ -11,6 +11,16 @@
       "proximity_fuse_distance": 1,
       "prevent_destroying_loot_items": true
     },
+    "hit_particles": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
+        "aaa_particle_data": {
+          "scale": 0.45
+        },
+        "explosive_particle_alternate": true
+      }
+    ],
     "hidden": true
   },
   "ammo": "gunsmithlib_std_ammo:12g_frag12_airburst",
