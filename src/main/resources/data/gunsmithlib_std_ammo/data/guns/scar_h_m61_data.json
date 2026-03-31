@@ -1,5 +1,8 @@
 {
   "gunsmithlib_extension": {
+    "gun_explosive": {
+      "prevent_destroying_loot_items": true
+    },
     "hidden": true
   },
   "ammo": "gunsmithlib_std_ammo:308_m61",

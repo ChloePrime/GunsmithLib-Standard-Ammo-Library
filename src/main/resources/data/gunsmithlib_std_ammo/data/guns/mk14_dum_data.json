@@ -1,5 +1,8 @@
 {
   "gunsmithlib_extension": {
+    "gun_explosive": {
+      "prevent_destroying_loot_items": true
+    },
     "potion_effects": [
       {
         "effect_id": "gunsmithlib_std_ammo:dum_hurt",
