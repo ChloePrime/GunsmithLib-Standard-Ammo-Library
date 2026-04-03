@@ -1,9 +1,10 @@
-// 1.20.1	2026-03-20T16:45:36.0354527	Item Models: gunsmithlib_std_ammo
+// 1.20.1	2026-04-04T02:23:05.4556932	Item Models: gunsmithlib_std_ammo
 43e2270bddb0368d8b078a2ddac03ef93fde03c2 assets/gunsmithlib_std_ammo/models/item/blue_tiberium_crystal.json
 5157466edce68147978f2fb100179345a0b32345 assets/gunsmithlib_std_ammo/models/item/green_tiberium_crystal.json
 6f163e9640403548edf9e03466ec3219ada54492 assets/gunsmithlib_std_ammo/models/item/monocrystalline_silicon.json
 87f2dc49ec3db0adc7cf8db43d7708d6cdb79c46 assets/gunsmithlib_std_ammo/models/item/n2_dynamite.json
 4ce4ae282e34434c8f585f61c3d3645a5b1625e1 assets/gunsmithlib_std_ammo/models/item/nitration_mixture.json
+14d7f777a42cee5baa2c47ce0e88b4d4af6ac286 assets/gunsmithlib_std_ammo/models/item/pico_rocket.json
 373a274a5f595430f47f04c9291699c06635d5ac assets/gunsmithlib_std_ammo/models/item/raw_tungsten.json
 1b6a4ee42140a0bd42afbf71b4b2b3f5e14965cd assets/gunsmithlib_std_ammo/models/item/sensor.json
 8c418472ff0de12ec17f8b42f7ac6cd5512f9d24 assets/gunsmithlib_std_ammo/models/item/sensor_wafer.json

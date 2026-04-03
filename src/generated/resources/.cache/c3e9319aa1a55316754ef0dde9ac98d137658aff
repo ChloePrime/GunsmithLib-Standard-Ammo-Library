@@ -1,0 +1,4 @@
+// 1.20.1	2026-04-04T02:23:05.456694	Tags for minecraft:damage_type mod id gunsmithlib_std_ammo
+0f82b149bfc321c3ade3b2171a3d608c69e76751 data/minecraft/tags/damage_type/bypasses_armor.json
+0f82b149bfc321c3ade3b2171a3d608c69e76751 data/minecraft/tags/damage_type/bypasses_cooldown.json
+0f82b149bfc321c3ade3b2171a3d608c69e76751 data/minecraft/tags/damage_type/witch_resistant_to.json

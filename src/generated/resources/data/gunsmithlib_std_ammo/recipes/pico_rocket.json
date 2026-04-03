@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "pattern": [
+    " # ",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 45,
+    "item": "gunsmithlib_std_ammo:pico_rocket"
+  },
+  "show_notification": true
+}

@@ -20,6 +20,7 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
     @Override
     protected void registerModels() {
         basicItem(GSAItems.STEEL_INGOT.get());
+        basicItem(GSAItems.PICO_ROCKET.get());
 
         basicItem(GSAItems.MONOCRYSTALLINE_SILICON.get());
         basicItem(GSAItems.WAFER.get());

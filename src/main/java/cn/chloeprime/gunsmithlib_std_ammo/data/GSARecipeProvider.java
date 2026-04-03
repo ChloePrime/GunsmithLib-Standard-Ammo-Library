@@ -39,6 +39,14 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                         6400)
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output, GunsmithLibStdAmmoMod.loc("steel_ingot_from_blasting"));
+        // 微型火箭
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PICO_ROCKET.get(), 45)
+                .define('#', GSAItemTags.INGOTS_STEEL)
+                .pattern(" # ")
+                .pattern("# #")
+                .pattern("# #")
+                .unlockedBy("has_steel_ingot", has(GSAItemTags.INGOTS_STEEL))
+                .save(output, GunsmithLibStdAmmoMod.loc("pico_rocket"));
         // 芯片制造
         var quartzBlocks = Ingredient.fromValues(Stream.of(
                 new Ingredient.TagValue(Tags.Items.STORAGE_BLOCKS_QUARTZ),

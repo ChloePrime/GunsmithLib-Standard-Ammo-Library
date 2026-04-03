@@ -19,6 +19,7 @@ public final class GSAItems {
 
     // 炼钢
     public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
+    public static final Supplier<Item> PICO_ROCKET = simpleItem("pico_rocket");
 
     // 芯片制造
     public static final Supplier<Item> MONOCRYSTALLINE_SILICON = simpleItem("monocrystalline_silicon");
@@ -101,6 +102,7 @@ public final class GSAItems {
             event.accept(STEEL_INGOT);
             event.accept(TUNGSTEN_INGOT);
             event.accept(TIBERIUM_ALLOY_INGOT);
+            event.accept(PICO_ROCKET);
             event.accept(MONOCRYSTALLINE_SILICON);
             event.accept(WAFER);
             event.accept(SOC_WAFER);

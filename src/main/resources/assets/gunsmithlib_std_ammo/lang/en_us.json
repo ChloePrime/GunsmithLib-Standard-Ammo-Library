@@ -1,5 +1,6 @@
 {
   "item.gunsmithlib_std_ammo.steel_ingot": "Steel Ingot",
+  "item.gunsmithlib_std_ammo.pico_rocket": "Pico Rocket",
 
   "item.gunsmithlib_std_ammo.monocrystalline_silicon": "Monocrystalline Silicon",
   "item.gunsmithlib_std_ammo.wafer": "Wafer",
@@ -57,6 +58,7 @@
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "Cannons roar, gold pour",
   "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "The ultimate Dumdum bullet",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§cHAZARDOUS:\n§eCarcinogenic\n§fCaused by:\n§fGot shot",
+  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "Rocket-Propelled:\nIncrease damage by distance",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "Uncle Leon's RPG-7 Rocket",
@@ -79,6 +81,11 @@
   "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm Super Shock Tip Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm White Phosphorus Bullet",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm Depleted Uranium Bullet",
+  "gunsmithlib_std_ammo.ammo.762x39_7n23.name": "§e7.62x39mm 7N23 BP Bullet",
+  "gunsmithlib_std_ammo.ammo.762x39_mai.name": "§e7.62x39mm MAI AP Bullet",
+  "gunsmithlib_std_ammo.ammo.762x39_7p51.name": "§e7.62x39mm 7P51 Rocket-Propelled Bolt",
+  "gunsmithlib_std_ammo.ammo.762x39_7p65.name": "§e7.62x39mm 7P65 Kraken AP Bolt",
+  "gunsmithlib_std_ammo.ammo.762x39_dbp39e.name": "§e7.62x39mm DBP39E \"Liberty\" Energetic Bolt",
   "gunsmithlib_std_ammo.ammo.308_m61.name": "§e.308 Win M61 AP Bullet",
   "gunsmithlib_std_ammo.ammo.308_m1158.name": "§e.308 Win M1158 Advanced AP Bullet",
   "gunsmithlib_std_ammo.ammo.308_dum.name": "§e.308 Win Super Shock Tip Bullet",
