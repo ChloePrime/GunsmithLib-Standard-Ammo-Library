@@ -1,4 +1,16 @@
 {
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
+        "aaa_particle_data": {
+          "scale": 0.08
+        },
+        "explosive_particle_alternate": true
+      }
+    ]
+  },
   "name": "gunsmithlib_std_ammo.ammo.762x39_dbp39e.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc",
   "display": "gunsmithlib_std_ammo:762x39_dbp39e_display",
