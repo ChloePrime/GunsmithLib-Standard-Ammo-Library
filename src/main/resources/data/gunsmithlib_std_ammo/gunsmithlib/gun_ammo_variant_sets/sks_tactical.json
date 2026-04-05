@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:sks_tactical",
+        "gunsmithlib_std_ammo:sks_tactical_7n23",
+        "gunsmithlib_std_ammo:sks_tactical_mai",
+        "gunsmithlib_std_ammo:sks_tactical_7p51",
+        "gunsmithlib_std_ammo:sks_tactical_7p65",
+        "gunsmithlib_std_ammo:sks_tactical_dbp39e"
+      ]
+    }
+  ]
+}
