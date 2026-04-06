@@ -3,6 +3,14 @@
     "hit_particles": [
       {
         "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:diamond_shard",
+        "aaa_particle_data": {
+          "scale": 0.02
+        },
+        "explosive_particle_alternate": false
+      },
+      {
+        "is_aaa_particle": true,
         "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
         "aaa_particle_data": {
           "scale": 0.06
