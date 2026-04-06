@@ -26,6 +26,7 @@
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.3": "",
   "item.gunsmithlib_std_ammo.n2_dynamite": "核级非核炸药",
 
+  "death.attack.gunsmithlib_std_ammo.cancer": "%s 死于白血病",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
   "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
   "effect.gunsmithlib_std_ammo.suffocating": "窒息",
