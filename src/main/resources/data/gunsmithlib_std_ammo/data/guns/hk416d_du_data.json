@@ -11,7 +11,7 @@
         "force": true
       }
     ],
-    "area_effect_cloud_duration": 4,
+    "area_effect_cloud_duration": 200,
     "hidden": true
   },
   "ammo": "gunsmithlib_std_ammo:556x45_du",
