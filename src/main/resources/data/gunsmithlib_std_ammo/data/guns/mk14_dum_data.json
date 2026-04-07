@@ -5,17 +5,13 @@
     },
     "potion_effects": [
       {
-        "effect_id": "gunsmithlib_std_ammo:dum_hurt",
-        "duration": 36000,
-        "level": 3,
-        "chance": 0.5,
-        "area_cloud_chance": 1,
-        "area_cloud_level": 2,
-        "max_stack_level": 20,
-        "force": true
+        "effect_id": "gunsmithlib_std_ammo:instant_death",
+        "duration": 1,
+        "level": 1,
+        "chance": 0.2,
+        "area_cloud_chance": 0
       }
     ],
-    "area_effect_cloud_duration": 5,
     "hidden": true
   },
   "ammo": "gunsmithlib_std_ammo:308_dum",

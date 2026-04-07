@@ -27,6 +27,8 @@
   "item.gunsmithlib_std_ammo.n2_dynamite": "核级非核炸药",
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s 死于白血病",
+  "effect.gunsmithlib_std_ammo.instant_death": "即死",
+  "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
   "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
   "effect.gunsmithlib_std_ammo.suffocating": "窒息",
@@ -53,7 +55,12 @@
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
+
   "gunsmithlib_std_ammo.affix.slicer": "斩裂弹",
+  "gunsmithlib_std_ammo.affix.instant_death.5p": "5% 概率赋予即死",
+  "gunsmithlib_std_ammo.affix.instant_death.10p": "10% 概率赋予即死",
+  "gunsmithlib_std_ammo.affix.instant_death.20p": "20% 概率赋予即死",
+
   "gunsmithlib_std_ammo.type.ammo.name": "特殊子弹",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "大炮一响，黄金万两",

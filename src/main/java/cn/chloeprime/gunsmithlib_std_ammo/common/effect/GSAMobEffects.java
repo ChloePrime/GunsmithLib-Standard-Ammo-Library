@@ -13,6 +13,7 @@ import java.util.function.Supplier;
 @SuppressWarnings("unused")
 public final class GSAMobEffects {
     private static final DeferredRegister<MobEffect> DFR = DeferredRegister.create(Registries.MOB_EFFECT, GunsmithLibStdAmmoMod.MOD_ID);
+    public static final Supplier<MobEffect> INSTANT_DEATH = DFR.register("instant_death", InstantDeathEffect::bootstrap);
     public static final Supplier<MobEffect> ARMOR_MELTDOWN = DFR.register("armor_meltdown", ArmorMeltdownEffect::bootstrap);
     public static final Supplier<MobEffect> SUFFOCATING = DFR.register("suffocating", SuffocatingEffect::bootstrap);
     public static final Supplier<MobEffect> BURNING = DFR.register("burning", BurningEffect::bootstrap);

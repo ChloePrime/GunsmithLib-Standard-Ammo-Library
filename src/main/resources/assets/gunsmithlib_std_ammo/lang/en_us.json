@@ -40,6 +40,8 @@
   "item.gunsmithlib_std_ammo.n2_dynamite": "Nuclear-Grade Non-Nuclear Dynamite",
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s was killed by leukemia",
+  "effect.gunsmithlib_std_ammo.instant_death": "Instant Death",
+  "effect.gunsmithlib_std_ammo.instant_death.description": "Instantly kills the effect holder",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "Armor Meltdown",
   "effect.gunsmithlib_std_ammo.armor_meltdown.description": "Decrease armor and armor toughness",
   "effect.gunsmithlib_std_ammo.suffocating": "Suffocating",
@@ -53,7 +55,12 @@
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
+
+  "gunsmithlib_std_ammo.affix.instant_death.5p": "5% Chance of Instant Kill",
+  "gunsmithlib_std_ammo.affix.instant_death.10p": "10% Chance of Instant Kill",
+  "gunsmithlib_std_ammo.affix.instant_death.20p": "20% Chance of Instant Kill",
   "gunsmithlib_std_ammo.affix.slicer": "Slicer",
+
   "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "Possessing a certain stopping power that briefly immobilizes the target upon impact",
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "Cannons roar, gold pour",

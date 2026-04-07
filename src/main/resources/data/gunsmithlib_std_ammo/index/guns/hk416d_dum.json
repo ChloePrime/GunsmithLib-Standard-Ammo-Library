@@ -2,7 +2,7 @@
   "name": "tacz.gun.hk416d.name",
   "tooltip": "tacz.gun.hk416d.desc",
   "data": "gunsmithlib_std_ammo:hk416d_dum_data",
-  "display": "tacz:hk416d_display",
+  "display": "gunsmithlib_std_ammo:hk416d_dum_display",
   "type": "rifle",
   "sort": 2
 }

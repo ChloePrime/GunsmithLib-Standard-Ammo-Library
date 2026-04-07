@@ -2,7 +2,7 @@
   "name": "tacz.gun.spr15hb.name",
   "tooltip": "tacz.gun.spr15hb.desc",
   "data": "gunsmithlib_std_ammo:spr15hb_dum_data",
-  "display": "tacz:spr15hb_display",
+  "display": "gunsmithlib_std_ammo:spr15hb_dum_display",
   "type": "rifle",
   "sort": 4
 }
