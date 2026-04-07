@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.m1911.name",
+  "tooltip": "tacz.gun.m1911.desc",
+  "data": "gunsmithlib_std_ammo:m1911_dum_data",
+  "display": "gunsmithlib_std_ammo:m1911_dum_display",
+  "type": "pistol"
+}

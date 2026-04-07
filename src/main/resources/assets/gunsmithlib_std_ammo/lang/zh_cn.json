@@ -79,6 +79,8 @@
   "gunsmithlib_std_ammo.ammo.9mm_7n31_2.name": "§a7N31-2 极上拓压（+++++P）超级穿甲弹",
   "gunsmithlib_std_ammo.ammo.45acp_ap.name": "§a.45 穿甲手枪弹",
   "gunsmithlib_std_ammo.ammo.45acp_pp.name": "§a.45 高压手枪弹",
+  "gunsmithlib_std_ammo.ammo.45acp_dum.name": "§a.45 狩猎达姆弹",
+  "gunsmithlib_std_ammo.ammo.45acp_dum.desc": "超高装药量！助您颗秒阿拉斯加最大的棕熊！\n警告：对人类使用这种弹药有违国际法！",
   "gunsmithlib_std_ammo.ammo.357mag_ag.name": "§c.357 银弹",
   "gunsmithlib_std_ammo.ammo.357mag_ag.desc": "穿透魔法防御\n§8软件工程问题的终极解决方案",
   "gunsmithlib_std_ammo.ammo.50ae_smart.name": "§c.50 AE 智能手枪弹",

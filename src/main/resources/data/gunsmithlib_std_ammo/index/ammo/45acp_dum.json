@@ -1,0 +1,6 @@
+{
+  "name": "gunsmithlib_std_ammo.ammo.45acp_dum.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.45acp_dum.desc",
+  "display": "gunsmithlib_std_ammo:45acp_dum_display",
+  "stack_size": 60
+}
