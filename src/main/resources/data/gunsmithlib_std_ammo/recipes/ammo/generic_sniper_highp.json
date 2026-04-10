@@ -1,0 +1,29 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 25
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:storage_blocks/copper"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:generic_sniper_highp",
+    "count": 18
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

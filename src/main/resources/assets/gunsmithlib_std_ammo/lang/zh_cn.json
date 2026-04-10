@@ -66,7 +66,8 @@
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "大炮一响，黄金万两",
   "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "终极达姆弹",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§c§L危险物质：\n§e致癌\n§f由此导致：\n§f被命中",
-  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "火箭助推：\n命中距离越远伤害越高",
+  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "火箭助推：命中距离越远伤害越高",
+  "gunsmithlib_std_ammo.ammo.generic.highp.desc": "高精度弹药：拥有较高的爆头倍率",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "里昂叔叔的 RPG-7 火箭筒",
@@ -101,6 +102,10 @@
   "gunsmithlib_std_ammo.ammo.308_dum.name": "§b.308 SST 超级扩张弹",
   "gunsmithlib_std_ammo.ammo.308_wp.name": "§b.308 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.308_du.name": "§b.308 贫铀弹",
+
+  "gunsmithlib_std_ammo.ammo.generic_sniper_ap.name": "§c通用穿甲狙击弹",
+  "gunsmithlib_std_ammo.ammo.generic_sniper_highp.name": "§c通用高精度狙击弹",
+  "gunsmithlib_std_ammo.ammo.generic_sniper_smart.name": "§c通用智能狙击弹",
 
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 号口径鸟弹",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "发射更多但更小的弹丸",

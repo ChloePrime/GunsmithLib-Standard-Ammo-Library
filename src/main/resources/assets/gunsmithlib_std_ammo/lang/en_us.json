@@ -66,7 +66,8 @@
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "Cannons roar, gold pour",
   "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "The ultimate Dumdum bullet",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§cHAZARDOUS:\n§eCarcinogenic\n§fCaused by:\n§fGot shot",
-  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "Rocket-Propelled:\nIncrease damage by distance",
+  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "Rocket-Propelled: Increase damage by distance",
+  "gunsmithlib_std_ammo.ammo.generic.highp.desc": "High Precision: Higher headshot multiplier",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "Uncle Leon's RPG-7 Rocket",
@@ -101,6 +102,10 @@
   "gunsmithlib_std_ammo.ammo.308_dum.name": "§e.308 Win Super Shock Tip Bullet",
   "gunsmithlib_std_ammo.ammo.308_wp.name": "§e.308 Win White Phosphorus Bullet",
   "gunsmithlib_std_ammo.ammo.308_du.name": "§e.308 Win Depleted Uranium Bullet",
+
+  "gunsmithlib_std_ammo.ammo.generic_sniper_ap.name": "§cAP Sniper Bullet",
+  "gunsmithlib_std_ammo.ammo.generic_sniper_highp.name": "§cHigh Precision Sniper Bullet",
+  "gunsmithlib_std_ammo.ammo.generic_sniper_smart.name": "§cSmart Sniper Bullet",
 
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 Gauge Birdshot",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "Shoots more but smaller pellets",
