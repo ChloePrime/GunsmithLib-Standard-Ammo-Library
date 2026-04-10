@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.ai_awp.name",
+  "tooltip": "tacz.gun.ai_awp.desc",
+  "data": "gunsmithlib_std_ammo:ai_awp_ap_data",
+  "display": "tacz:ai_awp_display",
+  "type": "sniper"
+}

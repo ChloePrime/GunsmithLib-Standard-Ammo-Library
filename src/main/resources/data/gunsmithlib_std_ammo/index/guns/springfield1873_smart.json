@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.springfield1873.name",
+  "tooltip": "tacz.gun.springfield1873.desc",
+  "data": "gunsmithlib_std_ammo:springfield1873_smart_data",
+  "display": "tacz:springfield1873_display",
+  "type": "sniper"
+}

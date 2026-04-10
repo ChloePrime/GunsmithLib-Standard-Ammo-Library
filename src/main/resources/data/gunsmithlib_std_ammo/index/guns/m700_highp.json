@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.m700.name",
+  "tooltip": "tacz.gun.m700.desc",
+  "data": "gunsmithlib_std_ammo:m700_highp_data",
+  "display": "tacz:m700_display",
+  "type": "sniper"
+}

@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:ai_awp",
+        "gunsmithlib_std_ammo:ai_awp_ap",
+        "gunsmithlib_std_ammo:ai_awp_highp",
+        "gunsmithlib_std_ammo:ai_awp_smart"
+      ]
+    }
+  ]
+}

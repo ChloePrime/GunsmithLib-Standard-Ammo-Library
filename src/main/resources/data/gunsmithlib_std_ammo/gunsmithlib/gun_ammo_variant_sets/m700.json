@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m700",
+        "gunsmithlib_std_ammo:m700_ap",
+        "gunsmithlib_std_ammo:m700_highp",
+        "gunsmithlib_std_ammo:m700_smart"
+      ]
+    }
+  ]
+}

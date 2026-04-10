@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:springfield1873",
+        "gunsmithlib_std_ammo:springfield1873_ap",
+        "gunsmithlib_std_ammo:springfield1873_highp",
+        "gunsmithlib_std_ammo:springfield1873_smart"
+      ]
+    }
+  ]
+}
