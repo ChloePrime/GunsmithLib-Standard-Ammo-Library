@@ -41,7 +41,7 @@
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s was killed by leukemia",
   "effect.gunsmithlib_std_ammo.instant_death": "Instant Death",
-  "effect.gunsmithlib_std_ammo.instant_death.description": "Instantly kills the effect holder",
+  "effect.gunsmithlib_std_ammo.instant_death.description": "Instantly kills the effect holder. Does not apply to bosses.",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "Armor Meltdown",
   "effect.gunsmithlib_std_ammo.armor_meltdown.description": "Decrease armor and armor toughness",
   "effect.gunsmithlib_std_ammo.suffocating": "Suffocating",

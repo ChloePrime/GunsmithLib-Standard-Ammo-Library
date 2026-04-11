@@ -28,7 +28,7 @@
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s 死于白血病",
   "effect.gunsmithlib_std_ammo.instant_death": "即死",
-  "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者",
+  "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者，对 boss 无效",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
   "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
   "effect.gunsmithlib_std_ammo.suffocating": "窒息",
