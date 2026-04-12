@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.m107.name",
+  "display": "gunsmithlib_std_ammo:m107_dum_display",
+  "data": "gunsmithlib_std_ammo:m107_dum_data",
+  "tooltip": "tacz.gun.m107.desc",
+  "type": "sniper"
+}

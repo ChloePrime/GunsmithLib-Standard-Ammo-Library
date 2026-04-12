@@ -59,6 +59,7 @@
   "gunsmithlib_std_ammo.affix.instant_death.5p": "5% Chance of Instant Kill",
   "gunsmithlib_std_ammo.affix.instant_death.10p": "10% Chance of Instant Kill",
   "gunsmithlib_std_ammo.affix.instant_death.20p": "20% Chance of Instant Kill",
+  "gunsmithlib_std_ammo.affix.instant_death.100p": "Instant Kill",
   "gunsmithlib_std_ammo.affix.slicer": "Slicer",
 
   "gunsmithlib_std_ammo.type.ammo.name": "Ammo Variants",

@@ -1,0 +1,14 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m107",
+        "gunsmithlib_std_ammo:m107_ap",
+        "gunsmithlib_std_ammo:m107_highp",
+        "gunsmithlib_std_ammo:m107_dum",
+        "gunsmithlib_std_ammo:m107_aphei"
+      ]
+    }
+  ]
+}

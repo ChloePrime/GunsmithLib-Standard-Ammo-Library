@@ -57,9 +57,10 @@
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
 
   "gunsmithlib_std_ammo.affix.slicer": "斩裂弹",
-  "gunsmithlib_std_ammo.affix.instant_death.5p": "5% 概率赋予即死",
-  "gunsmithlib_std_ammo.affix.instant_death.10p": "10% 概率赋予即死",
-  "gunsmithlib_std_ammo.affix.instant_death.20p": "20% 概率赋予即死",
+  "gunsmithlib_std_ammo.affix.instant_death.5p": "5% 概率赋予即死效果",
+  "gunsmithlib_std_ammo.affix.instant_death.10p": "10% 概率赋予即死效果",
+  "gunsmithlib_std_ammo.affix.instant_death.20p": "20% 概率赋予即死效果",
+  "gunsmithlib_std_ammo.affix.instant_death.100p": "赋予即死效果",
 
   "gunsmithlib_std_ammo.type.ammo.name": "特殊子弹",
   "gunsmithlib_std_ammo.ammo.generic.pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",

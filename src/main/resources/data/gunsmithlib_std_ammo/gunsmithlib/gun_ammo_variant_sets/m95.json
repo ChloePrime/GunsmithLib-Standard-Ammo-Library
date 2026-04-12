@@ -1,0 +1,14 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m95",
+        "gunsmithlib_std_ammo:m95_ap",
+        "gunsmithlib_std_ammo:m95_highp",
+        "gunsmithlib_std_ammo:m95_dum",
+        "gunsmithlib_std_ammo:m95_aphei"
+      ]
+    }
+  ]
+}

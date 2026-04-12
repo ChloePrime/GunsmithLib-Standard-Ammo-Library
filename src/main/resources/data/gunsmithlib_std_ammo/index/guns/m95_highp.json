@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.m95.name",
+  "display": "tacz:m95_display",
+  "data": "gunsmithlib_std_ammo:m95_highp_data",
+  "tooltip": "tacz.gun.m95.desc",
+  "type": "sniper"
+}
