@@ -1,0 +1,18 @@
+{
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
+        "aaa_particle_data": {
+          "scale": 0.3
+        },
+        "explosive_particle_alternate": true
+      }
+    ]
+  },
+  "name": "gunsmithlib_std_ammo.ammo.50bmg_aphei.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.generic.aphei.desc",
+  "display": "gunsmithlib_std_ammo:50bmg_aphei_display",
+  "stack_size": 30
+}

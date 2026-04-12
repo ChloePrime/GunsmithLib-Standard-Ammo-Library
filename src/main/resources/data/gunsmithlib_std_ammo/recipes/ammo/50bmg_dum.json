@@ -1,0 +1,40 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 110
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:rods/wooden"
+      },
+      "count": 384
+    },
+    {
+      "item": {
+        "tag": "forge:dyes/black"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      }
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:50bmg_dum",
+    "count": 24
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}
