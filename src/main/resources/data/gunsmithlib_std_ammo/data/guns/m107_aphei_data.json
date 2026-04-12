@@ -11,7 +11,7 @@
         "max_stack_level": 5,
         "force": true,
 
-        "area_cloud_chance": 1,
+        "area_cloud_chance": 0,
         "area_cloud_level": 4
       }
     ],
@@ -22,7 +22,7 @@
         "is_aaa_particle": true,
         "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
         "aaa_particle_data": {
-          "scale": 0.3
+          "scale": 0.15
         },
         "explosive_particle_alternate": true
       }
@@ -61,7 +61,7 @@
     "explosion": {
       "explode": true,
       "damage": 135,
-      "radius": 3,
+      "radius": 1.5,
       "knockback": true,
       "delay": 1
     }
