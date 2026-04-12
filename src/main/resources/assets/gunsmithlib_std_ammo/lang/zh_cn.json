@@ -91,7 +91,7 @@
 
   "gunsmithlib_std_ammo.ammo.556x45_m855a1.name": "§e5.56x45mm M855A1 强化弹",
   "gunsmithlib_std_ammo.ammo.556x45_m995.name": "§e5.56x45mm M995 穿甲弹",
-  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm SST 超级扩张弹",
+  "gunsmithlib_std_ammo.ammo.556x45_dum.name": "§e5.56x45mm 超级扩张狩猎弹",
   "gunsmithlib_std_ammo.ammo.556x45_wp.name": "§e5.56x45mm 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.556x45_du.name": "§e5.56x45mm 贫铀弹",
   "gunsmithlib_std_ammo.ammo.762x39_7n23.name": "§e7.62x39mm 7N23 钢芯穿甲弹",
@@ -101,7 +101,7 @@
   "gunsmithlib_std_ammo.ammo.762x39_dbp39e.name": "§e7.62x39mm DBP39E 解放牌含能穿甲爆弹",
   "gunsmithlib_std_ammo.ammo.308_m61.name": "§b.308 M61 经济型穿甲弹",
   "gunsmithlib_std_ammo.ammo.308_m1158.name": "§b.308 M1158 高端穿甲弹",
-  "gunsmithlib_std_ammo.ammo.308_dum.name": "§b.308 SST 超级扩张弹",
+  "gunsmithlib_std_ammo.ammo.308_dum.name": "§b.308 超级扩张狩猎弹",
   "gunsmithlib_std_ammo.ammo.308_wp.name": "§b.308 白磷燃烧弹",
   "gunsmithlib_std_ammo.ammo.308_du.name": "§b.308 贫铀弹",
 
@@ -112,7 +112,7 @@
   "gunsmithlib_std_ammo.ammo.50bmg_ap.name": "§c.50 M903 穿甲弹",
   "gunsmithlib_std_ammo.ammo.50bmg_highp.name": "§c.50 M1022 高精狙击弹",
   "gunsmithlib_std_ammo.ammo.50bmg_dum.name": "§c.50 超级扩张狩猎弹",
-  "gunsmithlib_std_ammo.ammo.50bmg_aphei.name": "§c.50 Mk-911 穿爆燃弹",
+  "gunsmithlib_std_ammo.ammo.50bmg_aphei.name": "§c.50 Mk-211 穿爆燃弹",
 
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 号口径鸟弹",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "发射更多但更小的弹丸",
