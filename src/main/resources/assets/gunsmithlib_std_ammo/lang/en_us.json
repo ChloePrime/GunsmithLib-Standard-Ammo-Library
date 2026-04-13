@@ -48,8 +48,8 @@
   "effect.gunsmithlib_std_ammo.suffocating.description": "Using guns become much harder. Randomly lose attack target for mobs",
   "effect.gunsmithlib_std_ammo.burning": "Thermite Stained",
   "effect.gunsmithlib_std_ammo.burning.description": "Unstoppable burning and increase burning damage received",
-  "effect.gunsmithlib_std_ammo.dum_hurt": "Acute Expanding Warhead Poisoning",
-  "effect.gunsmithlib_std_ammo.dum_hurt.description": "Body fulfilled by expanded warhead, thus reduces max health",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "Acute Lead Poisoning",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "Body fulfilled by expanded lead warhead, thus reduces max health",
   "effect.gunsmithlib_std_ammo.cancer": "Cancer",
   "effect.gunsmithlib_std_ammo.cancer.description": "Receive damage and reduce max health over time",
 

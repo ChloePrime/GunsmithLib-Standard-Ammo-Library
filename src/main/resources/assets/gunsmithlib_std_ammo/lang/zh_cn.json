@@ -35,8 +35,8 @@
   "effect.gunsmithlib_std_ammo.suffocating.description": "使用枪械变得极度困难，怪物随机失去攻击目标",
   "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
   "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
-  "effect.gunsmithlib_std_ammo.dum_hurt": "急性扩张弹头中毒",
-  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的弹头填充，降低最大生命值",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "急性铅中毒",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的铅弹头填充，降低最大生命值",
   "effect.gunsmithlib_std_ammo.cancer": "癌症",
   "effect.gunsmithlib_std_ammo.cancer.description": "持续受到伤害并减少最大生命值",
 

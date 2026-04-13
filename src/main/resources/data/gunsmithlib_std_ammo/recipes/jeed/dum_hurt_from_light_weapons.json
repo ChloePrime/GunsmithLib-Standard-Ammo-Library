@@ -13,12 +13,7 @@
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_dum\"}"
-    },
-    {
-      "type": "forge:partial_nbt",
-      "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:308_dum\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:45acp_dum\"}"
     }
   ]
 }

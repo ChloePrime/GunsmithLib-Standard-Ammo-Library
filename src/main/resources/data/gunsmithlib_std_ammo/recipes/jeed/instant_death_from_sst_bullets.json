@@ -7,23 +7,23 @@
   ],
   "type": "jeed:effect_provider",
   "effect": {
-    "id": "gunsmithlib_std_ammo:burning"
+    "id": "gunsmithlib_std_ammo:instant_death"
   },
   "providers": [
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_wp\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:556x45_dum\"}"
     },
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:308_wp\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:308_dum\"}"
     },
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
-      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:50bmg_aphei\"}"
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:50bmg_dum\"}"
     }
   ]
 }
