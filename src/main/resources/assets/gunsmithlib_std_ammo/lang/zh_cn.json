@@ -59,6 +59,8 @@
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "放入 1 或 3 级狙击弹药扩容弹匣",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入潜影壳",
 
+  "gunsmithlib_std_ammo.jei.info.tib_seed": "试试把它涂在树叶上，然后静观其变，木嘿嘿嘿~",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和\n官方包枪械使用这些变体的数据",
 

@@ -59,6 +59,8 @@
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "Add sniper ammo extended mags (tier 1 or 3)",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "Add a Shulker Shell",
 
+  "gunsmithlib_std_ammo.jei.info.tib_seed": "Paint it on any leaves! see how it goes patiently!",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data\nfor TaCZ Official Pack on these ammo variants.",
 

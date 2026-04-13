@@ -191,6 +191,8 @@ dependencies {
     runtimeOnly fg.deobf("maven.modrinth:oculus:1.20.1-1.7.0")
 
     // JEI
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:15.20.0.129")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:15.20.0.129")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:15.20.0.129")
     runtimeOnly fg.deobf("maven.modrinth:just-enough-effect-descriptions-jeed:jHYonbva")
 
