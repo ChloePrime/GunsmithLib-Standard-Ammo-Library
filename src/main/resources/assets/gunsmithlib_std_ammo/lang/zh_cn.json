@@ -60,7 +60,7 @@
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入潜影壳",
 
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
-  "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
+  "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和\n官方包枪械使用这些变体的数据",
 
   "gunsmithlib_std_ammo.affix.slicer": "斩裂弹",
   "gunsmithlib_std_ammo.affix.instant_death.5p": "5% 概率赋予即死效果",
@@ -69,12 +69,12 @@
   "gunsmithlib_std_ammo.affix.instant_death.100p": "赋予即死效果",
 
   "gunsmithlib_std_ammo.type.ammo.name": "特殊子弹",
-  "gunsmithlib_std_ammo.ammo.generic.pp.desc": "拥有一定的停止作用，命中目标后可使目标短暂停滞",
+  "gunsmithlib_std_ammo.ammo.generic.pp.desc": "§f拥有一定的停止作用，命中目标后可使目标短暂停滞",
   "gunsmithlib_std_ammo.ammo.generic.expensive.desc": "大炮一响，黄金万两",
   "gunsmithlib_std_ammo.ammo.generic.super_shock_tip.desc": "终极达姆弹",
   "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc": "§c§L危险物质：\n§e致癌\n§f由此导致：\n§f被命中",
-  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "火箭助推：命中距离越远伤害越高",
-  "gunsmithlib_std_ammo.ammo.generic.highp.desc": "高精度弹药：拥有较高的爆头倍率",
+  "gunsmithlib_std_ammo.ammo.generic.rocket_propelled.desc": "§f火箭助推：命中距离越远伤害越高",
+  "gunsmithlib_std_ammo.ammo.generic.highp.desc": "§f高精度弹药：拥有较高的爆头倍率",
   "gunsmithlib_std_ammo.ammo.generic.aphei.desc": "穿甲、爆炸、燃烧，三个愿望一次满足~",
 
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
@@ -89,9 +89,9 @@
   "gunsmithlib_std_ammo.ammo.45acp_ap.name": "§a.45 穿甲手枪弹",
   "gunsmithlib_std_ammo.ammo.45acp_pp.name": "§a.45 高压手枪弹",
   "gunsmithlib_std_ammo.ammo.45acp_dum.name": "§a.45 狩猎达姆弹",
-  "gunsmithlib_std_ammo.ammo.45acp_dum.desc": "超高装药量！助您颗秒阿拉斯加最大的棕熊！\n警告：对人类使用这种弹药有违国际法！",
+  "gunsmithlib_std_ammo.ammo.45acp_dum.desc": "§f超高装药量！助您颗秒阿拉斯加最大的棕熊！\n§7警告：对人类使用这种弹药有违国际法！",
   "gunsmithlib_std_ammo.ammo.357mag_ag.name": "§c.357 银弹",
-  "gunsmithlib_std_ammo.ammo.357mag_ag.desc": "穿透魔法防御\n§8软件工程问题的终极解决方案",
+  "gunsmithlib_std_ammo.ammo.357mag_ag.desc": "§f穿透魔法防御\n§7软件工程问题的终极解决方案",
   "gunsmithlib_std_ammo.ammo.50ae_smart.name": "§c.50 AE 智能手枪弹",
   "gunsmithlib_std_ammo.ammo.50ae_smart.desc": "协议三：保护射手",
 
@@ -121,18 +121,18 @@
   "gunsmithlib_std_ammo.ammo.50bmg_aphei.name": "§c.50 Mk-211 穿爆燃弹",
 
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912 号口径鸟弹",
-  "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "发射更多但更小的弹丸",
+  "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "§f发射更多但更小的弹丸",
   "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4 毫米钨芯穿甲霰弹",
   "gunsmithlib_std_ammo.ammo.12g_ap.desc": "中国人处理钨的方式",
   "gunsmithlib_std_ammo.ammo.12g_db.name": "§912 号口径龙息弹",
-  "gunsmithlib_std_ammo.ammo.12g_db.desc": "融化目标的护甲",
+  "gunsmithlib_std_ammo.ammo.12g_db.desc": "§f融化目标的护甲",
   "gunsmithlib_std_ammo.ammo.12g_he.name": "§918.4 毫米多用途高爆弹",
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "星际战士竟是我自己",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB 可编程空爆榴弹",
 
   "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name": "§dPG-7VL 多用途火箭弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.name": "§dPG-7VR 串联破甲火箭弹",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.desc": "穿透魔法防御，但是对普通装甲效果稍差",
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.desc": "§f穿透魔法防御，但是对普通装甲效果稍差",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_frag.name": "§dOG-7V 反人员火箭弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 火箭温压弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭重型斩裂弹",
