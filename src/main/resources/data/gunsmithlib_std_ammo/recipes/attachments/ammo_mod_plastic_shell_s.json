@@ -1,0 +1,18 @@
+{
+  "type": "gunsmithlib:smithing_transform_tacz_content_id",
+  "template": {
+    "item": "gunsmithlib_std_ammo:plastic_upgrade_smithing_template"
+  },
+  "base": {
+    "type": "forge:partial_nbt",
+    "item": "tacz:attachment",
+    "nbt": {
+      "AttachmentId": "tacz:sniper_extended_mag_1"
+    }
+  },
+  "addition": {
+    "item": "minecraft:shulker_shell"
+  },
+  "tacz_content_type": "attachment",
+  "result_id": "gunsmithlib_std_ammo:ammo_mod_plastic_shell_s"
+}

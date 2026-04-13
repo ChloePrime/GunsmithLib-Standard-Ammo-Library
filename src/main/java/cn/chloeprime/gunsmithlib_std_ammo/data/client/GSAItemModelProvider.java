@@ -45,5 +45,7 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
         basicItem(GSAItems.N2_DYNAMITE.get());
         basicItem(GSAItems.TIBERIUM_COMPOUND.get());
         basicItem(GSAItems.TIBERIUM_ALLOY_INGOT.get());
+
+        basicItem(GSAItems.PLASTIC_UPGRADE_SMITHING_TEMPLATE.get());
     }
 }

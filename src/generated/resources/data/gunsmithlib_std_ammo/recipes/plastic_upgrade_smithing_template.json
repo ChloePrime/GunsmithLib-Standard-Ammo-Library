@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "gunsmithlib_std_ammo:soc"
+    },
+    "X": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AXA",
+    "AAA"
+  ],
+  "result": {
+    "item": "gunsmithlib_std_ammo:plastic_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

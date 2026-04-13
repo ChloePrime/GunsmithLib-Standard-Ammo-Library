@@ -53,6 +53,12 @@
   "item.gunsmithlib_std_ammo.tpu.desc.0": "算力足以支持 AI 自主游玩 Minecraft",
   "item.gunsmithlib_std_ammo.tpu.desc.1": "",
 
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.applies_to": "狙击弹药扩容弹匣（1 级和 3 级）",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "潜影壳",
+  "upgrade.gunsmithlib_std_ammo.plastic_upgrade": "聚合物升级",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "放入 1 或 3 级狙击弹药扩容弹匣",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入潜影壳",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib 标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和官方包枪械使用这些变体的数据",
 
@@ -131,5 +137,10 @@
   "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 火箭温压弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 火箭重型斩裂弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "激活的斩裂弹",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取"
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取",
+
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§e塑料弹壳配备小弹匣",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "轻量化的塑料弹壳，拥有良好的人机工效",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§e塑料弹壳配备大弹匣",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "轻量化的塑料弹壳，拥有良好的人机工效"
 }

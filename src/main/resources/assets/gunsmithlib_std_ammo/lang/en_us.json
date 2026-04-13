@@ -53,6 +53,12 @@
   "effect.gunsmithlib_std_ammo.cancer": "Cancer",
   "effect.gunsmithlib_std_ammo.cancer.description": "Receive damage and reduce max health over time",
 
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.applies_to": "Sniper ammo extended mags (tier 1 or 3)",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "Shulker Shells",
+  "upgrade.gunsmithlib_std_ammo.plastic_upgrade": "Plastic Upgrade",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "Add sniper ammo extended mags (tier 1 or 3)",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "Add a Shulker Shell",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data for TaCZ Official Pack on these ammo variants.",
 
@@ -131,5 +137,10 @@
   "gunsmithlib_std_ammo.ammo.rpg_rocket_thrm.name": "§dRPG-7 Thermobaric Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer.name": "§dRPG-7 Heavy Slicing Rocket",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "Activated Slicer",
-  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "Technical item, not obtainable"
+  "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "Technical item, not obtainable",
+
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§ePlastic Shell (S)",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "Lightweight polymer shell, good ergonomics!",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§ePlastic Shell (L)",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "Lightweight polymer shell, good ergonomics!"
 }

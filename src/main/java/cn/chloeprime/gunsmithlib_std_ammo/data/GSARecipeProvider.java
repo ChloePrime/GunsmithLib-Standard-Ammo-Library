@@ -137,6 +137,25 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                 .save(output, getKey(TIBERIUM_COMPOUND.get()));
         gsaOreSmelting(output, List.of(TIBERIUM_COMPOUND.get()), RecipeCategory.MISC, TIBERIUM_ALLOY_INGOT.get(), 0.5F, 200, "tiberium_alloy");
         gsaOreBlasting(output, List.of(TIBERIUM_COMPOUND.get()), RecipeCategory.MISC, TIBERIUM_ALLOY_INGOT.get(), 0.5F, 100, "tiberium_alloy");
+
+        // 聚合物升级模板
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PLASTIC_UPGRADE_SMITHING_TEMPLATE.get())
+                .define('A', SOC.get())
+                .define('X', Items.SHULKER_SHELL)
+                .pattern("AAA")
+                .pattern("AXA")
+                .pattern("AAA")
+                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PLASTIC_UPGRADE_SMITHING_TEMPLATE.get(), 2)
+                .define('#', SOC.get())
+                .define('C', Tags.Items.INGOTS_IRON)
+                .define('S', PLASTIC_UPGRADE_SMITHING_TEMPLATE.get())
+                .pattern("#S#")
+                .pattern("#C#")
+                .pattern("###")
+                .unlockedBy("has_plastic_upgrade_smithing_template", has(PLASTIC_UPGRADE_SMITHING_TEMPLATE.get()))
+                .save(output, GunsmithLibStdAmmoMod.loc("plastic_upgrade_smithing_template_duplicating"));
     }
 
     @SuppressWarnings("SameParameterValue")

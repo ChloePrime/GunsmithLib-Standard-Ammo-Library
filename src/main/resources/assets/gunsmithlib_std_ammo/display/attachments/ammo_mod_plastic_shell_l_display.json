@@ -1,0 +1,7 @@
+{
+  "slot": "gunsmithlib_std_ammo:attachment/slot/ammo_mod_plastic_shell_l",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_a",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

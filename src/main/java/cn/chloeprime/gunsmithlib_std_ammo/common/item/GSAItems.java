@@ -2,7 +2,10 @@ package cn.chloeprime.gunsmithlib_std_ammo.common.item;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
+import net.minecraft.ChatFormatting;
+import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,6 +14,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -62,6 +66,17 @@ public final class GSAItems {
     public static final Supplier<Item> TIBERIUM_COMPOUND = simpleItem("tiberium_compound", Rarity.RARE);
     public static final Supplier<Item> TIBERIUM_ALLOY_INGOT = simpleItem("tiberium_alloy_ingot", Rarity.RARE);
 
+    // 锻造模板
+    public static final Supplier<Item> PLASTIC_UPGRADE_SMITHING_TEMPLATE = DFR.register("plastic_upgrade_smithing_template", () -> new SmithingTemplateItem(
+            Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.applies_to"))).withStyle(ChatFormatting.BLUE),
+            Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.ingredients"))).withStyle(ChatFormatting.BLUE),
+            Component.translatable(Util.makeDescriptionId("upgrade", GunsmithLibStdAmmoMod.loc("plastic_upgrade"))).withStyle(ChatFormatting.GRAY),
+            Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.base_slot_description"))),
+            Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.additions_slot_description"))),
+            List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_sniper_extended_mag_1"), GunsmithLibStdAmmoMod.loc("item/empty_slot_sniper_extended_mag_3")),
+            List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_shulker_shell"))
+    ));
+
     private static Supplier<Item> simpleItem(String name) {
         return simpleItem(name, Rarity.COMMON);
     }
@@ -102,6 +117,7 @@ public final class GSAItems {
             event.accept(STEEL_INGOT);
             event.accept(TUNGSTEN_INGOT);
             event.accept(TIBERIUM_ALLOY_INGOT);
+            event.accept(PLASTIC_UPGRADE_SMITHING_TEMPLATE);
             event.accept(PICO_ROCKET);
             event.accept(MONOCRYSTALLINE_SILICON);
             event.accept(WAFER);

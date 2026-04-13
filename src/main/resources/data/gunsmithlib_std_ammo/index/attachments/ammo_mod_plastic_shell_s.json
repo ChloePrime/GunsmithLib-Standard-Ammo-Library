@@ -1,0 +1,8 @@
+{
+  "name": "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name",
+  "tooltip": "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc",
+  "data": "gunsmithlib_std_ammo:ammo_mod_plastic_shell_s_data",
+  "display": "gunsmithlib_std_ammo:ammo_mod_plastic_shell_s_display",
+  "type": "extended_mag",
+  "sort": 1002
+}
