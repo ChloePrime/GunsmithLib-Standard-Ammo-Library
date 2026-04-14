@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "gunsmithlib_std_ammo:vx_plant",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "gunsmithlib_std_ammo:vx_plant"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "gunsmithlib_std_ammo:blocks/vx_plant"
+}

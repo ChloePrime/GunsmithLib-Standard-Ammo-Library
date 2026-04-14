@@ -21,6 +21,9 @@ import java.util.function.Supplier;
 public final class GSAItems {
     private static final DeferredRegister<Item> DFR = DeferredRegister.create(Registries.ITEM, GunsmithLibStdAmmoMod.MOD_ID);
 
+    // 自然方块
+    public static final Supplier<BlockItem> VX_PLANT = blockItem("vx_plant", GSABlocks.VX_PLANT);
+
     // 炼钢
     public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
     public static final Supplier<Item> PICO_ROCKET = simpleItem("pico_rocket");
@@ -103,6 +106,7 @@ public final class GSAItems {
             event.accept(PURIFIED_DEBRIS);
         }
         if (event.getTabKey().equals(CreativeModeTabs.NATURAL_BLOCKS)) {
+            event.accept(VX_PLANT);
             event.accept(TIBERIUM_ORE);
             event.accept(DEEPSLATE_TIBERIUM_ORE);
             event.accept(NETHER_TIBERIUM_ORE);

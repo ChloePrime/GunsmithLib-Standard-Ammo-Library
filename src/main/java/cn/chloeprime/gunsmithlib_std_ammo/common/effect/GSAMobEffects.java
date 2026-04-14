@@ -19,6 +19,7 @@ public final class GSAMobEffects {
     public static final Supplier<MobEffect> BURNING = DFR.register("burning", BurningEffect::bootstrap);
     public static final Supplier<MobEffect> CANCER = DFR.register("cancer", CancerEffect::bootstrap);
     public static final Supplier<MobEffect> DUM_HURT = DFR.register("dum_hurt", DumHurtEffect::bootstrap);
+    public static final Supplier<MobEffect> STRONG_POISON = DFR.register("strong_poison", StrongPoisonEffect::bootstrap);
 
     public static void init(IEventBus bus) {
         DFR.register(bus);

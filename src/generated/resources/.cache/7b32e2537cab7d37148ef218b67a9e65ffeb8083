@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-16T23:14:48.6950021	Tags for minecraft:block mod id gunsmithlib_std_ammo
+// 1.20.1	2026-04-15T01:40:29.8749697	Tags for minecraft:block mod id gunsmithlib_std_ammo
 8a1742337eaa47ec4d3dac7fef3cd1f3b9ad25ca data/forge/tags/blocks/ores.json
 adfede93692d54e9b41469617aee0c2c0935baa6 data/forge/tags/blocks/ores/tiberium/green.json
 d3a87704ce93255a97939fd91ac707df22c93516 data/forge/tags/blocks/ores/tiberium_seed.json
@@ -16,3 +16,6 @@ d3a87704ce93255a97939fd91ac707df22c93516 data/minecraft/tags/blocks/dragon_immun
 278dbe5eef84bf16b8da1c50b593541154e8b2b4 data/minecraft/tags/blocks/mineable/pickaxe.json
 d3f1b46452e138d32cfa78a14714feac85a4bbab data/minecraft/tags/blocks/needs_diamond_tool.json
 adfede93692d54e9b41469617aee0c2c0935baa6 data/minecraft/tags/blocks/needs_stone_tool.json
+72fa5c071cea5c93cd01cf39a9ac740aad06158d data/minecraft/tags/blocks/replaceable_by_trees.json
+72fa5c071cea5c93cd01cf39a9ac740aad06158d data/minecraft/tags/blocks/sword_efficient.json
+72fa5c071cea5c93cd01cf39a9ac740aad06158d data/minecraft/tags/blocks/tall_flowers.json

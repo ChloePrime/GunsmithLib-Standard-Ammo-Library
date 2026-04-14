@@ -2,6 +2,7 @@ package cn.chloeprime.gunsmithlib_std_ammo;
 
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAMobEffects;
+import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAPotions;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.particle.GSAParticleTypes;
@@ -20,6 +21,7 @@ public class GunsmithLibStdAmmoMod {
         GSAItems.init(bus);
         GSAEntities.init(bus);
         GSAMobEffects.init(bus);
+        GSAPotions.init(bus);
         GSAParticleTypes.init(bus);
     }
 

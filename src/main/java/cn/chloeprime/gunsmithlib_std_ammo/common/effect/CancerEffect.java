@@ -1,9 +1,7 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.effect;
 
 import cn.chloeprime.gunsmithlib_std_ammo.common.GSADamageTypes;
-import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.world.damagesource.DamageSource;
+import cn.chloeprime.gunsmithlib_std_ammo.common.util.DamageSourceUtil;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -38,7 +36,7 @@ public class CancerEffect extends MobEffectBaseUtility {
     @Override
     public void applyEffectTick(@Nonnull LivingEntity victim, int amplifier) {
         var damage = amplifier + 1;
-        var source = createCancerDamageSource(victim.level().registryAccess(), victim.damageSources().magic());
+        var source = DamageSourceUtil.source(victim.level().registryAccess(), GSADamageTypes.CANCER, victim.damageSources()::magic);
         var oldHealth = victim.getHealth();
         var success = victim.hurt(source, damage);
         if (!success) {
@@ -71,13 +69,6 @@ public class CancerEffect extends MobEffectBaseUtility {
             return;
         }
         Optional.ofNullable(victim.getAttribute(Attributes.MAX_HEALTH)).ifPresent(inst -> inst.removeModifier(MAX_HEALTH_MODIFIER_ID));
-    }
-
-    private static DamageSource createCancerDamageSource(RegistryAccess registry, DamageSource fallback) {
-        return registry.registry(Registries.DAMAGE_TYPE)
-                .flatMap(reg -> reg.getHolder(GSADamageTypes.CANCER))
-                .map(DamageSource::new)
-                .orElse(fallback);
     }
 
     private static void reduceMaxHealth(LivingEntity victim, double amount) {

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "purple_dye",
+  "ingredients": [
+    {
+      "item": "gunsmithlib_std_ammo:vx_plant"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:purple_dye"
+  }
+}

@@ -2,12 +2,15 @@ package cn.chloeprime.gunsmithlib_std_ammo.common.block;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 
@@ -25,6 +29,29 @@ public final class GSABlocks {
     private static final DeferredRegister<Block> DFR = DeferredRegister.create(Registries.BLOCK, GunsmithLibStdAmmoMod.MOD_ID);
     public static final IntProvider TIB_ORE_EXP = UniformInt.of(3, 7);
     public static final IntProvider TIB_SEED_ORE_EXP = UniformInt.of(16, 40);
+
+    public static final Supplier<TallFlowerBlock> VX_PLANT = DFR.register("vx_plant", () -> new TallFlowerBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.PLANT).sound(SoundType.GRASS)
+            .noCollission().instabreak()
+            .offsetType(BlockBehaviour.OffsetType.XZ)
+            .ignitedByLava()
+            .pushReaction(PushReaction.DESTROY)) {
+        @Override
+        public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+            return 60;
+        }
+
+        @Override
+        public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+            return 100;
+        }
+
+        @Override
+        @ParametersAreNonnullByDefault
+        public boolean isBonemealSuccess(Level level, RandomSource rng, BlockPos pos, BlockState state) {
+            return level.random.nextFloat() < 1F / 64 && super.isBonemealSuccess(level, rng, pos, state);
+        }
+    });
 
     public static final Supplier<RotatedPillarBlock> PURIFIED_DEBRIS = DFR.register("purified_debris", () -> new RotatedPillarBlock(BlockBehaviour
             .Properties.of()

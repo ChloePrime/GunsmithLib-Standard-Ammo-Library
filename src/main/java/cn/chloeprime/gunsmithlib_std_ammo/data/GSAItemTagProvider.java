@@ -31,6 +31,7 @@ public class GSAItemTagProvider extends ItemTagsProvider {
     @Override
     @SuppressWarnings("unchecked")
     protected void addTags(@Nonnull HolderLookup.Provider registry) {
+        copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
         copy(BlockTags.LEAVES, ItemTags.LEAVES);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
         copy(Tags.Blocks.ORE_RATES_SINGULAR, Tags.Items.ORE_RATES_SINGULAR);

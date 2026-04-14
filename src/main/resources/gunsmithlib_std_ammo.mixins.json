@@ -10,7 +10,8 @@
     "MixinCommonNetworkCache",
     "MixinGunData",
     "MixinItemEntity",
-    "MixinLivingEntity"
+    "MixinLivingEntity",
+    "PotionBrewingAccessor"
   ],
   "client": [
     "client.ParticleAccessor"

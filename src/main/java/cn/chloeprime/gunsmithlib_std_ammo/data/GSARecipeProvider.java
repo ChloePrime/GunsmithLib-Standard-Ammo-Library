@@ -1,6 +1,7 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItemTags;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.data.PackOutput;
@@ -30,6 +31,12 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
 
     @Override
     protected void buildRecipes(@Nonnull Consumer<FinishedRecipe> output) {
+        // 乌头变颜料
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PURPLE_DYE, 2)
+                .requires(GSABlocks.VX_PLANT.get())
+                .group("purple_dye")
+                .unlockedBy(getHasName(GSABlocks.VX_PLANT.get()), has(GSABlocks.VX_PLANT.get()))
+                .save(output, GunsmithLibStdAmmoMod.loc("purple_dye_from_vx_plant"));
         // 炼钢
         SimpleCookingRecipeBuilder.blasting(
                         Ingredient.of(Tags.Items.INGOTS_IRON),

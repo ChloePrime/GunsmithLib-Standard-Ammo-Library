@@ -7,4 +7,5 @@ import net.minecraft.world.damagesource.DamageType;
 
 public class GSADamageTypes {
     public static final ResourceKey<DamageType> CANCER = ResourceKey.create(Registries.DAMAGE_TYPE, GunsmithLibStdAmmoMod.loc("cancer"));
+    public static final ResourceKey<DamageType> POISON = ResourceKey.create(Registries.DAMAGE_TYPE, GunsmithLibStdAmmoMod.loc("poison"));
 }

@@ -36,6 +36,10 @@ public class GSABlockTagProvider extends BlockTagsProvider {
     @Override
     @SuppressWarnings("unchecked")
     protected void addTags(@Nonnull HolderLookup.Provider registry) {
+        tag(BlockTags.TALL_FLOWERS).add(GSABlocks.VX_PLANT.get());
+        tag(BlockTags.SWORD_EFFICIENT).add(GSABlocks.VX_PLANT.get());
+        tag(BlockTags.REPLACEABLE_BY_TREES).add(GSABlocks.VX_PLANT.get());
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 GSABlocks.PURIFIED_DEBRIS.get(),
                 GSABlocks.END_TIBERIUM_SEED_ORE.get(),

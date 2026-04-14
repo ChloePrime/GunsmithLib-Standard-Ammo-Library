@@ -1,4 +1,6 @@
 {
+  "block.gunsmithlib_std_ammo.vx_plant": "VX乌头",
+
   "item.gunsmithlib_std_ammo.steel_ingot": "钢锭",
   "item.gunsmithlib_std_ammo.pico_rocket": "微型火箭",
 
@@ -26,20 +28,6 @@
   "item.gunsmithlib_std_ammo.tiberium_alloy_ingot.desc.3": "",
   "item.gunsmithlib_std_ammo.n2_dynamite": "核级非核炸药",
 
-  "death.attack.gunsmithlib_std_ammo.cancer": "%s 死于白血病",
-  "effect.gunsmithlib_std_ammo.instant_death": "即死",
-  "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者，对 boss 无效",
-  "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
-  "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
-  "effect.gunsmithlib_std_ammo.suffocating": "窒息",
-  "effect.gunsmithlib_std_ammo.suffocating.description": "使用枪械变得极度困难，怪物随机失去攻击目标",
-  "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
-  "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
-  "effect.gunsmithlib_std_ammo.dum_hurt": "急性铅中毒",
-  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的铅弹头填充，降低最大生命值",
-  "effect.gunsmithlib_std_ammo.cancer": "癌症",
-  "effect.gunsmithlib_std_ammo.cancer.description": "持续受到伤害并减少最大生命值",
-
   "item.gunsmithlib_std_ammo.monocrystalline_silicon": "单晶硅",
   "item.gunsmithlib_std_ammo.wafer": "晶圆",
   "item.gunsmithlib_std_ammo.soc_wafer": "SoC 晶圆",
@@ -58,6 +46,28 @@
   "upgrade.gunsmithlib_std_ammo.plastic_upgrade": "聚合物升级",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "放入 1 或 3 级狙击弹药扩容弹匣",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入潜影壳",
+
+  "item.minecraft.potion.effect.gunsmithlib_std_ammo.vx": "VX神经毒素",
+  "item.minecraft.splash_potion.effect.gunsmithlib_std_ammo.vx": "喷溅型VX神经毒素",
+  "item.minecraft.lingering_potion.effect.gunsmithlib_std_ammo.vx": "滞留型VX神经毒素",
+  "item.minecraft.tipped_arrow.effect.gunsmithlib_std_ammo.vx": "VX神经毒素箭",
+
+  "death.attack.gunsmithlib_std_ammo.cancer": "%s 死于白血病",
+  "death.attack.gunsmithlib_std_ammo.poison": "%s死于化学武器",
+  "effect.gunsmithlib_std_ammo.instant_death": "即死",
+  "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者，对 boss 无效",
+  "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
+  "effect.gunsmithlib_std_ammo.armor_meltdown.description": "降低护甲值和盔甲韧性",
+  "effect.gunsmithlib_std_ammo.suffocating": "窒息",
+  "effect.gunsmithlib_std_ammo.suffocating.description": "使用枪械变得极度困难，怪物随机失去攻击目标",
+  "effect.gunsmithlib_std_ammo.burning": "燃剂缠身",
+  "effect.gunsmithlib_std_ammo.burning.description": "无法停止地燃烧，增加受到的着火伤害",
+  "effect.gunsmithlib_std_ammo.dum_hurt": "急性铅中毒",
+  "effect.gunsmithlib_std_ammo.dum_hurt.description": "身体被膨胀后的铅弹头填充，降低最大生命值",
+  "effect.gunsmithlib_std_ammo.cancer": "癌症",
+  "effect.gunsmithlib_std_ammo.cancer.description": "持续受到伤害并减少最大生命值",
+  "effect.gunsmithlib_std_ammo.strong_poison": "强中毒",
+  "effect.gunsmithlib_std_ammo.strong_poison.description": "受到跟血量上限正相关且致死的持续伤害",
 
   "gunsmithlib_std_ammo.jei.info.tib_seed": "试试把它涂在树叶上，然后静观其变，木嘿嘿嘿~",
 

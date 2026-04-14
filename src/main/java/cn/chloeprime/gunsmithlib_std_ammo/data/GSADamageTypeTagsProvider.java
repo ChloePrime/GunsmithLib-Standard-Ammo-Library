@@ -26,5 +26,9 @@ public class GSADamageTypeTagsProvider extends DamageTypeTagsProvider {
         tag(DamageTypeTags.BYPASSES_ARMOR).add(GSADamageTypes.CANCER);
         tag(DamageTypeTags.BYPASSES_COOLDOWN).add(GSADamageTypes.CANCER);
         tag(DamageTypeTags.WITCH_RESISTANT_TO).add(GSADamageTypes.CANCER);
+
+        tag(DamageTypeTags.ALWAYS_TRIGGERS_SILVERFISH).add(GSADamageTypes.POISON);
+        tag(DamageTypeTags.AVOIDS_GUARDIAN_THORNS).add(GSADamageTypes.POISON);
+        tag(DamageTypeTags.BYPASSES_ARMOR).add(GSADamageTypes.POISON);
     }
 }
