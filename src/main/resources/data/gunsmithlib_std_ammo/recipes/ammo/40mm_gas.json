@@ -1,0 +1,32 @@
+{
+  "materials": [
+    {
+      "item":
+      {
+        "type": "forge:partial_nbt",
+        "item": "minecraft:potion",
+        "nbt": "{Potion:\"gunsmithlib_std_ammo:vx\"}"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 9
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:40mm_gas",
+    "count": 6
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

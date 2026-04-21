@@ -13,6 +13,11 @@
     {
       "type": "forge:partial_nbt",
       "item": "tacz:ammo",
+      "nbt": "{AmmoId:\"gunsmithlib_std_ammo:40mm_thrm\"}"
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "tacz:ammo",
       "nbt": "{AmmoId:\"gunsmithlib_std_ammo:rpg_rocket_thrm\"}"
     }
   ]

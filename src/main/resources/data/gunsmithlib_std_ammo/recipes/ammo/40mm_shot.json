@@ -1,0 +1,29 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:nuggets/iron"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 9
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:40mm_shot",
+    "count": 6
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

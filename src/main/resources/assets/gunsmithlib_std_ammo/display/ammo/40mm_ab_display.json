@@ -1,0 +1,24 @@
+{
+  "model": "tacz:ammo/40mm_grenade",
+  "texture": "gunsmithlib_std_ammo:ammo/uv/40mm_ab",
+  "shell": {
+    "model": "tacz:shell/40mm_shell",
+    "texture": "tacz:shell/40mm_shell"
+  },
+  "slot": "gunsmithlib_std_ammo:ammo/slot/40mm_ab",
+  "entity": {
+    "model": "gunsmithlib_std_ammo:ammo_entity/40mm_grenade_fixed",
+    "texture": "gunsmithlib_std_ammo:ammo_entity/40mm_ab"
+  },
+  "particle": {
+    "name": "smoke",
+    "delta": [
+      0,
+      0,
+      0
+    ],
+    "speed": 0,
+    "life_time": 50,
+    "count": 5
+  }
+}

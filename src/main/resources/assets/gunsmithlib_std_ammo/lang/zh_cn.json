@@ -142,6 +142,12 @@
   "gunsmithlib_std_ammo.ammo.12g_he.desc": "星际战士竟是我自己",
   "gunsmithlib_std_ammo.ammo.12g_frag12_airburst.name": "§9FRAG-12-AB可编程空爆榴弹",
 
+  "gunsmithlib_std_ammo.ammo.40mm_dp.name": "§d40mm 高爆多用途榴弹",
+  "gunsmithlib_std_ammo.ammo.40mm_ab.name": "§d40mm 可编程空爆榴弹",
+  "gunsmithlib_std_ammo.ammo.40mm_thrm.name": "§d40mm 温压榴弹",
+  "gunsmithlib_std_ammo.ammo.40mm_shot.name": "§d40mm 霰弹",
+  "gunsmithlib_std_ammo.ammo.40mm_gas.name": "§d40mm 毒气榴弹",
+
   "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name": "§dPG-7VL多用途火箭弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.name": "§dPG-7VR串联破甲火箭弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_tandem.desc": "§f穿透魔法防御，但是对普通装甲效果稍差",
