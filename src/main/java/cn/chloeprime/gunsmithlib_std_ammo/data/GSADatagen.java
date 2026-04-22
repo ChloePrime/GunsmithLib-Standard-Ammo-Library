@@ -20,6 +20,7 @@ public final class GSADatagen {
             var bp = new GSABlockTagProvider(packOutput, lookupProvider, MOD_ID, existingFileHelper);
             generator.addProvider(true, bp);
             generator.addProvider(true, new GSAItemTagProvider(packOutput, lookupProvider, bp.contentsGetter(), MOD_ID, existingFileHelper));
+            generator.addProvider(true, new GSAEntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(true, new GSALootProvider(packOutput));
             generator.addProvider(true, new GSARecipeProvider(packOutput));
             generator.addProvider(true, new GSADamageTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));

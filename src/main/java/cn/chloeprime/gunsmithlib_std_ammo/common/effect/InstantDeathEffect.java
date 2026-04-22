@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.effect;
 
+import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntityTypeTags;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;
@@ -8,7 +9,6 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.util.FakePlayerFactory;
 
 import javax.annotation.Nonnull;
@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public class InstantDeathEffect extends InstantenousMobEffect {
     public static boolean isBoss(Entity entity) {
-        return entity.getType().is(Tags.EntityTypes.BOSSES);
+        return entity.getType().is(GSAEntityTypeTags.INSTANT_DEATH_IMMUNE);
     }
 
     private static final GameProfile INVULNERABILITY_TESTER_PROFILE = new GameProfile(
