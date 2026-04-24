@@ -13,7 +13,7 @@
         "is_aaa_particle": true,
         "particle_id": "gunsmithlib_std_ammo:explosion_mini/green",
         "aaa_particle_data": {
-          "scale": 0.1
+          "scale": 0.2
         },
         "explosive_particle_alternate": true
       }
