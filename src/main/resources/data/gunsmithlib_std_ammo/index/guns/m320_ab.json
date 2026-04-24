@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.m320.name",
+  "tooltip": "tacz.gun.m320.desc",
+  "data": "gunsmithlib_std_ammo:m320_ab_data",
+  "display": "gunsmithlib_std_ammo:m320_ab_display",
+  "type": "rpg"
+}

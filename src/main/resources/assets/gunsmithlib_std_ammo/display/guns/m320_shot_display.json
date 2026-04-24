@@ -1,0 +1,49 @@
+{
+  "model": "gunsmithlib_std_ammo:gun/m320_fixed_geo",
+  "texture": "gunsmithlib_std_ammo:gun/uv/m320_shot",
+  "hud": "tacz:gun/hud/m320",
+  "slot": "tacz:gun/slot/m320",
+  "animation": "tacz:m320",
+  "use_default_animation": "rifle",
+  "player_animator_3rd": "tacz:rifle_default.player_animation",
+  "lod": {
+    "model": "tacz:gun/lod/m320",
+    "texture": "tacz:gun/lod/m320"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 1.2
+  },
+  "sounds": {
+    "reload_empty": "tacz:m320/m320_reload_empty",
+    "inspect": "tacz:m320/m320_inspect",
+    "inspect_empty": "tacz:m320/m320_inspect",
+    "draw": "tacz:m320/m320_draw",
+    "put_away":"tacz:m320/m320_put_away",
+    "shoot": "tacz:spas_12/spas12_shoot",
+    "shoot_3p": "tacz:m870/m870_shoot_3p",
+    "silence": "tacz:spas_12/spas12_silence",
+    "silence_3p": "spas_12/spas12_silence_3p",
+    "melee_push": "tacz:melee_stock/melee_stock_02",
+    "melee_stock": "tacz:melee_stock/melee_stock_03"
+  },
+  "offhand_show": {
+    "pos": [1, 20, 4],
+    "rotate": [0, 0, 45],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [1, 16, -2],
+      "rotate": [0, 0, 20],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

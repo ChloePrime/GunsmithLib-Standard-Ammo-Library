@@ -1,0 +1,16 @@
+{
+  "master": "gunsmithlib_std_ammo:m320_dp",
+  "parts": [
+    {
+      "name": "main",
+      "variants": [
+        "tacz:m320",
+        "gunsmithlib_std_ammo:m320_dp",
+        "gunsmithlib_std_ammo:m320_ab",
+        "gunsmithlib_std_ammo:m320_shot",
+        "gunsmithlib_std_ammo:m320_thrm",
+        "gunsmithlib_std_ammo:m320_gas"
+      ]
+    }
+  ]
+}
