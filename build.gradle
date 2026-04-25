@@ -74,6 +74,10 @@ minecraft {
     runs {
         // applies to all the run configs below
         configureEach {
+            jvmArgs "-Xms8G"
+            jvmArgs "-Xmx8G"
+            jvmArgs "-XX:+AllowEnhancedClassRedefinition"
+            jvmArgs "-XX:+IgnoreUnrecognizedVMOptions"
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
