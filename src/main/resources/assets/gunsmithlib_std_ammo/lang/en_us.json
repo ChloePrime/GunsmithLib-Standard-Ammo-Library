@@ -52,6 +52,10 @@
   "item.minecraft.lingering_potion.effect.gunsmithlib_std_ammo.vx": "Lingering Bottle of VX Neurotoxin",
   "item.minecraft.tipped_arrow.effect.gunsmithlib_std_ammo.vx": "Arrow of VX Neurotoxin",
 
+  "entity.gunsmithlib_std_ammo.slicing_warhead": "Slicer Warhead",
+  "entity.gunsmithlib_std_ammo.bullet_merchant": "Firearm Merchant",
+  "item.gunsmithlib_std_ammo.bullet_merchant_spawn_egg": "Firearm Merchant Spawn Egg",
+
   "death.attack.gunsmithlib_std_ammo.cancer": "%s was killed by leukemia",
   "death.attack.gunsmithlib_std_ammo.poison": "%s was killed by chemical weapons",
   "effect.gunsmithlib_std_ammo.instant_death": "Instant Death",

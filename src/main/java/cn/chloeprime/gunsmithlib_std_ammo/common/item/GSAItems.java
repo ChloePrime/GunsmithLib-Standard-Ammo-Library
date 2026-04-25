@@ -2,12 +2,14 @@ package cn.chloeprime.gunsmithlib_std_ammo.common.item;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
+import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -80,6 +82,9 @@ public final class GSAItems {
             List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_shulker_shell"))
     ));
 
+    // 刷怪蛋
+    public static final Supplier<SpawnEggItem> BULLET_MERCHANT_SPAWN_EGG = DFR.register("bullet_merchant_spawn_egg", () -> new ForgeSpawnEggItem(GSAEntities.BULLET_MERCHANT, 0xff_ffffff, 0xff_dca8a8, new Item.Properties()));
+
     private static Supplier<Item> simpleItem(String name) {
         return simpleItem(name, Rarity.COMMON);
     }
@@ -138,6 +143,9 @@ public final class GSAItems {
         }
         if (event.getTabKey().equals(CreativeModeTabs.COMBAT)) {
             event.accept(TUNGSTEN_BLADE);
+        }
+        if (event.getTabKey().equals(CreativeModeTabs.SPAWN_EGGS)) {
+            event.accept(BULLET_MERCHANT_SPAWN_EGG);
         }
     }
 

@@ -47,5 +47,7 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
         basicItem(GSAItems.TIBERIUM_ALLOY_INGOT.get());
 
         basicItem(GSAItems.PLASTIC_UPGRADE_SMITHING_TEMPLATE.get());
+
+        basicItem(GSAItems.BULLET_MERCHANT_SPAWN_EGG.get());
     }
 }

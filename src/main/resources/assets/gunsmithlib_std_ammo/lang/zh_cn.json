@@ -52,6 +52,10 @@
   "item.minecraft.lingering_potion.effect.gunsmithlib_std_ammo.vx": "滞留型VX神经毒素",
   "item.minecraft.tipped_arrow.effect.gunsmithlib_std_ammo.vx": "VX神经毒素箭",
 
+  "entity.gunsmithlib_std_ammo.slicing_warhead": "斩裂弹",
+  "entity.gunsmithlib_std_ammo.bullet_merchant": "军火行商",
+  "item.gunsmithlib_std_ammo.bullet_merchant_spawn_egg": "军火行商刷怪蛋",
+
   "death.attack.gunsmithlib_std_ammo.cancer": "%s死于白血病",
   "death.attack.gunsmithlib_std_ammo.poison": "%s死于化学武器",
   "effect.gunsmithlib_std_ammo.instant_death": "即死",
