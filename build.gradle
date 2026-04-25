@@ -179,7 +179,10 @@ dependencies {
 
     // TACZ
     implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:7401617-sources-7401626')
-    implementation jarJar(fg.deobf('mod.chloeprime:gunsmithlib:5.9.4-alpha.8+mc1.20.1+tacz1.1.7'))
+    implementation jarJar(fg.deobf('mod.chloeprime:gunsmithlib:5.9.4-alpha.8+mc1.20.1+tacz1.1.7')) {
+        exclude group: '*', module: '*'
+        jarJar.ranged(it, "[5.9.4-alpha.8,)")
+    }
 
     // 个人前置
     compileOnly fg.deobf('cn.chloeprime.kuroutils2:kuroutils2:2001.2.3.0')
@@ -233,6 +236,7 @@ tasks.named('processResources', ProcessResources).configure {
 
 // Example for how to get properties into the manifest for reading at runtime.
 tasks.named('jar', Jar).configure {
+    archiveClassifier = 'core'
     manifest {
         attributes(["Specification-Title"     : mod_id,
                     "Specification-Vendor"    : mod_authors,
@@ -245,6 +249,10 @@ tasks.named('jar', Jar).configure {
 
     // This is the preferred method to reobfuscate your jar file
     finalizedBy 'reobfJar'
+}
+
+tasks.named('jarJar').configure {
+    archiveClassifier = ''
 }
 
 tasks.withType(JavaCompile).configureEach {
