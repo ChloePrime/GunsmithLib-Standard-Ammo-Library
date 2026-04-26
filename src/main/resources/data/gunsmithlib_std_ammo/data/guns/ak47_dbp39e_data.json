@@ -140,6 +140,7 @@
   "allow_attachment_types": [
     "scope",
     "stock",
+    "grip",
     "muzzle",
     "extended_mag"
   ]
