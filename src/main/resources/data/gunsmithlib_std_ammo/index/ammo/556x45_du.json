@@ -11,6 +11,12 @@
       }
     ]
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 12,
+      "amount": 30
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.556x45_du.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.generic.carcinogenic.desc",
   "display": "gunsmithlib_std_ammo:556x45_du_display",

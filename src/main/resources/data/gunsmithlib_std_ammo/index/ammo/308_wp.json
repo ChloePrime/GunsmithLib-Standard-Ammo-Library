@@ -16,6 +16,12 @@
       }
     ]
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 3,
+      "amount": 20
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.308_wp.name",
   "display": "gunsmithlib_std_ammo:308_wp_display",
   "stack_size": 60

@@ -4,6 +4,7 @@ import cn.chloeprime.commons.async.TaskScheduler;
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightGoal;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightMob;
+import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSABulletPriceDatabase;
 import com.google.common.base.Suppliers;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
@@ -13,12 +14,14 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -78,9 +81,12 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     @Override
     public boolean hurt(@Nonnull DamageSource source, float amount) {
         if (level().getDifficulty() == Difficulty.PEACEFUL) {
-            return false;
+            if (!source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+                return false;
+            }
         }
-        return super.hurt(source, amount);
+        var oow = source.is(DamageTypes.FELL_OUT_OF_WORLD);
+        return super.hurt(source, amount * (oow ? 25 : 1));
     }
 
     @Override
@@ -257,6 +263,8 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
 
     @Override
     protected void updateTrades() {
+        var offers = this.getOffers();
+        this.addOffersFromItemListings(offers, GSABulletPriceDatabase.listings(), 5);
     }
 
     // Misc

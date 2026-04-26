@@ -15,12 +15,19 @@ public class GSAGunpackExtension {
     @GunpackProperty
     private @Nullable ResourceLocation slicing_shot_model_override;
 
+    @GunpackProperty
+    private @Nullable PriceData price;
+
     public Optional<SlicingWarhead.Properties> getSlicingShotProperties() {
         return Optional.ofNullable(slicing_shot);
     }
 
     public Optional<ResourceLocation> getSlicingShotModelOverride() {
         return Optional.ofNullable(slicing_shot_model_override);
+    }
+
+    public Optional<PriceData> getPrice() {
+        return Optional.ofNullable(price);
     }
 
     public static Optional<GSAGunpackExtension> of(GunData data) {

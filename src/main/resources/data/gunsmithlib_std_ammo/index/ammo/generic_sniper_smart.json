@@ -11,6 +11,12 @@
       }
     ]
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 30,
+      "amount": 5
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.generic_sniper_smart.name",
   "display": "gunsmithlib_std_ammo:generic_sniper_smart_display",
   "stack_size": 30

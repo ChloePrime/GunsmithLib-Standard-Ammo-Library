@@ -11,6 +11,12 @@
       }
     ]
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 12,
+      "amount": 5
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.generic_sniper_highp.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.generic.highp.desc",
   "display": "gunsmithlib_std_ammo:generic_sniper_highp_display",

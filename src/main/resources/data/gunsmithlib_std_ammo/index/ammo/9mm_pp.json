@@ -1,4 +1,10 @@
 {
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 2,
+      "amount": 60
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.9mm_pp.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.generic.pp.desc",
   "display": "gunsmithlib_std_ammo:9mm_pp_display",

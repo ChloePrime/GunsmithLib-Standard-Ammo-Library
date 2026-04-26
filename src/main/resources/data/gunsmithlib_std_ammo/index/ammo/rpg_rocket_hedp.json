@@ -6,6 +6,12 @@
       ]
     }
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 10,
+      "amount": 1
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.rpg_rocket_hedp.name",
   "display": "gunsmithlib_std_ammo:rpg_rocket_hedp_display",
   "stack_size": 6

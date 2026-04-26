@@ -35,6 +35,12 @@
       }
     ]
   },
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 24,
+      "amount": 12
+    }
+  },
   "name": "gunsmithlib_std_ammo.ammo.12g_he.name",
   "tooltip": "gunsmithlib_std_ammo.ammo.12g_he.desc",
   "display": "gunsmithlib_std_ammo:12g_he_display",
