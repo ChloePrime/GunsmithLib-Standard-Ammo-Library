@@ -1,0 +1,36 @@
+{
+  "model": "gunsmithlib_std_ammo:gun/lg5_geo",
+  "texture": "gunsmithlib_std_ammo:gun/uv/lg5_dp",
+  "slot": "gunsmithlib_std_ammo:gun/slot/lg5",
+  "hud": "gunsmithlib_std_ammo:gun/hud/lg5",
+  "player_animator_3rd": "tacz:rifle_default.player_animation",
+  "animation": "gunsmithlib_std_ammo:lg5",
+  "default_animation": "gunsmithlib_std_ammo:cibr_mg_default",
+  "state_machine": "gunsmithlib_std_ammo:cibr_qjz171_state_machine",
+  "iron_zoom": 1.5,
+  "zoom_model_fov": 45,
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 1.5
+  },
+  "shell": {
+    "initial_velocity": [6, 2, -4.5],
+    "random_velocity": [2, 1.5, 0.5],
+    "acceleration": [0.0, -12.5, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "sounds": {
+    "shoot": "gunsmithlib_std_ammo:lg5/lg5_shoot",
+    "shoot_3p": "gunsmithlib_std_ammo:lg5/lg5_shoot_3p",
+    "draw": "tacz:m107/m107_draw"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "gunsmithlib_std_ammo.gun.lg5.name",
+  "tooltip": "gunsmithlib_std_ammo.gun.lg5.desc",
+  "data": "gunsmithlib_std_ammo:lg5_shot_data",
+  "display": "gunsmithlib_std_ammo:lg5_shot_display",
+  "type": "rpg",
+  "item_type": "modern_kinetic",
+  "sort": 2461600
+}
