@@ -49,7 +49,10 @@
     "damage": 75,
     "extra_damage": {
       "armor_ignore": 0.96,
-      "head_shot_multiplier": 1.5
+      "head_shot_multiplier": 1.5,
+      "damage_adjust": [
+        {"distance": 40, "damage": 10}
+      ]
     },
     "speed": 60,
     "gravity": 0.15,
