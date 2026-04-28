@@ -100,6 +100,8 @@
   "gunsmithlib_std_ammo.ammo.generic.highp.desc": "§f高精度弹药：拥有较高的爆头倍率",
   "gunsmithlib_std_ammo.ammo.generic.aphei.desc": "穿甲、爆炸、燃烧，三个愿望一次满足~",
 
+  "gunsmithlib_std_ammo.gun.lg5.name": "LG5狙击榴弹发射器",
+  "gunsmithlib_std_ammo.gun.lg5.desc": "更适合西方朋友的狙击炮\n§8感谢§1乐栓LESHUAN_20§8提供的QLU-11美术资产~",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "里昂叔叔的RPG-7火箭筒",
   "gunsmithlib_std_ammo.gun.rpg7_leon.desc": "造物主究竟渴望什么？",
@@ -168,6 +170,8 @@
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.name": "激活的斩裂弹",
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取",
 
+  "gunsmithlib_std_ammo.attachment.y_mjl11_005.name": "§cY/MJL11-005火控瞄准系统",
+  "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc": "§f注意：使用榴霰弹时火控将不会生效。\n§8感谢§1乐栓LESHUAN_20§8提供的QMD-131美术资产~",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§e塑料弹壳配备小弹匣",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "轻量化的塑料弹壳，拥有良好的人机工效",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§e塑料弹壳配备大弹匣",

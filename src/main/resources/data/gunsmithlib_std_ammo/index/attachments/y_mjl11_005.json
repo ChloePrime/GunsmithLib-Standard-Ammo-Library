@@ -1,0 +1,8 @@
+{
+  "name": "gunsmithlib_std_ammo.attachment.y_mjl11_005.name",
+  "tooltip": "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc",
+  "data": "gunsmithlib_std_ammo:y_mjl11_005_data",
+  "display": "gunsmithlib_std_ammo:y_mjl11_005_display",
+  "type": "scope",
+  "sort": 2461600
+}

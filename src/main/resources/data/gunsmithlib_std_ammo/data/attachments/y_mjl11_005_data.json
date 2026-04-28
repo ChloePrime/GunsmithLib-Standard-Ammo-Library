@@ -1,0 +1,14 @@
+{
+  "gunsmithlib_extension": {
+    "attribute_modifiers": [
+      {
+        "attribute": "gunsmithlib:aim_lock_angle",
+        "id": "c42b38d9-6761-4c17-a33b-48407df5d179",
+        "name": "Y/MJL11-005 Scope",
+        "amount": 3
+      }
+    ]
+  },
+  "weight": 1.2,
+  "ads_addend": 0.06
+}

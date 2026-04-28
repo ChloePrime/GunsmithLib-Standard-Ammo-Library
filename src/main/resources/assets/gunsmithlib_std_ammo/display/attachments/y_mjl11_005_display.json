@@ -1,0 +1,29 @@
+{
+  "slot": "gunsmithlib_std_ammo:attachment/slot/y_mjl11_005",
+  "model": "gunsmithlib_std_ammo:attachment/y_mjl11_005_geo",
+  "texture": "gunsmithlib_std_ammo:attachment/uv/y_mjl11_005",
+  "lod": {
+    "model": "gunsmithlib_std_ammo:attachment/lod/y_mjl11_005",
+    "texture": "gunsmithlib_std_ammo:attachment/lod/y_mjl11_005"
+  },
+  "zoom": [
+    5,
+    15,
+    20
+  ],
+  "views": [
+    1,
+    1,
+    1
+  ],
+  "views_fov": [
+    50.0,
+    40.0,
+    30.0
+  ],
+  "scope": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}
