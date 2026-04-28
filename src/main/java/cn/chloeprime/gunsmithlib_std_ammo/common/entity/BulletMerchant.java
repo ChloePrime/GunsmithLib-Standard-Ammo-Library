@@ -2,6 +2,7 @@ package cn.chloeprime.gunsmithlib_std_ammo.common.entity;
 
 import cn.chloeprime.commons.async.TaskScheduler;
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightGoal;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightMob;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSABulletPriceDatabase;
@@ -13,6 +14,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.stats.Stats;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
@@ -265,6 +267,33 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     protected void updateTrades() {
         var offers = this.getOffers();
         this.addOffersFromItemListings(offers, GSABulletPriceDatabase.listings(), 5);
+    }
+
+    // Sounds
+
+    @Override
+    public @Nullable SoundEvent getAmbientSound() {
+        return (isTrading() ? GSASoundEvents.BULLET_MERCHANT_TRADE : GSASoundEvents.BULLET_MERCHANT_AMBIENT).get();
+    }
+
+    @Override
+    public @Nullable SoundEvent getHurtSound(@Nonnull DamageSource damageSource) {
+        return GSASoundEvents.BULLET_MERCHANT_HURT.get();
+    }
+
+    @Override
+    public @Nullable SoundEvent getDeathSound() {
+        return GSASoundEvents.BULLET_MERCHANT_DEATH.get();
+    }
+
+    @Override
+    public @Nonnull SoundEvent getTradeUpdatedSound(boolean yes) {
+        return (yes ? GSASoundEvents.BULLET_MERCHANT_YES : GSASoundEvents.BULLET_MERCHANT_NO).get();
+    }
+
+    @Override
+    public @Nonnull SoundEvent getNotifyTradeSound() {
+        return GSASoundEvents.BULLET_MERCHANT_YES.get();
     }
 
     // Misc

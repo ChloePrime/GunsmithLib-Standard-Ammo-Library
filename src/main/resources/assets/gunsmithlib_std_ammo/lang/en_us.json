@@ -75,6 +75,13 @@
 
   "gunsmithlib_std_ammo.jei.info.tib_seed": "Paint it on any leaves! see how it goes patiently!",
 
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "Bullet Merchant mumbles",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "Bullet Merchant trades",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt": "Bullet Merchant hurts",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.death": "Bullet Merchant dies",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.yes": "Bullet Merchant agrees",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.no": "Bullet Merchant disagrees",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib Standard Ammo Library",
   "pack.gunsmithlib_std_ammo.desc" : "Common ammo variants and gun data\nfor TaCZ Official Pack on these ammo variants.",
 

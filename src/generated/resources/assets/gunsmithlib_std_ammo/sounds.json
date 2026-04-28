@@ -1,0 +1,48 @@
+{
+  "bullet_merchant_ambient": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/uh_huh",
+      "gunsmithlib_std_ammo:entity/generic_girl/hrmm_0",
+      "gunsmithlib_std_ammo:entity/generic_girl/hrmm_1"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient"
+  },
+  "bullet_merchant_death": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/call_medic_0",
+      "gunsmithlib_std_ammo:entity/generic_girl/call_medic_1",
+      "gunsmithlib_std_ammo:entity/generic_girl/call_medic_2",
+      "gunsmithlib_std_ammo:entity/generic_girl/call_medic_3",
+      "gunsmithlib_std_ammo:entity/generic_girl/call_medic_4"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.death"
+  },
+  "bullet_merchant_hurt": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/hurt_0",
+      "gunsmithlib_std_ammo:entity/generic_girl/hurt_1"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt"
+  },
+  "bullet_merchant_no": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/baka"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.no"
+  },
+  "bullet_merchant_trade": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/uh_huh",
+      "gunsmithlib_std_ammo:entity/generic_girl/huh_0",
+      "gunsmithlib_std_ammo:entity/generic_girl/huh_1"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade"
+  },
+  "bullet_merchant_yes": {
+    "sounds": [
+      "gunsmithlib_std_ammo:entity/generic_girl/yes_0",
+      "gunsmithlib_std_ammo:entity/generic_girl/yes_1"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.yes"
+  }
+}

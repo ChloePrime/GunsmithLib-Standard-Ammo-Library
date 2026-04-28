@@ -75,6 +75,13 @@
 
   "gunsmithlib_std_ammo.jei.info.tib_seed": "试试把它涂在树叶上，然后静观其变，木嘿嘿嘿~",
 
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "军火行商：喃喃自语",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "军火行商：交易",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt": "军火行商：受伤",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.death": "军火行商：死亡",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.yes": "军火行商：同意",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.no": "军火行商：拒绝",
+
   "pack.gunsmithlib_std_ammo.name" : "GunsmithLib标准弹种库",
   "pack.gunsmithlib_std_ammo.desc" : "内含常见弹药变体和\n官方包枪械使用这些变体的数据",
 

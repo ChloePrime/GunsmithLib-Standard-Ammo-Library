@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo;
 
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAMobEffects;
 import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAPotions;
@@ -23,6 +24,7 @@ public class GunsmithLibStdAmmoMod {
         GSAMobEffects.init(bus);
         GSAPotions.init(bus);
         GSAParticleTypes.init(bus);
+        GSASoundEvents.init(bus);
     }
 
     public static ResourceLocation loc(String path) {
