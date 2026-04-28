@@ -1,0 +1,7 @@
+{
+  "name": "not_available",
+  "tooltip": "not_available",
+  "data": "gunsmithlib_std_ammo:40mm_frag_frag_data",
+  "display": "gunsmithlib_std_ammo:generic_frag_display",
+  "type": "rifle"
+}
