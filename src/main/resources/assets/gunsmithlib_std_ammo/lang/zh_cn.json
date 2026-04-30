@@ -75,6 +75,8 @@
 
   "gunsmithlib_std_ammo.jei.info.tib_seed": "试试把它涂在树叶上，然后静观其变，木嘿嘿嘿~",
 
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.draw": "机关炮拔枪",
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.shoot": "机关炮发射",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "军火行商：喃喃自语",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "军火行商：交易",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt": "军火行商：受伤",
@@ -100,6 +102,8 @@
   "gunsmithlib_std_ammo.ammo.generic.highp.desc": "§f高精度弹药：拥有较高的爆头倍率",
   "gunsmithlib_std_ammo.ammo.generic.aphei.desc": "穿甲、爆炸、燃烧，三个愿望一次满足~",
 
+  "gunsmithlib_std_ammo.gun.autocannon.name": "QPZ-25突击机关炮",
+  "gunsmithlib_std_ammo.gun.autocannon.desc": "做最优质的直升机杀手",
   "gunsmithlib_std_ammo.gun.lg5.name": "LG5狙击榴弹发射器",
   "gunsmithlib_std_ammo.gun.lg5.desc": "更适合西方朋友的狙击炮\n§8感谢§1乐栓LESHUAN_20§8提供的QLU-11美术资产~",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",

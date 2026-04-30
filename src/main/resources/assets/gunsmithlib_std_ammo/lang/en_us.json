@@ -75,6 +75,8 @@
 
   "gunsmithlib_std_ammo.jei.info.tib_seed": "Paint it on any leaves! see how it goes patiently!",
 
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.draw": "Autocannon Drawing",
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.shoot": "Autocannon Firing",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "Bullet Merchant mumbles",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "Bullet Merchant trades",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt": "Bullet Merchant hurts",
@@ -100,6 +102,8 @@
   "gunsmithlib_std_ammo.ammo.generic.highp.desc": "§fHigh Precision: Higher headshot multiplier",
   "gunsmithlib_std_ammo.ammo.generic.aphei.desc": "Penetrate. Detonate. Incinerate. One round, three dreams come true~",
 
+  "gunsmithlib_std_ammo.gun.autocannon.name": "QPZ-25 Assault Autocannon",
+  "gunsmithlib_std_ammo.gun.autocannon.desc": "Be the most qualified helicopter killer",
   "gunsmithlib_std_ammo.gun.lg5.name": "LG5 Grenade Launcher",
   "gunsmithlib_std_ammo.gun.lg5.desc": "Sniper gun for western friends\n§8Assets ported from CIBR's QLU-11, made by §1LESHUAN_20",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
