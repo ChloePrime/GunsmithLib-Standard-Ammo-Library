@@ -7,13 +7,16 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAPotions;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.particle.GSAParticleTypes;
+import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.slf4j.Logger;
 
 @Mod(GunsmithLibStdAmmoMod.MOD_ID)
 public class GunsmithLibStdAmmoMod {
     public static final String MOD_ID = "gunsmithlib_std_ammo";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     @SuppressWarnings("removal")
     public GunsmithLibStdAmmoMod() {
