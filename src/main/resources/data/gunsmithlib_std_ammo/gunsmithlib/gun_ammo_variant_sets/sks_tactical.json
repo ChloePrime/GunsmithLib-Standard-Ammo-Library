@@ -1,7 +1,9 @@
 {
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:sks_tactical",
         "gunsmithlib_std_ammo:sks_tactical_7n23",

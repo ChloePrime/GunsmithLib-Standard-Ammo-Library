@@ -1,7 +1,9 @@
 {
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:aa12",
         "gunsmithlib_std_ammo:aa12_birdshot",

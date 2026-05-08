@@ -1,7 +1,9 @@
 {
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:m95",
         "gunsmithlib_std_ammo:m95_ap",

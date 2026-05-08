@@ -1,8 +1,10 @@
 {
   "master": "gunsmithlib_std_ammo:m320_dp",
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:m320",
         "gunsmithlib_std_ammo:m320_dp",

@@ -1,7 +1,9 @@
 {
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:ai_awp",
         "gunsmithlib_std_ammo:ai_awp_ap",

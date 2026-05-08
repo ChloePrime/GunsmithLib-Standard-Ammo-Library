@@ -1,7 +1,9 @@
 {
+  "priority": "std:gsa_main",
   "parts": [
     {
       "name": "main",
+      "priority": "std:gsa_main",
       "variants": [
         "tacz:scar_l",
         "gunsmithlib_std_ammo:scar_l_m855a1",
