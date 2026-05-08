@@ -180,5 +180,7 @@
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§ePlastic Shell (S)",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "Lightweight polymer shell, good ergonomics!",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§ePlastic Shell (L)",
-  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "Lightweight polymer shell, good ergonomics!"
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "Lightweight polymer shell, good ergonomics!",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_glow.name": "§eOptical Brightener Ammo",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_glow.desc": "§fLights up the target.\nMay the light of Juche brighten up the world"
 }

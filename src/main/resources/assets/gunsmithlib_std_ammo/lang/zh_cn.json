@@ -180,5 +180,7 @@
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§e塑料弹壳配备小弹匣",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "轻量化的塑料弹壳，拥有良好的人机工效",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§e塑料弹壳配备大弹匣",
-  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "轻量化的塑料弹壳，拥有良好的人机工效"
+  "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.desc": "轻量化的塑料弹壳，拥有良好的人机工效",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_glow.name": "§e荧光指示弹",
+  "gunsmithlib_std_ammo.attachment.ammo_mod_glow.desc": "§f点亮目标。\n愿主体思想的真理之光照耀世间万物"
 }
