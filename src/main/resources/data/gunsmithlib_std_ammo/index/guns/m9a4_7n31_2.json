@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.m9a4.name",
+  "tooltip": "tacz.gun.m9a4.desc",
+  "data": "gunsmithlib_std_ammo:m9a4_7n31_2_data",
+  "display": "gunsmithlib_std_ammo:m9a4_7n31_2_display",
+  "type": "pistol",
+  "sort": 14
+}

@@ -1,0 +1,15 @@
+{
+  "priority": "std:gsa_main",
+  "parts": [
+    {
+      "name": "main",
+      "priority": "std:gsa_main",
+      "variants": [
+        "tacz:m9a4",
+        "gunsmithlib_std_ammo:m9a4_ap",
+        "gunsmithlib_std_ammo:m9a4_pp",
+        "gunsmithlib_std_ammo:m9a4_7n31_2"
+      ]
+    }
+  ]
+}

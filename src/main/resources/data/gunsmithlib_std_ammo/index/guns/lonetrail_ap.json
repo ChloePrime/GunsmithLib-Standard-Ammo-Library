@@ -1,0 +1,8 @@
+{
+  "name": "tacz.gun.lonetrail.name",
+  "tooltip": "tacz.gun.lonetrail.desc",
+  "data": "gunsmithlib_std_ammo:lonetrail_ap_data",
+  "display": "tacz:lonetrail_display",
+  "type": "pistol",
+  "sort": 11
+}

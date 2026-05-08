@@ -1,0 +1,15 @@
+{
+  "priority": "std:gsa_main",
+  "parts": [
+    {
+      "name": "main",
+      "priority": "std:gsa_main",
+      "variants": [
+        "tacz:lonetrail",
+        "gunsmithlib_std_ammo:lonetrail_ap",
+        "gunsmithlib_std_ammo:lonetrail_highp",
+        "gunsmithlib_std_ammo:lonetrail_smart"
+      ]
+    }
+  ]
+}

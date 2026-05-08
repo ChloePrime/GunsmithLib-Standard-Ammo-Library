@@ -1,0 +1,15 @@
+{
+  "priority": "std:gsa_main",
+  "parts": [
+    {
+      "name": "main",
+      "priority": "std:gsa_main",
+      "variants": [
+        "tacz:hk_mk23",
+        "gunsmithlib_std_ammo:hk_mk23_ap",
+        "gunsmithlib_std_ammo:hk_mk23_pp",
+        "gunsmithlib_std_ammo:hk_mk23_dum"
+      ]
+    }
+  ]
+}
