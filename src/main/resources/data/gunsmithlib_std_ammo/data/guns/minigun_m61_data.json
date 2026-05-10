@@ -20,18 +20,18 @@
         {"distance": "infinite", "damage": 6}
       ]
     },
-    "speed": 345,
+    "speed": 390,
     "gravity": 0.15,
     "knockback": 0.1,
     "friction": 0.025,
     "pierce": 3
   },
   "heat":  {
-    "max": 360,
+    "max": 500,
     "per_shot": 2,
-    "cooling_multiplier": 5,
-    "cooling_delay": 500,
-    "over_heat_time": 3000,
+    "cooling_multiplier": 15,
+    "cooling_delay": 5,
+    "over_heat_time": 2500,
     "min_inaccuracy": 1,
     "max_inaccuracy": 1.2,
     "min_rpm_mod": 1,
@@ -68,7 +68,7 @@
     "bpm": 1200,
     "min_interval": 0.5
   },
-  "crawl_recoil_multiplier": 0.5,
+  "crawl_recoil_multiplier": 0.75,
   "recoil": {
     "pitch": [
       {"time": 0, "value": [0.6, 0.6]},
@@ -88,7 +88,7 @@
     "move": 3,
     "sneak": 2.25,
     "lie": 2.25,
-    "aim": 0.9
+    "aim": 0.8
   },
   "melee": {
     "distance": 1,

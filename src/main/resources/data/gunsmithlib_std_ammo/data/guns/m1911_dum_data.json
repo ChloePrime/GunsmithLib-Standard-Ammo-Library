@@ -26,11 +26,11 @@
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
         {"distance": 24, "damage": 22},
-        {"distance": 50, "damage": 15},
+        {"distance": 50, "damage": 18},
         {"distance": "infinite", "damage": 10}
       ]
     },
-    "speed": 335,
+    "speed": 360,
     "gravity": 0.15,
     "knockback": 0.2,
     "friction": 0.035,
@@ -47,12 +47,12 @@
   "reload": {
     "type": "magazine",
     "feed": {
-      "empty": 1.96,
+      "empty": 1.5,
       "tactical": 1.16
     },
     "cooldown": {
-      "empty": 2.48,
-      "tactical": 1.98
+      "empty": 2,
+      "tactical": 1.7
     }
   },
   "draw_time": 0.49,
@@ -90,8 +90,8 @@
     ]
   },
   "inaccuracy": {
-    "stand": 1.65,
-    "move": 1.95,
+    "stand": 1.5,
+    "move": 1.75,
     "sneak": 0.95,
     "lie": 0.75,
     "aim": 0.16

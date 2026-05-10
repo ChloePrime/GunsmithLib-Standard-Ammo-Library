@@ -107,10 +107,10 @@
   },
   "fire_mode_adjust": {
     "burst":{
-      "rpm": 200,
-      "damage":-4,
-      "aim_inaccuracy": 1,
-      "other_inaccuracy": 1
+      "damage":-8,
+      "armor_ignore": -0.1,
+      "aim_inaccuracy": 1.35,
+      "other_inaccuracy": 1.35
     }
   },
   "recoil": {
