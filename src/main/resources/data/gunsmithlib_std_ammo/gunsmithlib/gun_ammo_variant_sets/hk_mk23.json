@@ -8,7 +8,12 @@
         "tacz:hk_mk23",
         "gunsmithlib_std_ammo:hk_mk23_ap",
         "gunsmithlib_std_ammo:hk_mk23_pp",
-        "gunsmithlib_std_ammo:hk_mk23_dum"
+        "gunsmithlib_std_ammo:hk_mk23_dum",
+        "gunsmithlib_std_ammo:hk_mk23_subsonic",
+        {
+          "semi": "gunsmithlib_std_ammo:hk_mk23_hacker_semi",
+          "burst": "gunsmithlib_std_ammo:hk_mk23_hacker_burst"
+        }
       ]
     }
   ]

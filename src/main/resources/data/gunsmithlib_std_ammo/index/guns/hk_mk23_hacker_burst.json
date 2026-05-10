@@ -1,0 +1,7 @@
+{
+  "name": "tacz.gun.hk_mk23.name",
+  "tooltip": "tacz.gun.hk_mk23.desc",
+  "data": "gunsmithlib_std_ammo:hk_mk23_hacker_burst_data",
+  "display": "tacz:hk_mk23_display",
+  "type": "pistol"
+}
