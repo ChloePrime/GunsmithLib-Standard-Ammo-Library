@@ -59,6 +59,9 @@
       "tactical": 3.2
     }
   },
+  "script": "gunsmithlib_std_ammo:exhaustive_gun_logic",
+  "script_param": {
+  },
   "draw_time": 0.75,
   "put_away_time": 0.73,
   "aim_time": 0.2,
