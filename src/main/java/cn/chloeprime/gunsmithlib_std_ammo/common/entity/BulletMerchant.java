@@ -12,11 +12,15 @@ import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.FireMode;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.stats.Stats;
 import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
@@ -39,6 +43,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fml.LogicalSide;
+import org.jetbrains.annotations.ApiStatus;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -47,6 +52,12 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 public class BulletMerchant extends AbstractVillager implements GunfightMob {
+    public static final ResourceLocation SKIN_NORMAL_VERSION = GunsmithLibStdAmmoMod.loc("textures/entity/bullet_merchant/skin_normal.png");
+    public static final ResourceLocation SKIN_PRIMER_VERSION = GunsmithLibStdAmmoMod.loc("textures/entity/bullet_merchant/skin_primer.png");
+
+    @ApiStatus.Experimental
+    public static final double PRIMER_PROBABILITY = 0.1;
+    
     public static final EntityType<BulletMerchant> TYPE = EntityType.Builder
             .of(BulletMerchant::new, MobCategory.CREATURE)
             .sized(0.6F, 1.8F)
@@ -56,6 +67,26 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     public BulletMerchant(EntityType<? extends AbstractVillager> type, Level level) {
         super(type, level);
         reassessWeaponGoal();
+    }
+
+    public boolean isPrimerVersion() {
+        return this.entityData.get(IS_PRIMER_VERSION);
+    }
+
+    public void setIsPrimerVersion(boolean value) {
+        this.entityData.set(IS_PRIMER_VERSION, value);
+    }
+
+    public ResourceLocation getSkinLocation() {
+        return isPrimerVersion() ? SKIN_PRIMER_VERSION : SKIN_NORMAL_VERSION;
+    }
+
+    private static final EntityDataAccessor<Boolean> IS_PRIMER_VERSION = SynchedEntityData.defineId(BulletMerchant.class, EntityDataSerializers.BOOLEAN);
+
+    @Override
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        this.entityData.define(IS_PRIMER_VERSION, false);
     }
 
     @Override
@@ -142,8 +173,10 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
 
     public static AttributeSupplier.Builder createBulletMerchantAttributes() {
         return createMobAttributes()
-                .add(Attributes.ATTACK_DAMAGE, 1)
                 .add(Attributes.MAX_HEALTH, 500)
+                .add(Attributes.ATTACK_DAMAGE, 1)
+                .add(Attributes.ARMOR, 10)
+                .add(Attributes.ARMOR_TOUGHNESS, 6)
                 .add(Attributes.FOLLOW_RANGE, 64)
                 .add(Attributes.MOVEMENT_SPEED, 0.5);
     }
@@ -169,6 +202,9 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     @ParametersAreNonnullByDefault
     public @Nonnull SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty, MobSpawnType pReason, @Nullable SpawnGroupData pSpawnData, @Nullable CompoundTag pDataTag) {
         var result = super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+        if (this.random.nextFloat() < PRIMER_PROBABILITY) {
+            this.setIsPrimerVersion(true);
+        }
         this.populateDefaultEquipmentSlots(level().getRandom(), pDifficulty);
         this.setGuaranteedDrop(EquipmentSlot.MAINHAND);
         this.setGuaranteedDrop(EquipmentSlot.OFFHAND);
@@ -185,7 +221,14 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     @Override
     public void readAdditionalSaveData(@Nonnull CompoundTag compound) {
         super.readAdditionalSaveData(compound);
+        setIsPrimerVersion(compound.getBoolean("is_primer_version"));
         reassessWeaponGoal();
+    }
+
+    @Override
+    public void addAdditionalSaveData(@Nonnull CompoundTag compound) {
+        super.addAdditionalSaveData(compound);
+        compound.putBoolean("is_primer_version", isPrimerVersion());
     }
 
     @Override
@@ -270,6 +313,11 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     }
 
     // Sounds
+
+    @Override
+    public float getVoicePitch() {
+        return isBaby() ? super.getVoicePitch() : Mth.lerp(0.5F, super.getVoicePitch() + 0.2F, 1);
+    }
 
     @Override
     public @Nullable SoundEvent getAmbientSound() {

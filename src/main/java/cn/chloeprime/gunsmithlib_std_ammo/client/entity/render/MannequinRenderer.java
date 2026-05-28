@@ -39,6 +39,7 @@ import java.util.Objects;
  * @param <E> 实体类型
  */
 public class MannequinRenderer<E extends Mob> extends MobRenderer<E, PlayerModel<E>> {
+    @SuppressWarnings("unused")
     public static
     <E extends Mob>
     EntityRendererProvider<E> factory(@Nonnull ResourceLocation skin, boolean slim) {
