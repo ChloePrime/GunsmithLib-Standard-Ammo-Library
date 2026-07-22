@@ -6,6 +6,23 @@ local MAIN_TRACK = default.MAIN_TRACK
 local main_track_states = default.main_track_states
 
 local idle_state = setmetatable({}, {__index = main_track_states.idle})
+local gun_kick_state = setmetatable({}, {__index = default.gun_kick_state})
+
+function gun_kick_state.transition(this, context, input)
+    -- 玩家按下开火键时需要在射击轨道行里寻找空闲轨道去播放射击动画(如果没有空闲会分配新的),需要注意的是射击动画要向下混合
+    if (input == INPUT_SHOOT) then
+        local ext = context:gunsmithlib_extension()
+        local states = ext:shooter_states()
+
+        local is_scoping = states:aiming_progress() >= 0.9 and states:get_scope_type() == "SCOPE"
+        local anim = ext:ternary_op(is_scoping, "shoot", "shoot2")
+        -- 这里是混合动画，一般是可叠加的 gun kick
+        local track = context:findIdleTrack(GUN_KICK_TRACK_LINE, false)
+        context:runAnimation(anim, track, true, PLAY_ONCE_STOP, 0)
+        return nil
+    end
+    return default.gun_kick_state.transition(this, context, input)
+end
 
 -- 检查当前是否还有弹药
 local function isNoAmmo(context)
@@ -21,7 +38,7 @@ local function runReloadAnimation(context)
     if (isNoAmmo(context)) then
         -- "ext"表示扩容插件等级,"0"代表不装扩容插件
         if (ext < 2) then
-            context:runAnimation("reload_empty", track, false, PLAY_ONCE_STOP, 0.2)
+            context:runAnimation("reload_empty_2", track, false, PLAY_ONCE_STOP, 0.2)
         else
             context:runAnimation("reload_empty", track, false, PLAY_ONCE_STOP, 0.2)
         end
@@ -47,7 +64,9 @@ local M = setmetatable({
     main_track_states = setmetatable({
         idle = idle_state
     }, {__index = main_track_states}),
+    gun_kick_state = gun_kick_state
 }, {__index = default})
+
 function M:initialize(context)
     default.initialize(self, context)
 end
@@ -57,6 +76,7 @@ function M:states()
     return {
         self.base_track_state,
         self.bolt_caught_states.normal,
+        self.over_heat_states.normal,
         self.main_track_states.start,
         self.gun_kick_state,
         self.movement_track_states.idle,
@@ -64,5 +84,6 @@ function M:states()
         self.slide_states.normal
     }
 end
+
 -- 导出状态机
 return M

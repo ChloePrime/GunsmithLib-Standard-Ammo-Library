@@ -23,25 +23,25 @@
   ],
   "script": "tacz:xmag_reload_logic",
   "script_param": {
-    "reload_feed": 2.38,
-    "reload_cooldown": 3.7,
-    "empty_feed": 4.75,
-    "empty_cooldown": 6.0,
+    "reload_feed": 3.0,
+    "reload_cooldown": 4.79,
+    "empty_feed": 4.59,
+    "empty_cooldown": 5.88,
 
-    "reload_xmag_1_feed": 2.38,
-    "reload_xmag_1_cooldown": 3.7,
-    "empty_xmag_1_feed": 4.75,
-    "empty_xmag_1_cooldown": 6.0,
+    "reload_xmag_1_feed": 3.0,
+    "reload_xmag_1_cooldown": 4.79,
+    "empty_xmag_1_feed": 4.59,
+    "empty_xmag_1_cooldown": 5.88,
 
-    "reload_xmag_2_feed": 3.38,
+    "reload_xmag_2_feed": 3.67,
     "reload_xmag_2_cooldown": 5.0,
-    "empty_xmag_2_feed":4.75,
-    "empty_xmag_2_cooldown": 6.0,
+    "empty_xmag_2_feed":4.63,
+    "empty_xmag_2_cooldown": 6.08,
 
-    "reload_xmag_3_feed": 3.38,
+    "reload_xmag_3_feed": 3.67,
     "reload_xmag_3_cooldown": 5.0,
-    "empty_xmag_3_feed":4.75,
-    "empty_xmag_3_cooldown": 6.0
+    "empty_xmag_3_feed":4.63,
+    "empty_xmag_3_cooldown": 6.08
   },
   "can_crawl": true,
   "can_slide": false,
@@ -96,8 +96,8 @@
       "tactical": 5.0
     }
   },
-  "draw_time": 0.87,
-  "put_away_time": 0.27,
+  "draw_time": 0.83,
+  "put_away_time": 0.25,
   "aim_time": 0.2,
   "sprint_time": 0.2,
   "weight": 25,
@@ -125,14 +125,22 @@
   "crawl_recoil_multiplier": 0.75,
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [1.98, 1.98]},
-      {"time": 0.1, "value": [1.98, 1.98]},
-      {"time": 0.45, "value": [-0.175, -0.175]},
-      {"time": 0.6, "value": [0, 0]}
+      {"time": 0, "value": [5.5, 5.5]},
+      {"time": 0.07, "value": [4.5, 4.5]},
+      {"time": 0.16, "value": [5.25, 5.25]},
+      {"time": 0.24, "value": [4, 4]},
+      {"time": 0.6, "value": [-0.5, -0.5]},
+      {"time": 0.71, "value": [0.25, 0.25]},
+      {"time": 0.83, "value": [0, 0]},
+      {"time": 0.88, "value": [0, 0]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.23, 0.18]},
-      {"time": 0.35, "value": [0, 0]}
+      {"time": 0, "value": [-1.25, -1.25]},
+      {"time": 0.08, "value": [1.15, 1.15]},
+      {"time": 0.17, "value": [-0.5, -0.5]},
+      {"time": 0.28, "value": [0.25, 0.25]},
+      {"time": 0.5, "value": [0, 0]},
+      {"time": 0.8, "value": [0, 0]}
     ]
   },
   "inaccuracy": {
