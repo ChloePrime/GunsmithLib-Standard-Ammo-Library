@@ -1,0 +1,12 @@
+{
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 20,
+      "amount": 1
+    }
+  },
+  "name": "gunsmithlib_std_ammo.ammo.30x173_wasp.name",
+  "tooltip": "gunsmithlib_std_ammo.ammo.30x173_wasp.desc",
+  "display": "gunsmithlib_std_ammo:30x173_wasp_display",
+  "stack_size": 15
+}

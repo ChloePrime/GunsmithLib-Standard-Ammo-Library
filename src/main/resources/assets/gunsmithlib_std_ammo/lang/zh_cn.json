@@ -153,6 +153,14 @@
   "gunsmithlib_std_ammo.ammo.50bmg_dum.name": "§c.50超级扩张狩猎弹",
   "gunsmithlib_std_ammo.ammo.50bmg_aphei.name": "§c.50 Mk-211穿爆燃弹",
 
+  "gunsmithlib_std_ammo.ammo.30x173_dp.name": "§c30x173mm MK264多用途高爆弹",
+  "gunsmithlib_std_ammo.ammo.30x173_he.name": "§c30x173mm MK238高爆弹",
+  "gunsmithlib_std_ammo.ammo.30x173_ap.name": "§c30x173mm MK258穿甲弹",
+  "gunsmithlib_std_ammo.ammo.30x173_ab.name": "§c30x173mm MK310空爆高爆弹",
+  "gunsmithlib_std_ammo.ammo.30x173_fuel.name": "§c30x173mm MK552高能燃料炮弹",
+  "gunsmithlib_std_ammo.ammo.30x173_wasp.name": "§c30x173mm XM4 W.A.S.P导弹",
+  "gunsmithlib_std_ammo.ammo.30x173_wasp.desc": "§f朝侧方射出后飞向追踪目标\n§e⚠ §7为了您的安全考虑，严禁在狭窄空间中使用本产品。",
+
   "gunsmithlib_std_ammo.ammo.12g_birdshot.name": "§912号口径鸟弹",
   "gunsmithlib_std_ammo.ammo.12g_birdshot.desc": "§f发射更多但更小的弹丸",
   "gunsmithlib_std_ammo.ammo.12g_ap.name": "§918.4毫米钨芯穿甲霰弹",

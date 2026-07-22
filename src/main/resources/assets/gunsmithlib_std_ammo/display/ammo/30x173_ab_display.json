@@ -1,0 +1,10 @@
+{
+  "model": "gunsmithlib_std_ammo:ammo/30x173",
+  "texture": "gunsmithlib_std_ammo:ammo/uv/30x173_dp",
+  "slot": "gunsmithlib_std_ammo:ammo/slot/30x173_ab",
+  "tracer_color": "#FF4732",
+  "shell": {
+    "model": "gunsmithlib_std_ammo:shell/30x173_shell",
+    "texture": "gunsmithlib_std_ammo:shell/30x173_shell"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "gunsmithlib_std_ammo_extension": {
+    "price": {
+      "cost": 16,
+      "amount": 1
+    }
+  },
+  "name": "gunsmithlib_std_ammo.ammo.30x173_dp.name",
+  "display": "gunsmithlib_std_ammo:30x173_dp_display",
+  "stack_size": 15
+}
