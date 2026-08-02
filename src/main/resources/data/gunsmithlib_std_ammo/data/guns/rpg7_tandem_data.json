@@ -37,6 +37,15 @@
         "explosive_particle_alternate": true
       }
     ],
+    "bullet_trails": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:missile_boost",
+        "aaa_particle_data": {
+          "scale": 0.75
+        }
+      }
+    ],
     "hidden": true
   },
   "ammo": "gunsmithlib_std_ammo:rpg_rocket_tandem",

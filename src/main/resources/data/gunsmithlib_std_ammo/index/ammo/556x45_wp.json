@@ -4,7 +4,14 @@
       {
         "particle_id": "minecraft:lava",
         "speed": 1,
-        "count": 4
+        "count": 3
+      },
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:flak_explosion/yellow_ember",
+        "aaa_particle_data": {
+          "scale": 0.36
+        }
       }
     ]
   },

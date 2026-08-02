@@ -8,6 +8,13 @@
       },
       {
         "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:flak_explosion/yellow_ember",
+        "aaa_particle_data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "is_aaa_particle": true,
         "particle_id": "gunsmithlib_std_ammo:explosion_mini/blue",
         "aaa_particle_data": {
           "scale": 0.2

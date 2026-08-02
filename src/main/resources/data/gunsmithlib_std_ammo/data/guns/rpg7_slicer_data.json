@@ -3,6 +3,15 @@
     "gun_explosive": {
       "prevent_destroying_loot_items": true
     },
+    "bullet_trails": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:missile_boost",
+        "aaa_particle_data": {
+          "scale": 0.75
+        }
+      }
+    ],
     "hidden": true
   },
   "gunsmithlib_std_ammo_extension": {

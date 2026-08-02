@@ -1,4 +1,16 @@
 {
+  "gunsmithlib_extension": {
+    "hit_particles": [
+      {
+        "is_aaa_particle": true,
+        "particle_id": "gunsmithlib_std_ammo:flak_explosion/yellow_dense",
+        "aaa_particle_data": {
+          "scale": 0.92
+        },
+        "explosive_particle_alternate": true
+      }
+    ]
+  },
   "gunsmithlib_std_ammo_extension": {
     "price": {
       "cost": 4,
