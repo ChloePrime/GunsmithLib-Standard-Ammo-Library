@@ -11,6 +11,7 @@ import java.util.function.Supplier;
 
 public class GSASoundEvents {
     private static final DeferredRegister<SoundEvent> DFR = DeferredRegister.create(Registries.SOUND_EVENT, GunsmithLibStdAmmoMod.MOD_ID);
+    public static final Supplier<SoundEvent> AUTOCANNON_FLAK_FIRE = register("autocannon/autocannon_flak_fire");
     public static final Supplier<SoundEvent> AUTOCANNON_SHOOT = register("autocannon/autocannon_shoot");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_AMBIENT = register("bullet_merchant_ambient");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_TRADE = register("bullet_merchant_trade");

@@ -1,7 +1,15 @@
 {
+  "comment": "空爆高爆弹：您已被踢出服务器：no kong bao",
   "gunsmithlib_extension": {
     "gun_explosive": {
-      "safety_distance": 6,
+      "airburst_distances": [
+        50,
+        100,
+        200
+      ],
+      "airburst_distances_distribution": 0.01,
+      "airburst_rangefinder_max_distance": 800,
+      "safety_distance": 8,
       "safety_distance_flags": [
         "prevents_airburst_rangefindinng",
         "prevents_proximity_fuse",
@@ -11,48 +19,27 @@
     },
     "hit_particles": [
       {
-        "is_aaa_particle": false,
-        "particle_id": "minecraft:explosion",
-        "dx": 0.67,
-        "dy": 0.67,
-        "dz": 0.67,
-        "speed": 0,
-        "count": 6,
-        "explosive_particle_alternate": true
-      },
-      {
-        "is_aaa_particle": false,
-        "particle_id": "gunsmithlib_std_ammo:tinted_electric_spark 1 1 0.9 1 2 5 false false",
-        "speed": 0.115,
-        "count": 40,
-        "explosive_particle_alternate": true
-      },
-      {
-        "is_aaa_particle": false,
-        "particle_id": "gunsmithlib_std_ammo:tinted_electric_spark 1 0.9 0.4 1 2 15 false false",
-        "speed": 0.231,
-        "count": 120,
-        "explosive_particle_alternate": true
-      },
-      {
         "is_aaa_particle": true,
-        "particle_id": "gunsmithlib_std_ammo:explosion",
+        "particle_id": "gunsmithlib_std_ammo:explosion_mini/yellow",
         "aaa_particle_data": {
-          "scale": 0.67
+          "scale": 1.2
         },
         "explosive_particle_alternate": true
       }
-    ]
+    ],
+    "hidden": true
   },
-  "ammo": "gunsmithlib_std_ammo:30x173_dp",
+  "ammo": "gunsmithlib_std_ammo:30x173_ab",
   "ammo_amount": 3,
   "extended_mag_ammo_amount": [
     6,
     9,
     15
   ],
-  "script": "tacz:xmag_reload_logic",
+  "script": "gunsmithlib_std_ammo:ab_offset_xmag_reload_logic",
   "script_param": {
+    "ab_offset": 3,
+
     "reload_feed": 3.0,
     "reload_cooldown": 4.79,
     "empty_feed": 4.59,
@@ -80,15 +67,15 @@
   "bullet": {
     "life": 0.9,
     "bullet_amount": 1,
-    "damage": 90,
+    "damage": 30,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.75,
+      "armor_ignore": 0.05,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 120, "damage": 90},
-        {"distance": 240, "damage": 75},
-        {"distance": "infinite", "damage": 60}
+        {"distance": 120, "damage": 30},
+        {"distance": 240, "damage": 25},
+        {"distance": "infinite", "damage": 20}
       ]
     },
     "speed": 600,
@@ -104,8 +91,8 @@
     "explosion": {
       "explode": true,
       "delay": 30,
-      "radius": 4,
-      "damage": 60,
+      "radius": 6,
+      "damage": 90,
       "knockback": true,
       "destroy_block": false
     }

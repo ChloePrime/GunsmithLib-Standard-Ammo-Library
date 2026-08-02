@@ -1,6 +1,7 @@
-// 1.20.1	2026-04-14T23:16:16.1636602	Tags for minecraft:damage_type mod id gunsmithlib_std_ammo
+// 1.20.1	2026-08-02T17:49:12.9110886	Tags for minecraft:damage_type mod id gunsmithlib_std_ammo
 c96a784d097a4465bf71f28de0bb767ec9086eda data/minecraft/tags/damage_type/always_triggers_silverfish.json
-c96a784d097a4465bf71f28de0bb767ec9086eda data/minecraft/tags/damage_type/avoids_guardian_thorns.json
-78b86cfa904db85c400fc03b7e4f025a095e8c85 data/minecraft/tags/damage_type/bypasses_armor.json
+0192c008d8ba0cffb5dad9757dc2e716cd5ffed6 data/minecraft/tags/damage_type/avoids_guardian_thorns.json
+f07e594055cc9e7bb80bcf659680509a09ef1b14 data/minecraft/tags/damage_type/bypasses_armor.json
 0f82b149bfc321c3ade3b2171a3d608c69e76751 data/minecraft/tags/damage_type/bypasses_cooldown.json
+5b06e7de2edeab437830c94e8d8491dfe03f8ac7 data/minecraft/tags/damage_type/is_fire.json
 0f82b149bfc321c3ade3b2171a3d608c69e76751 data/minecraft/tags/damage_type/witch_resistant_to.json

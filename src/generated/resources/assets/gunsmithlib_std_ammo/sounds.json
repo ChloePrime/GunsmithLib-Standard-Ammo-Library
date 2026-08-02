@@ -1,4 +1,12 @@
 {
+  "autocannon/autocannon_flak_fire": {
+    "sounds": [
+      "gunsmithlib_std_ammo:item/gun/autocannon/flak_fire_0",
+      "gunsmithlib_std_ammo:item/gun/autocannon/flak_fire_1",
+      "gunsmithlib_std_ammo:item/gun/autocannon/flak_fire_2"
+    ],
+    "subtitle": "subtitles.item.gunsmithlib_std_ammo.autocannon.flak_fire"
+  },
   "autocannon/autocannon_shoot": {
     "sounds": [
       "gunsmithlib_std_ammo:item/gun/autocannon/shoot_0",

@@ -58,6 +58,7 @@
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s was killed by leukemia",
   "death.attack.gunsmithlib_std_ammo.poison": "%s was killed by chemical weapons",
+  "death.attack.gunsmithlib_std_ammo.plasma": "%s was glassified by a cluster of plasma",
   "effect.gunsmithlib_std_ammo.instant_death": "Instant Death",
   "effect.gunsmithlib_std_ammo.instant_death.description": "Instantly kills the effect holder. Does not apply to bosses.",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "Armor Meltdown",
@@ -76,6 +77,7 @@
   "gunsmithlib_std_ammo.jei.info.tib_seed": "Paint it on any leaves! see how it goes patiently!",
 
   "subtitles.item.gunsmithlib_std_ammo.autocannon.draw": "Autocannon Drawing",
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.flak_fire": "Autocannon Firing?",
   "subtitles.item.gunsmithlib_std_ammo.autocannon.shoot": "Autocannon Firing",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "Bullet Merchant mumbles",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "Bullet Merchant trades",

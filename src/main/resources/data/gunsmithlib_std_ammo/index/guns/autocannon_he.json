@@ -1,0 +1,9 @@
+{
+  "name": "gunsmithlib_std_ammo.gun.autocannon.name",
+  "tooltip": "gunsmithlib_std_ammo.gun.autocannon.desc",
+  "data": "gunsmithlib_std_ammo:autocannon_he_data",
+  "display": "gunsmithlib_std_ammo:autocannon_display",
+  "type": "rpg",
+  "item_type": "modern_kinetic",
+  "sort": 138
+}

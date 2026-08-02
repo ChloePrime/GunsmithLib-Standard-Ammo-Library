@@ -58,6 +58,7 @@
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s死于白血病",
   "death.attack.gunsmithlib_std_ammo.poison": "%s死于化学武器",
+  "death.attack.gunsmithlib_std_ammo.plasma": "%s被一团电浆烧成了玻璃",
   "effect.gunsmithlib_std_ammo.instant_death": "即死",
   "effect.gunsmithlib_std_ammo.instant_death.description": "立刻杀死效果的拥有者，对Boss无效",
   "effect.gunsmithlib_std_ammo.armor_meltdown": "护甲熔毁",
@@ -76,6 +77,7 @@
   "gunsmithlib_std_ammo.jei.info.tib_seed": "试试把它涂在树叶上，然后静观其变，木嘿嘿嘿~",
 
   "subtitles.item.gunsmithlib_std_ammo.autocannon.draw": "机关炮拔枪",
+  "subtitles.item.gunsmithlib_std_ammo.autocannon.flak_fire": "机关炮发射？",
   "subtitles.item.gunsmithlib_std_ammo.autocannon.shoot": "机关炮发射",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "军火行商：喃喃自语",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "军火行商：交易",

@@ -1,0 +1,17 @@
+{
+  "priority": "std:main",
+  "parts": [
+    {
+      "name": "main",
+      "priority": "std:main",
+      "variants": [
+        "gunsmithlib_std_ammo:autocannon",
+        "gunsmithlib_std_ammo:autocannon_he",
+        "gunsmithlib_std_ammo:autocannon_ap",
+        "gunsmithlib_std_ammo:autocannon_ab",
+        "gunsmithlib_std_ammo:autocannon_fuel",
+        "gunsmithlib_std_ammo:autocannon_wasp"
+      ]
+    }
+  ]
+}

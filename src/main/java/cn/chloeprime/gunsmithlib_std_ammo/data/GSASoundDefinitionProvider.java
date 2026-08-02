@@ -22,6 +22,7 @@ public class GSASoundDefinitionProvider extends SoundDefinitionsProvider {
 
     @Override
     public void registerSounds() {
+        add(GSASoundEvents.AUTOCANNON_FLAK_FIRE, "item", "autocannon.flak_fire", loc("item/gun/autocannon/flak_fire_%s", 3));
         add(GSASoundEvents.AUTOCANNON_SHOOT, "item", "autocannon.shoot", loc("item/gun/autocannon/shoot_%s", 4));
         add(GSASoundEvents.BULLET_MERCHANT_AMBIENT, "entity", "bullet_merchant.ambient",
                 loc("entity/generic_girl/uh_huh"),

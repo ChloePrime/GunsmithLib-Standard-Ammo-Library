@@ -108,16 +108,16 @@ dependencies {
     // TACZ
     implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:8055552-sources-8055584')
     // implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:7401617-sources-7401626')
-    implementation jarJar(fg.deobf('cn.chloeprime.gunsmithlib:gunsmithlib-forge-1.20.1-tacz1.1.8:6.2.2')) {
+    implementation jarJar(fg.deobf('cn.chloeprime.gunsmithlib:gunsmithlib-forge-1.20.1-tacz1.1.8:6.4.0-alpha.9')) {
         exclude group: '*', module: '*'
-        jarJar.ranged(it, "[6.2.2,)")
+        jarJar.ranged(it, "[6.4.0-alpha.9,)")
     }
 
     // 个人前置
     compileOnly fg.deobf('cn.chloeprime.kuroutils2:kuroutils2:2001.2.3.0')
 
     // AAA Particles
-    runtimeOnly fg.deobf('mod.chloeprime:aaa-particles-forge:1.20.1-2.0.0-beta.6')
+    runtimeOnly fg.deobf('cn.chloeprime:aaa_particles-forge-1.20.1:2.2.3')
     runtimeOnly fg.deobf('maven.modrinth:architectury-api:9.2.14+forge')
 
     // Oculus
