@@ -1,0 +1,28 @@
+{
+  "loot_tables": [
+    "minecraft:chests/woodland_mansion"
+  ],
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunsmithlib_std_ammo:steel_ingot",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:binomial",
+                "n": 512.0,
+                "p": 0.5
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

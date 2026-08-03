@@ -1,0 +1,29 @@
+{
+  "loot_tables": [
+    "minecraft:chests/ruined_portal",
+
+    "minecraft:chests/ancient_city",
+    "minecraft:chests/pillager_outpost",
+    "minecraft:chests/simple_dungeon",
+    "minecraft:chests/stronghold_corridor",
+    "minecraft:chests/stronghold_crossing"
+  ],
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunsmithlib_std_ammo:tungsten_ingot"
+        }
+      ]
+    }
+  ]
+}

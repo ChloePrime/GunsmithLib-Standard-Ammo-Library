@@ -1,0 +1,43 @@
+{
+  "loot_tables": [
+    "minecraft:chests/bastion_bridge",
+    "minecraft:chests/bastion_hoglin_stable",
+    "minecraft:chests/bastion_other",
+    "minecraft:chests/nether_bridge",
+
+    "minecraft:chests/end_city_treasure",
+    "minecraft:chests/woodland_mansion",
+
+    "minecraft:entities/piglin_brute",
+    "minecraft:entities/ravager"
+  ],
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.5,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunsmithlib_std_ammo:tungsten_ingot",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:binomial",
+                "n": 8.0,
+                "p": 0.5
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

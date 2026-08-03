@@ -1,0 +1,47 @@
+{
+  "loot_tables": [
+    "minecraft:chests/village/village_butcher",
+    "minecraft:chests/village/village_fletcher",
+    "minecraft:chests/village/village_mason",
+    
+    "minecraft:chests/bastion_bridge",
+    "minecraft:chests/bastion_hoglin_stable",
+    "minecraft:chests/bastion_other",
+    "minecraft:chests/bastion_treasure",
+    "minecraft:chests/end_city_treasure",
+    "minecraft:chests/nether_bridge",
+    "minecraft:chests/simple_dungeon",
+
+    "minecraft:entities/pillager",
+    "minecraft:entities/vindicator"
+  ],
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunsmithlib_std_ammo:steel_ingot",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:binomial",
+                "n": 4.0,
+                "p": 0.25
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

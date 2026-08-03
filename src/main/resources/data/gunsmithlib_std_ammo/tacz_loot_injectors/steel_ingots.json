@@ -1,0 +1,47 @@
+{
+  "loot_tables": [
+    "minecraft:chests/village/village_armorer",
+    "minecraft:chests/village/village_toolsmith",
+    "minecraft:chests/village/village_weaponsmith",
+
+    "minecraft:chests/pillager_outpost",
+
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/ancient_city",
+    "minecraft:chests/igloo_chest",
+    "minecraft:chests/stronghold_corridor",
+    "minecraft:chests/stronghold_crossing",
+
+    "minecraft:entities/evoker",
+    "minecraft:entities/illusioner"
+  ],
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.5,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunsmithlib_std_ammo:steel_ingot",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:binomial",
+                "n": 16.0,
+                "p": 0.5
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
