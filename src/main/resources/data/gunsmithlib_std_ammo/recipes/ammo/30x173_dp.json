@@ -1,0 +1,47 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "gunsmithlib_std_ammo:primer"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      },
+      "count": 120
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 25
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 45
+    },
+    {
+      "item": {
+        "item": "gunsmithlib_std_ammo:n2_bomb"
+      },
+      "count": 9
+    },
+    {
+      "item": {
+        "tag": "forge:nuggets/iron"
+      },
+      "count": 240
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:30x173_dp",
+    "count": 15
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,6 +1,9 @@
 {
   "block.gunsmithlib_std_ammo.vx_plant": "VX乌头",
 
+  "item.gunsmithlib_std_ammo.primer": "优质底火",
+  "item.gunsmithlib_std_ammo.primer_primer": "最优质的底火",
+
   "item.gunsmithlib_std_ammo.steel_ingot": "钢锭",
   "item.gunsmithlib_std_ammo.pico_rocket": "微型火箭",
 
@@ -13,6 +16,7 @@
   "block.gunsmithlib_std_ammo.tiberium_ore": "泰伯利亚矿石",
   "block.gunsmithlib_std_ammo.deepslate_tiberium_ore": "深层泰伯利亚矿石",
   "block.gunsmithlib_std_ammo.nether_tiberium_ore": "下界泰伯利亚矿石",
+  "block.gunsmithlib_std_ammo.n2_bomb": "N2炸弹",
   "block.gunsmithlib_std_ammo.end_tiberium_seed_ore": "末地泰伯利亚矿石",
   "item.gunsmithlib_std_ammo.tiberium_seed": "泰伯利亚种子",
   "block.gunsmithlib_std_ammo.tiberium_leaves": "泰伯利亚树叶",
@@ -55,6 +59,7 @@
   "entity.gunsmithlib_std_ammo.slicing_warhead": "斩裂弹",
   "entity.gunsmithlib_std_ammo.bullet_merchant": "军火行商",
   "item.gunsmithlib_std_ammo.bullet_merchant_spawn_egg": "军火行商刷怪蛋",
+  "entity.gunsmithlib_std_ammo.n2_bomb": "N2炸弹",
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s死于白血病",
   "death.attack.gunsmithlib_std_ammo.poison": "%s死于化学武器",

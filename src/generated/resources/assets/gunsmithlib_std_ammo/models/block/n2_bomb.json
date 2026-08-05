@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "gunsmithlib_std_ammo:block/n2_bomb_bottom",
+    "side": "gunsmithlib_std_ammo:block/n2_bomb_side",
+    "top": "gunsmithlib_std_ammo:block/n2_bomb_top"
+  }
+}

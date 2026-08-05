@@ -16,6 +16,7 @@ public final class GSAEntities {
     private static final DeferredRegister<EntityType<?>> DFR = DeferredRegister.create(Registries.ENTITY_TYPE, GunsmithLibStdAmmoMod.MOD_ID);
     public static final Supplier<EntityType<SlicingWarhead>> SLICING_WARHEAD = DFR.register("slicing_warhead", () -> SlicingWarhead.TYPE);
     public static final Supplier<EntityType<BulletMerchant>> BULLET_MERCHANT = DFR.register("bullet_merchant", () -> BulletMerchant.TYPE);
+    public static final Supplier<EntityType<GSATntEntity>> N2_BOMB = DFR.register("n2_bomb", () -> GSATntEntity.TYPE_N2_BOMB);
 
     public static void init(IEventBus bus) {
         DFR.register(bus);

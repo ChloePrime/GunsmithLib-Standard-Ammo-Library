@@ -1,6 +1,9 @@
 {
   "block.gunsmithlib_std_ammo.vx_plant": "Acontium Vixicum",
 
+  "item.gunsmithlib_std_ammo.primer": "Primer Primer",
+  "item.gunsmithlib_std_ammo.primer_primer": "The Primest Primer",
+
   "item.gunsmithlib_std_ammo.steel_ingot": "Steel Ingot",
   "item.gunsmithlib_std_ammo.pico_rocket": "Pico Rocket",
 
@@ -26,6 +29,7 @@
   "block.gunsmithlib_std_ammo.tiberium_ore": "Tiberium Ore",
   "block.gunsmithlib_std_ammo.deepslate_tiberium_ore": "Deepslate Tiberium Ore",
   "block.gunsmithlib_std_ammo.nether_tiberium_ore": "Nether Tiberium Ore",
+  "block.gunsmithlib_std_ammo.n2_bomb": "N2 Bomb",
   "block.gunsmithlib_std_ammo.end_tiberium_seed_ore": "End Tiberium Ore",
   "item.gunsmithlib_std_ammo.tiberium_seed": "Tiberium Seed",
   "block.gunsmithlib_std_ammo.tiberium_leaves": "Tiberium Leaves",
@@ -55,6 +59,7 @@
   "entity.gunsmithlib_std_ammo.slicing_warhead": "Slicer Warhead",
   "entity.gunsmithlib_std_ammo.bullet_merchant": "Firearm Merchant",
   "item.gunsmithlib_std_ammo.bullet_merchant_spawn_egg": "Firearm Merchant Spawn Egg",
+  "entity.gunsmithlib_std_ammo.n2_bomb": "N2 Bomb",
 
   "death.attack.gunsmithlib_std_ammo.cancer": "%s was killed by leukemia",
   "death.attack.gunsmithlib_std_ammo.poison": "%s was killed by chemical weapons",

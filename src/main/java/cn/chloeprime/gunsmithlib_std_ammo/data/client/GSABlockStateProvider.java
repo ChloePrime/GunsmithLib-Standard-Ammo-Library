@@ -1,6 +1,7 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data.client;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSATntBlock;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -36,6 +37,11 @@ public class GSABlockStateProvider extends BlockStateProvider implements Datagen
                 "all",
                 blockTexture(TIBERIUM_LEAVES.get())));
         simpleBlockItem(TIBERIUM_LEAVES);
+        simpleBlockWithItem(N2_BOMB.get(), models().cubeBottomTop(
+                getKey(N2_BOMB.get()).toString(),
+                GunsmithLibStdAmmoMod.loc("block/n2_bomb_side"),
+                GunsmithLibStdAmmoMod.loc("block/n2_bomb_bottom"),
+                GunsmithLibStdAmmoMod.loc("block/n2_bomb_top")));
     }
 
     @SuppressWarnings("deprecation")

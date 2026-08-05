@@ -1,6 +1,7 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.block;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
@@ -102,6 +103,15 @@ public final class GSABlocks {
             return silkTouchLevel == 0 ? TIB_SEED_ORE_EXP.sample(randomSource) : 0;
         }
     });
+
+    public static final Supplier<Block> N2_BOMB = DFR.register("n2_bomb", () -> new GSATntBlock(GSAEntities.N2_BOMB, GSATntBlock.Properties.of(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.FIRE).sound(SoundType.GRASS)
+                    .instabreak()
+                    .ignitedByLava()
+                    .isRedstoneConductor((state, level, pos) -> false))
+            .fuse(100)
+            .power(6)));
+
 
     public static final Supplier<TiberiumLeavesBlock> TIBERIUM_LEAVES = DFR.register("tiberium_leaves", () -> new TiberiumLeavesBlock(BlockBehaviour.Properties.of()
             .mapColor(MapColor.COLOR_LIGHT_GREEN)

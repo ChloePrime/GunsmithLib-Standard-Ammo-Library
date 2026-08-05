@@ -1,0 +1,35 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "gunsmithlib_std_ammo:primer"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      },
+      "count": 120
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 30
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/tungsten"
+      },
+      "count": 15
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "group": "gunsmithlib_std_ammo:ammo",
+    "id": "gunsmithlib_std_ammo:30x173_ap",
+    "count": 15
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -13,7 +13,8 @@
     "MixinGunData",
     "MixinItemEntity",
     "MixinLivingEntity",
-    "PotionBrewingAccessor"
+    "PotionBrewingAccessor",
+    "PrimedTntAccessor"
   ],
   "client": [
     "client.ParticleAccessor"

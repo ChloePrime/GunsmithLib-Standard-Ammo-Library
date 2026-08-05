@@ -16,7 +16,9 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -74,6 +76,16 @@ public class GSALootProvider extends LootTableProvider {
             add(GSABlocks.TIBERIUM_ORE.get(), blk -> createOreDrop(blk, GSAItems.GREEN_TIBERIUM_CRYSTAL.get()));
             add(GSABlocks.DEEPSLATE_TIBERIUM_ORE.get(), blk -> createOreDrop(blk, GSAItems.GREEN_TIBERIUM_CRYSTAL.get()));
             add(GSABlocks.NETHER_TIBERIUM_ORE.get(), createDenseTiberiumOreDrops(GSAItems.GREEN_TIBERIUM_CRYSTAL.get()));
+            add(GSABlocks.N2_BOMB.get(), LootTable.lootTable()
+                    .withPool(this.applyExplosionCondition(GSABlocks.N2_BOMB.get(), LootPool.lootPool()
+                            .setRolls(ConstantValue.exactly(1))
+                            .add(LootItem
+                                    .lootTableItem(GSABlocks.N2_BOMB.get())
+                                    .when(LootItemBlockStatePropertyCondition
+                                            .hasBlockStateProperties(GSABlocks.N2_BOMB.get())
+                                            .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TntBlock.UNSTABLE, false)))))
+                    ));
+
             add(GSABlocks.END_TIBERIUM_SEED_ORE.get(), blk -> createOreDrop(blk, GSAItems.TIBERIUM_SEED.get()));
             add(GSABlocks.TIBERIUM_LEAVES.get(), this::tiberiumLeaves);
         }

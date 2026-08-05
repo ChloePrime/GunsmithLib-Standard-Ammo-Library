@@ -16,6 +16,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 
+import javax.annotation.Nonnull;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -25,6 +26,15 @@ public final class GSAItems {
 
     // 自然方块
     public static final Supplier<BlockItem> VX_PLANT = blockItem("vx_plant", GSABlocks.VX_PLANT);
+
+    // 基础原材料
+    public static final Supplier<Item> PRIMER = simpleItem("primer", Rarity.UNCOMMON);
+    public static final Supplier<Item> PRIMER_PRIMER = DFR.register("primer_primer", () -> new SimpleItem(new Item.Properties().rarity(Rarity.EPIC)) {
+        @Override
+        public boolean isFoil(@Nonnull ItemStack stack) {
+            return true;
+        }
+    });
 
     // 炼钢
     public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
@@ -58,6 +68,7 @@ public final class GSAItems {
     public static final Supplier<BlockItem> NETHER_TIBERIUM_ORE = blockItem("nether_tiberium_ore", GSABlocks.NETHER_TIBERIUM_ORE);
     public static final Supplier<Item> GREEN_TIBERIUM_CRYSTAL = DFR.register("green_tiberium_crystal", () -> new BurnableSimpleItem(1600, new Item.Properties()));
     public static final Supplier<Item> N2_DYNAMITE = simpleItem("n2_dynamite");
+    public static final Supplier<BlockItem> N2_BOMB = blockItem("n2_bomb", GSABlocks.N2_BOMB);
 
     // 蓝泰矿
     public static final Supplier<BlockItem> END_TIBERIUM_SEED_ORE = blockItem("end_tiberium_seed_ore", Rarity.RARE, GSABlocks.END_TIBERIUM_SEED_ORE);
@@ -118,6 +129,9 @@ public final class GSAItems {
             event.accept(END_TIBERIUM_SEED_ORE);
             event.accept(TIBERIUM_LEAVES);
         }
+        if (event.getTabKey().equals(CreativeModeTabs.FUNCTIONAL_BLOCKS) || event.getTabKey().equals(CreativeModeTabs.REDSTONE_BLOCKS)) {
+            event.accept(N2_BOMB);
+        }
         if (event.getTabKey().equals(CreativeModeTabs.INGREDIENTS)) {
             event.accept(RAW_TUNGSTEN);
             event.accept(TIBERIUM_SEED);
@@ -127,6 +141,8 @@ public final class GSAItems {
             event.accept(TUNGSTEN_INGOT);
             event.accept(TIBERIUM_ALLOY_INGOT);
             event.accept(PLASTIC_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(PRIMER);
+            event.accept(PRIMER_PRIMER);
             event.accept(PICO_ROCKET);
             event.accept(MONOCRYSTALLINE_SILICON);
             event.accept(WAFER);

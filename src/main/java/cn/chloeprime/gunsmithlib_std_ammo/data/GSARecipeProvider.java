@@ -13,6 +13,7 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 
 import javax.annotation.Nonnull;
@@ -128,6 +129,16 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                 .requires(GSAItemTags.GEMS_TIB_GREEN)
                 .unlockedBy("has_green_tiberiuum_crystal", has(GREEN_TIBERIUM_CRYSTAL.get()))
                 .save(output, getKey(N2_DYNAMITE.get()));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, N2_BOMB.get())
+                .define('#', Ingredient.of(Blocks.OBSIDIAN, Blocks.PRISMARINE))
+                .define('X', N2_DYNAMITE.get())
+                .pattern("X#X")
+                .pattern("#X#")
+                .pattern("X#X")
+                .unlockedBy("has_n2_dynamite", has(N2_DYNAMITE.get()))
+                .save(output, getKey(N2_BOMB.get()));
+
 
         // 泰伯利亚混合物，泰伯利亚合金
         ShapelessRecipeBuilder

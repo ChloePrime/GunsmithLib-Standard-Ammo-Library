@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "gunsmithlib_std_ammo:n2_bomb",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "unstable": "false"
+              }
+            }
+          ],
+          "name": "gunsmithlib_std_ammo:n2_bomb"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "gunsmithlib_std_ammo:blocks/n2_bomb"
+}

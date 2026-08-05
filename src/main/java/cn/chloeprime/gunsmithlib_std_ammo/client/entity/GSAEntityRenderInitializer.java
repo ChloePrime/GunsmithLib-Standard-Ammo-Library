@@ -1,7 +1,9 @@
 package cn.chloeprime.gunsmithlib_std_ammo.client.entity;
 
 import cn.chloeprime.gunsmithlib_std_ammo.client.entity.render.AmmoEntityDelegateRenderer;
+import cn.chloeprime.gunsmithlib_std_ammo.client.entity.render.GSATntRenderer;
 import cn.chloeprime.gunsmithlib_std_ammo.client.entity.render.MannequinRenderer;
+import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.BulletMerchant;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.GSAEntities;
 import net.minecraft.resources.ResourceLocation;
@@ -23,5 +25,6 @@ public class GSAEntityRenderInitializer {
                 return entity.getSkinLocation();
             }
         });
+        event.registerEntityRenderer(GSAEntities.N2_BOMB.get(), context -> new GSATntRenderer(context, () -> GSABlocks.N2_BOMB.get().defaultBlockState()));
     }
 }

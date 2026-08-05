@@ -4,6 +4,7 @@ import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -19,6 +20,10 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
 
     @Override
     protected void registerModels() {
+        basicItem(GSAItems.PRIMER.get());
+        getBuilder(
+                getKey(GSAItems.PRIMER_PRIMER.get()).toString())
+                .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(GunsmithLibStdAmmoMod.MOD_ID, "item/" + getKey(GSAItems.PRIMER.get()).getPath())));
         basicItem(GSAItems.STEEL_INGOT.get());
         basicItem(GSAItems.PICO_ROCKET.get());
 
