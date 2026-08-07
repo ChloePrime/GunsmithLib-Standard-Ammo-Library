@@ -1,11 +1,13 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.item;
 
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSACommonConfig;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.EnhancedAmmoData;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.GSAGunpackExtension;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.PriceData;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.event.OnDatapackSyncEvent;
@@ -75,7 +77,8 @@ public final class GSABulletPriceDatabase {
                 .setId(entry.id())
                 .setCount(entry.price().amount())
                 .build();
-        return new BasicItemListing(entry.price().cost(), ammo, getMaxTrades(entry), getExp(entry));
+        int finalCost = Mth.floor(1e-8 + entry.price().cost() * GSACommonConfig.BM_GLOBAL_PRICE_SCALE.get());
+        return new BasicItemListing(finalCost, ammo, getMaxTrades(entry), getExp(entry));
     }
 
     private static int getMaxTrades(Entry entry) {

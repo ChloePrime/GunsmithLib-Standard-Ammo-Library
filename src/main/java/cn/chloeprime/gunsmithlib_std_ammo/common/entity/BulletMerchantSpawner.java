@@ -1,6 +1,7 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.entity;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSACommonConfig;
 import cn.chloeprime.gunsmithlib_std_ammo.common.level.GSABiomeTags;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
@@ -27,11 +28,10 @@ import java.util.Optional;
 
 @Mod.EventBusSubscriber
 public class BulletMerchantSpawner extends SavedData {
-    public static final long SPAWN_PERIOD = 24000;
     public static final long TICK_PERIOD = 1200;
 
     public static final Codec<BulletMerchantSpawner> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.LONG.optionalFieldOf("spawn_delay", Math.round(SPAWN_PERIOD * 1.5)).forGetter(spw -> spw.spawnDelay),
+            Codec.LONG.optionalFieldOf("spawn_delay", 36000L).forGetter(spw -> spw.spawnDelay),
             Codec.INT.optionalFieldOf("dice_failures", 0).forGetter(spw -> spw.diceFailureCount),
             Codec.BOOL.optionalFieldOf("scheduled", false).forGetter(spw -> spw.scheduled)
     ).apply(instance, BulletMerchantSpawner::new));
@@ -60,7 +60,15 @@ public class BulletMerchantSpawner extends SavedData {
     }
 
     public static BulletMerchantSpawner create() {
-        return new BulletMerchantSpawner(Math.round(SPAWN_PERIOD * 1.5), 0, false);
+        return new BulletMerchantSpawner(Math.round(getSpawnPeriod() * 1.5), 0, false);
+    }
+
+    public static boolean isEnabled() {
+        return getSpawnPeriod() > 0;
+    }
+
+    public static long getSpawnPeriod() {
+        return GSACommonConfig.BM_SPAWN_PERIOD.get();
     }
 
     @Override
@@ -76,6 +84,9 @@ public class BulletMerchantSpawner extends SavedData {
             return;
         }
         tickDelay += TICK_PERIOD;
+        if (!isEnabled()) {
+            return;
+        }
         if (!level.getGameRules().getBoolean(GameRules.RULE_DO_TRADER_SPAWNING)) {
             return;
         }
@@ -85,7 +96,7 @@ public class BulletMerchantSpawner extends SavedData {
             return;
         }
         boolean success = trySpawn(level);
-        spawnDelay += success ? SPAWN_PERIOD : TICK_PERIOD;
+        spawnDelay += success ? Math.max(TICK_PERIOD, getSpawnPeriod()) : TICK_PERIOD;
     }
 
     public float getSpawnChance() {

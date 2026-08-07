@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo;
 
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSACommonConfig;
 import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.effect.GSAMobEffects;
@@ -10,6 +11,7 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.particle.GSAParticleTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -20,7 +22,10 @@ public class GunsmithLibStdAmmoMod {
 
     @SuppressWarnings("removal")
     public GunsmithLibStdAmmoMod() {
-        var bus = FMLJavaModLoadingContext.get().getModEventBus();
+        var ctx = FMLJavaModLoadingContext.get();
+        ctx.registerConfig(ModConfig.Type.COMMON, GSACommonConfig.SPEC);
+
+        var bus = ctx.getModEventBus();
         GSABlocks.init(bus);
         GSAItems.init(bus);
         GSAEntities.init(bus);
