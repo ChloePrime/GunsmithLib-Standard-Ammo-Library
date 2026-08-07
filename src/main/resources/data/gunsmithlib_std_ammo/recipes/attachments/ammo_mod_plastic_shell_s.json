@@ -11,7 +11,7 @@
     }
   },
   "addition": {
-    "item": "minecraft:shulker_shell"
+    "item": "gunsmithlib_std_ammo:engineering_plastic_grains"
   },
   "tacz_content_type": "attachment",
   "result_id": "gunsmithlib_std_ammo:ammo_mod_plastic_shell_s"

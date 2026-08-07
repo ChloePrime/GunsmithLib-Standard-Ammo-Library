@@ -98,6 +98,7 @@ repositories {
 }
 
 dependencies {
+    final boolean TACZ_DUR = false
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.
@@ -111,6 +112,11 @@ dependencies {
     implementation jarJar(fg.deobf('cn.chloeprime.gunsmithlib:gunsmithlib-forge-1.20.1-tacz1.1.8:6.4.0-alpha.9')) {
         exclude group: '*', module: '*'
         jarJar.ranged(it, "[6.4.0-alpha.9,)")
+    }
+
+    // 枪械耐久，需要新版 forge
+    if (TACZ_DUR) {
+        implementation fg.deobf("curse.maven:tacz-durability-1065328:8606081")
     }
 
     // 个人前置

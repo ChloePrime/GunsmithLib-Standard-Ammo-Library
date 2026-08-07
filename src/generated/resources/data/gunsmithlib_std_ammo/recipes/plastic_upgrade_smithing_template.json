@@ -6,7 +6,7 @@
       "item": "gunsmithlib_std_ammo:soc"
     },
     "X": {
-      "item": "minecraft:shulker_shell"
+      "item": "gunsmithlib_std_ammo:engineering_plastic_block"
     }
   },
   "pattern": [

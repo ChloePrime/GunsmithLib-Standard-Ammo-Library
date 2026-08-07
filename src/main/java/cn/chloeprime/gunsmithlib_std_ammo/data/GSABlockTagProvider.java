@@ -41,6 +41,14 @@ public class GSABlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.REPLACEABLE_BY_TREES).add(GSABlocks.VX_PLANT.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                GSABlocks.ENGINEERING_PLASTIC_BLOCK.get());
+        tag(BlockTags.NEEDS_IRON_TOOL).add(
+                GSABlocks.ENGINEERING_PLASTIC_BLOCK.get());
+        tag(GSABlockTags.STORAGE_BLOCKS).addTag(GSABlockTags.STORAGE_BLOCKS_ENGINEERING_PLASTIC);
+        tag(GSABlockTags.STORAGE_BLOCKS_ENGINEERING_PLASTIC).add(
+                GSABlocks.ENGINEERING_PLASTIC_BLOCK.get());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 GSABlocks.PURIFIED_DEBRIS.get(),
                 GSABlocks.END_TIBERIUM_SEED_ORE.get(),
                 GSABlocks.TIBERIUM_LEAVES.get())

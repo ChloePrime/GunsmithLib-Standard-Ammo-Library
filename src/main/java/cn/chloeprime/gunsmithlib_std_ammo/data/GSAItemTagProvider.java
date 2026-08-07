@@ -43,6 +43,11 @@ public class GSAItemTagProvider extends ItemTagsProvider {
         copy(GSABlockTags.ORES_TUNGSTEN, GSAItemTags.ORES_TUNGSTEN);
         copy(GSABlockTags.ORES_TIBERIUM, GSAItemTags.ORES_TIBERIUM);
         copy(GSABlockTags.ORES_TIB_SEED, GSAItemTags.ORES_TIB_SEED);
+        copy(GSABlockTags.STORAGE_BLOCKS, GSAItemTags.STORAGE_BLOCKS);
+        copy(GSABlockTags.STORAGE_BLOCKS_ENGINEERING_PLASTIC, GSAItemTags.STORAGE_BLOCKS_ENGINEERING_PLASTIC);
+
+        tag(GSAItemTags.GEMS).addTag(GSAItemTags.GEMS_ENGINEERING_PLASTIC);
+        tag(GSAItemTags.GEMS_ENGINEERING_PLASTIC).add(GSAItems.ENGINEERING_PLASTIC_GRAINS.get());
 
         tag(GSAItemTags.INGOTS).addTag(GSAItemTags.INGOTS_STEEL);
         tag(GSAItemTags.INGOTS_STEEL).add(GSAItems.STEEL_INGOT.get());

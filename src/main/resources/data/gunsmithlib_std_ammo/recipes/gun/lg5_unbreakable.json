@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gundb"
+    }
+  ],
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 7
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/tungsten"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 30
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      },
+      "count": 200
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "gunsmithlib_std_ammo:lg5",
+    "nbt": "{Unbreakable:1b}"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

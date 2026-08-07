@@ -3,6 +3,8 @@
 
   "item.gunsmithlib_std_ammo.primer": "优质底火",
   "item.gunsmithlib_std_ammo.primer_primer": "最优质的底火",
+  "item.gunsmithlib_std_ammo.engineering_plastic_grains": "工程塑料颗粒",
+  "block.gunsmithlib_std_ammo.engineering_plastic_block": "工程塑料块",
 
   "item.gunsmithlib_std_ammo.steel_ingot": "钢锭",
   "item.gunsmithlib_std_ammo.pico_rocket": "微型火箭",
@@ -46,10 +48,10 @@
   "item.gunsmithlib_std_ammo.tpu.desc.1": "",
 
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.applies_to": "狙击弹药扩容弹匣（1级和3级）",
-  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "潜影壳",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "工程塑料颗粒",
   "upgrade.gunsmithlib_std_ammo.plastic_upgrade": "聚合物升级",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "放入1或3级狙击弹药扩容弹匣",
-  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入潜影壳",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "放入工程塑料颗粒",
 
   "item.minecraft.potion.effect.gunsmithlib_std_ammo.vx": "VX神经毒素",
   "item.minecraft.splash_potion.effect.gunsmithlib_std_ammo.vx": "喷溅型VX神经毒素",
@@ -113,7 +115,7 @@
   "gunsmithlib_std_ammo.gun.autocannon.name": "QPZ-25突击机关炮",
   "gunsmithlib_std_ammo.gun.autocannon.desc": "做最优质的直升机杀手",
   "gunsmithlib_std_ammo.gun.lg5.name": "LG5狙击榴弹发射器",
-  "gunsmithlib_std_ammo.gun.lg5.desc": "更适合西方朋友的狙击炮\n§8感谢§1乐栓LESHUAN_20§8提供的QLU-11美术资产~",
+  "gunsmithlib_std_ammo.gun.lg5.desc": "更适合西方朋友的狙击炮\n§8感谢§9乐栓LESHUAN_20§8提供的QLU-11美术资产~",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "也只是原则上而已了......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "里昂叔叔的RPG-7火箭筒",
   "gunsmithlib_std_ammo.gun.rpg7_leon.desc": "造物主究竟渴望什么？",
@@ -196,7 +198,7 @@
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "技术性物品，无法获取",
 
   "gunsmithlib_std_ammo.attachment.y_mjl11_005.name": "§cY/MJL11-005火控瞄准系统",
-  "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc": "§f注意：使用榴霰弹时火控将不会生效。\n§8感谢§1乐栓LESHUAN_20§8提供的QMD-131美术资产~",
+  "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc": "§f注意：使用榴霰弹时火控将不会生效。\n§8感谢§9乐栓LESHUAN_20§8提供的QMD-131美术资产~",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§e塑料弹壳配备小弹匣",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "轻量化的塑料弹壳，拥有良好的人机工效",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§e塑料弹壳配备大弹匣",

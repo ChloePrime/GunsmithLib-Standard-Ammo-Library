@@ -24,6 +24,8 @@ public class GSAItemModelProvider extends ItemModelProvider implements DatagenRe
         getBuilder(
                 getKey(GSAItems.PRIMER_PRIMER.get()).toString())
                 .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(GunsmithLibStdAmmoMod.MOD_ID, "item/" + getKey(GSAItems.PRIMER.get()).getPath())));
+        basicItem(GSAItems.ENGINEERING_PLASTIC_GRAINS.get());
+
         basicItem(GSAItems.STEEL_INGOT.get());
         basicItem(GSAItems.PICO_ROCKET.get());
 

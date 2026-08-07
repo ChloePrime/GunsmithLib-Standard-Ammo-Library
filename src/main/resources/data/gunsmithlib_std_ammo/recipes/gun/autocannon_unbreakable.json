@@ -1,0 +1,58 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gundb"
+    }
+  ],
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      },
+      "count": 550
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 180
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/tungsten"
+      },
+      "count": 80
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 125
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 25
+    },
+    {
+      "item": {
+        "tag": "forge:gems/engineering_plastic"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "item": "minecraft:echo_shard"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "gunsmithlib_std_ammo:autocannon",
+    "nbt": "{Unbreakable:1b}"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

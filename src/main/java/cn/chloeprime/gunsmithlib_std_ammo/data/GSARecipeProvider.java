@@ -3,21 +3,15 @@ package cn.chloeprime.gunsmithlib_std_ammo.data;
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
 import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSABlocks;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItemTags;
-import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 
 import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
@@ -25,7 +19,7 @@ import java.util.stream.Stream;
 
 import static cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAItems.*;
 
-public class GSARecipeProvider extends RecipeProvider implements DatagenRegistryHelper {
+public class GSARecipeProvider extends GSARecipeProviderLib {
     public GSARecipeProvider(PackOutput output) {
         super(output);
     }
@@ -38,6 +32,42 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                 .group("purple_dye")
                 .unlockedBy(getHasName(GSABlocks.VX_PLANT.get()), has(GSABlocks.VX_PLANT.get()))
                 .save(output, GunsmithLibStdAmmoMod.loc("purple_dye_from_vx_plant"));
+        // 塑料
+        SimpleCookingRecipeBuilder.smelting(
+                        Ingredient.of(Items.SHULKER_SHELL),
+                        RecipeCategory.MISC,
+                        ENGINEERING_PLASTIC_GRAINS.get(),
+                        1.5F,
+                        200)
+                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .save(output, GunsmithLibStdAmmoMod.loc("engineering_plastic_from_smelting_shulker_shell"));
+        SimpleCookingRecipeBuilder.smelting(
+                        Ingredient.of(ItemTags.MUSIC_DISCS),
+                        RecipeCategory.MISC,
+                        ENGINEERING_PLASTIC_GRAINS.get(),
+                        1.5F,
+                        200)
+                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .save(output, GunsmithLibStdAmmoMod.loc("engineering_plastic_from_smelting_music_discs"));
+        SimpleCookingRecipeBuilder.blasting(
+                        Ingredient.of(Items.SHULKER_SHELL),
+                        RecipeCategory.MISC,
+                        ENGINEERING_PLASTIC_GRAINS.get(),
+                        1.5F,
+                        100)
+                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .save(output, GunsmithLibStdAmmoMod.loc("engineering_plastic_from_blasting_shulker_shell"));
+        SimpleCookingRecipeBuilder.blasting(
+                        Ingredient.of(ItemTags.MUSIC_DISCS),
+                        RecipeCategory.MISC,
+                        ENGINEERING_PLASTIC_GRAINS.get(),
+                        1.5F,
+                        100)
+                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .save(output, GunsmithLibStdAmmoMod.loc("engineering_plastic_from_blasting_music_discs"));
+        gsaNineBlockStorageRecipes(output,
+                RecipeCategory.MISC, ENGINEERING_PLASTIC_GRAINS.get(), GSAItemTags.GEMS_ENGINEERING_PLASTIC,
+                RecipeCategory.BUILDING_BLOCKS, ENGINEERING_PLASTIC_BLOCK.get());
         // 炼钢
         SimpleCookingRecipeBuilder.blasting(
                         Ingredient.of(Tags.Items.INGOTS_IRON),
@@ -159,11 +189,11 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
         // 聚合物升级模板
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PLASTIC_UPGRADE_SMITHING_TEMPLATE.get())
                 .define('A', SOC.get())
-                .define('X', Items.SHULKER_SHELL)
+                .define('X', ENGINEERING_PLASTIC_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AXA")
                 .pattern("AAA")
-                .unlockedBy("has_shulker_shell", has(Items.SHULKER_SHELL))
+                .unlockedBy("has_engineering_plastic_grains", has(ENGINEERING_PLASTIC_GRAINS.get()))
                 .save(output);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, PLASTIC_UPGRADE_SMITHING_TEMPLATE.get(), 2)
                 .define('#', SOC.get())
@@ -174,56 +204,5 @@ public class GSARecipeProvider extends RecipeProvider implements DatagenRegistry
                 .pattern("###")
                 .unlockedBy("has_plastic_upgrade_smithing_template", has(PLASTIC_UPGRADE_SMITHING_TEMPLATE.get()))
                 .save(output, GunsmithLibStdAmmoMod.loc("plastic_upgrade_smithing_template_duplicating"));
-    }
-
-    @SuppressWarnings("SameParameterValue")
-    @ParametersAreNonnullByDefault
-    protected static void gsaOreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<? extends ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
-        gsaOreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
-    }
-
-    @SuppressWarnings("SameParameterValue")
-    @ParametersAreNonnullByDefault
-    protected static void gsaOreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<? extends ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
-        gsaOreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
-    }
-
-    @ParametersAreNonnullByDefault
-    protected static void gsaOreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<? extends ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
-        for(ItemLike itemlike : pIngredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike)).save(pFinishedRecipeConsumer, GunsmithLibStdAmmoMod.loc(getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike)));
-        }
-    }
-
-    @SuppressWarnings("SameParameterValue")
-    protected static void gsaStonecutterResultFromBase(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pResult, ItemLike pMaterial, int pResultCount) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(pMaterial), pCategory, pResult, pResultCount).unlockedBy(getHasName(pMaterial), has(pMaterial)).save(pFinishedRecipeConsumer, GunsmithLibStdAmmoMod.loc(getConversionRecipeName(pResult, pMaterial) + "_stonecutting"));
-    }
-
-    protected static void photolithography(
-            Consumer<FinishedRecipe> output,
-            Supplier<? extends ItemLike> result,
-            TagKey<Item> top,
-            TagKey<Item> middle
-    ) {
-        ItemLike resultItem = result.get();
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, resultItem)
-                .define('C', top)
-                .define('D', middle)
-                .define('S', WAFER.get())
-                .pattern("C")
-                .pattern("D")
-                .pattern("S")
-                .unlockedBy("has_wafer", has(WAFER.get()))
-                .save(output);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, resultItem, 3)
-                .define('C', top)
-                .define('D', middle)
-                .define('S', WAFER.get())
-                .pattern("CCC")
-                .pattern("DDD")
-                .pattern("SSS")
-                .unlockedBy("has_wafer", has(WAFER.get()))
-                .save(output, GunsmithLibStdAmmoMod.loc(getItemName(resultItem) + "_batched"));
     }
 }

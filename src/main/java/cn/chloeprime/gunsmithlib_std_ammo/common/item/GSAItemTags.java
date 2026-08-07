@@ -21,9 +21,13 @@ public class GSAItemTags {
     public static final TagKey<Item> INGOTS_TIB_ALLOY = commonTag("ingots/tiberium_alloy");
 
     public static final TagKey<Item> GEMS = Tags.Items.GEMS;
+    public static final TagKey<Item> GEMS_ENGINEERING_PLASTIC = commonTag("gems/engineering_plastic");
     public static final TagKey<Item> GEMS_TIB_SEED = commonTag("gems/tiberium_seed");
     public static final TagKey<Item> GEMS_TIB_GREEN = commonTag("gems/tiberium/green");
     public static final TagKey<Item> GEMS_TIB_BLUE = commonTag("gems/tiberium/blue");
+
+    public static final TagKey<Item> STORAGE_BLOCKS = Tags.Items.STORAGE_BLOCKS;
+    public static final TagKey<Item> STORAGE_BLOCKS_ENGINEERING_PLASTIC = commonTag("storage_blocks/engineering_plastic");
 
     public static final TagKey<Item> KNIVES = commonTag("tools/knives");
     public static final TagKey<Item> KNIVES_FD = ItemTags.create(GunsmithLibStdAmmoMod.loc("farmersdelight", "tools/knives"));

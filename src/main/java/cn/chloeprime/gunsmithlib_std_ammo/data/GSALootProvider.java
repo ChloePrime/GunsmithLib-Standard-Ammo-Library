@@ -16,7 +16,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -72,6 +71,7 @@ public class GSALootProvider extends LootTableProvider {
         @Override
         protected void generate() {
             add(GSABlocks.VX_PLANT.get(), (blk) -> createSinglePropConditionTable(blk, DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+            dropSelf(GSABlocks.ENGINEERING_PLASTIC_BLOCK.get());
             add(GSABlocks.PURIFIED_DEBRIS.get(), blk -> createOreDrop(blk, GSAItems.RAW_TUNGSTEN.get()));
             add(GSABlocks.TIBERIUM_ORE.get(), blk -> createOreDrop(blk, GSAItems.GREEN_TIBERIUM_CRYSTAL.get()));
             add(GSABlocks.DEEPSLATE_TIBERIUM_ORE.get(), blk -> createOreDrop(blk, GSAItems.GREEN_TIBERIUM_CRYSTAL.get()));

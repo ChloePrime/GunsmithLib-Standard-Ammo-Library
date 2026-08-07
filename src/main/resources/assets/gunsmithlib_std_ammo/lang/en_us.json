@@ -3,6 +3,8 @@
 
   "item.gunsmithlib_std_ammo.primer": "Primer Primer",
   "item.gunsmithlib_std_ammo.primer_primer": "The Primest Primer",
+  "item.gunsmithlib_std_ammo.engineering_plastic_grains": "Engineering Plastic Grains",
+  "block.gunsmithlib_std_ammo.engineering_plastic_block": "Engineering Plastic Block",
 
   "item.gunsmithlib_std_ammo.steel_ingot": "Steel Ingot",
   "item.gunsmithlib_std_ammo.pico_rocket": "Pico Rocket",
@@ -46,10 +48,10 @@
   "item.gunsmithlib_std_ammo.n2_dynamite": "Nuclear-Grade Non-Nuclear Dynamite",
 
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.applies_to": "Sniper ammo extended mags (tier 1 or 3)",
-  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "Shulker Shells",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.ingredients": "Engineering Plastic Grains",
   "upgrade.gunsmithlib_std_ammo.plastic_upgrade": "Plastic Upgrade",
   "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.base_slot_description": "Add sniper ammo extended mags (tier 1 or 3)",
-  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "Add a Shulker Shell",
+  "item.gunsmithlib_std_ammo.smithing_template.plastic_upgrade.additions_slot_description": "Add engineering plastic grains",
 
   "item.minecraft.potion.effect.gunsmithlib_std_ammo.vx": "Bottle of VX Neurotoxin",
   "item.minecraft.splash_potion.effect.gunsmithlib_std_ammo.vx": "Splash Bottle of VX Neurotoxin",
@@ -113,7 +115,7 @@
   "gunsmithlib_std_ammo.gun.autocannon.name": "QPZ-25 Assault Autocannon",
   "gunsmithlib_std_ammo.gun.autocannon.desc": "Be the most qualified helicopter killer",
   "gunsmithlib_std_ammo.gun.lg5.name": "LG5 Grenade Launcher",
-  "gunsmithlib_std_ammo.gun.lg5.desc": "Sniper gun for western friends\n§8Assets ported from CIBR's QLU-11, made by §1LESHUAN_20",
+  "gunsmithlib_std_ammo.gun.lg5.desc": "Sniper gun for western friends\n§8Assets ported from CIBR's QLU-11, made by §9LESHUAN_20",
   "gunsmithlib_std_ammo.gun.m1014_db.desc": "Just principally......",
   "gunsmithlib_std_ammo.gun.rpg7_leon.name": "Uncle Leon's RPG-7 Rocket",
   "gunsmithlib_std_ammo.gun.rpg7_leon.desc": "What does the creator desire?",
@@ -196,7 +198,7 @@
   "gunsmithlib_std_ammo.ammo.rpg_rocket_slicer_activated.desc": "Technical item, not obtainable",
 
   "gunsmithlib_std_ammo.attachment.y_mjl11_005.name": "§cY/MJL11-005 Fire Control Sight System",
-  "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc": "§fNote: Fire control is not available when using shots.\n§8Assets ported from CIBR's QMD-131, made by §1LESHUAN_20",
+  "gunsmithlib_std_ammo.attachment.y_mjl11_005.desc": "§fNote: Fire control is not available when using shots.\n§8Assets ported from CIBR's QMD-131, made by §9LESHUAN_20",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.name": "§ePlastic Shell (S)",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_s.desc": "Lightweight polymer shell, good ergonomics!",
   "gunsmithlib_std_ammo.attachment.ammo_mod_plastic_shell_l.name": "§ePlastic Shell (L)",

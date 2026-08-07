@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "forge:gems/engineering_plastic"
+    },
+    "C": {
+      "item": "gunsmithlib_std_ammo:engineering_plastic_grains"
+    }
+  },
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "item": "gunsmithlib_std_ammo:engineering_plastic_block"
+  },
+  "show_notification": true
+}

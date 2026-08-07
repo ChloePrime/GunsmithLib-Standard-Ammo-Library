@@ -1,6 +1,7 @@
-// 1.20.1	2026-08-04T21:43:50.5252658	Loot Tables
+// 1.20.1	2026-08-09T18:22:45.2512208	Loot Tables
 2ef2131b9a9525d8b84e6427b7f0b80af020bc80 data/gunsmithlib_std_ammo/loot_tables/blocks/deepslate_tiberium_ore.json
 a734f06e50311f561f3dd70bb4219242c0aeee3d data/gunsmithlib_std_ammo/loot_tables/blocks/end_tiberium_seed_ore.json
+b31372bf3f734ed53604ada615f37e057fe080e9 data/gunsmithlib_std_ammo/loot_tables/blocks/engineering_plastic_block.json
 b83b63a6f43129d828d0593f95b526a843314c21 data/gunsmithlib_std_ammo/loot_tables/blocks/n2_bomb.json
 da617db7ddd2a8d4762603f0708c2227489cc471 data/gunsmithlib_std_ammo/loot_tables/blocks/nether_tiberium_ore.json
 8bcb24f0b45516ee62ad9d9e8db17c1e6f4a697d data/gunsmithlib_std_ammo/loot_tables/blocks/purified_debris.json

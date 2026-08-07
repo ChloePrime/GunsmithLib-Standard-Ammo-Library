@@ -6,12 +6,16 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightGoal;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightMob;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSABulletPriceDatabase;
+import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSAVillagerTrades;
 import cn.chloeprime.gunsmithlib_std_ammo.common.rpg.GSADamageTypeTags;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.CompoundUtil;
 import com.google.common.base.Suppliers;
+import com.tacz.guns.api.item.IAttachment;
 import com.tacz.guns.api.item.attachment.AttachmentType;
+import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.FireMode;
+import mod.chloeprime.gunsmithlib.api.util.Gunsmith;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -39,6 +43,7 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.*;
 import net.minecraft.world.entity.npc.AbstractVillager;
+import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -205,13 +210,24 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     private static final Supplier<ItemStack> WEAPON_TEMPLATE = Suppliers.memoize(BulletMerchant::createEquippedWeapon);
 
     private static ItemStack createEquippedWeapon() {
-        return GunItemBuilder.create()
+        var laser = AttachmentItemBuilder.create()
+                .setId(ResourceLocation.tryParse("tacz:laser_nightstick"))
+                .build();
+        if (laser.getItem() instanceof IAttachment athInterface) {
+            athInterface.setLaserColor(laser, 0xFF2B2B);
+        }
+        var gun = Gunsmith.getGunInfo(GunItemBuilder.create()
                 .setId(GunsmithLibStdAmmoMod.loc("scar_h_m1158"))
                 .putAttachment(AttachmentType.EXTENDED_MAG, ResourceLocation.tryParse("tacz:ammo_mod_he"))
                 .setAmmoCount(25)
                 .setAmmoInBarrel(true)
                 .setFireMode(FireMode.AUTO)
-                .forceBuild();
+                .forceBuild()).orElse(null);
+        if (gun == null) {
+            return ItemStack.EMPTY;
+        }
+        gun.gunItem().installAttachment(gun.gunStack(), laser);
+        return gun.gunStack();
     }
 
     private int isRangedMode = -1;
@@ -368,9 +384,26 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
 
     @Override
     protected void updateTrades() {
+        var random = this.getRandom();
+        int count;
+        if (isPrimerVersion()) {
+            count = 10;
+        } else {
+            count = 5;
+            for (int i = 0; i < 3; i++) {
+                if (random.nextFloat() < 0.5) {
+                    count += 1;
+                }
+            }
+        }
         var offers = this.getOffers();
-        this.addOffersFromItemListings(offers, GSABulletPriceDatabase.listings(), 5);
+        this.addOffersFromItemListings(offers, GSABulletPriceDatabase.listings(), count);
+        this.addOffersFromItemListings(offers, EXTRA_TRADES, 1);
     }
+
+    private static final VillagerTrades.ItemListing[] EXTRA_TRADES = {
+            GSAVillagerTrades.AutocannonTradingRecipe.INSTANCE,
+    };
 
     // Despawn Control
 

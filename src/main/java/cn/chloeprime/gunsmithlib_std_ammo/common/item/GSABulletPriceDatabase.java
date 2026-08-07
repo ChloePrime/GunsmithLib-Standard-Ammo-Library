@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo.common.item;
 
+import cn.chloeprime.gunsmithlib_std_ammo.api.common.event.BulletPriceDatabaseUpdateEvent;
 import cn.chloeprime.gunsmithlib_std_ammo.common.GSACommonConfig;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.EnhancedAmmoData;
 import cn.chloeprime.gunsmithlib_std_ammo.common.gunpack.GSAGunpackExtension;
@@ -10,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraftforge.common.BasicItemListing;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.OnDatapackSyncEvent;
 import net.minecraftforge.event.level.LevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -70,6 +72,7 @@ public final class GSABulletPriceDatabase {
         LISTINGS = ENTRIES.stream()
                 .map(GSABulletPriceDatabase::createListing)
                 .toArray(VillagerTrades.ItemListing[]::new);
+        MinecraftForge.EVENT_BUS.post(new BulletPriceDatabaseUpdateEvent(ENTRIES, LISTINGS));
     }
 
     private static VillagerTrades.ItemListing createListing(Entry entry) {
@@ -90,7 +93,7 @@ public final class GSABulletPriceDatabase {
         } else if (cost > 16) {
             return 64;
         } else {
-            return 4096;
+            return 1024;
         }
     }
 

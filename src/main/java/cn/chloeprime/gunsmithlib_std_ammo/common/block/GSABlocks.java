@@ -54,12 +54,18 @@ public final class GSABlocks {
         }
     });
 
-    public static final Supplier<RotatedPillarBlock> PURIFIED_DEBRIS = DFR.register("purified_debris", () -> new RotatedPillarBlock(BlockBehaviour
+    public static final Supplier<Block> ENGINEERING_PLASTIC_BLOCK = DFR.register("engineering_plastic_block", () -> new Block(BlockBehaviour
             .Properties.of()
             .mapColor(MapColor.COLOR_BLACK)
+            .sound(SoundType.BAMBOO_WOOD).instrument(NoteBlockInstrument.BASS)
             .requiresCorrectToolForDrops()
-            .strength(30, 1200)
-            .sound(SoundType.ANCIENT_DEBRIS)));
+            .strength(20, 30)));
+
+    public static final Supplier<RotatedPillarBlock> PURIFIED_DEBRIS = DFR.register("purified_debris", () -> new RotatedPillarBlock(BlockBehaviour
+            .Properties.of()
+            .mapColor(MapColor.COLOR_BLACK).sound(SoundType.ANCIENT_DEBRIS)
+            .requiresCorrectToolForDrops()
+            .strength(30, 1200)));
 
     public static final Supplier<Block> TIBERIUM_ORE = DFR.register("tiberium_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
             .mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM)

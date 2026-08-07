@@ -1,6 +1,7 @@
-// 1.20.1	2026-08-06T02:31:16.3115334	Item Models: gunsmithlib_std_ammo
+// 1.20.1	2026-08-09T13:18:24.9586822	Item Models: gunsmithlib_std_ammo
 43e2270bddb0368d8b078a2ddac03ef93fde03c2 assets/gunsmithlib_std_ammo/models/item/blue_tiberium_crystal.json
 f938f245a4c34e0ae137d23b0b5c541cd53014be assets/gunsmithlib_std_ammo/models/item/bullet_merchant_spawn_egg.json
+c05c216276a932c734673a65eb9df33a9ad7e47c assets/gunsmithlib_std_ammo/models/item/engineering_plastic_grains.json
 5157466edce68147978f2fb100179345a0b32345 assets/gunsmithlib_std_ammo/models/item/green_tiberium_crystal.json
 6f163e9640403548edf9e03466ec3219ada54492 assets/gunsmithlib_std_ammo/models/item/monocrystalline_silicon.json
 87f2dc49ec3db0adc7cf8db43d7708d6cdb79c46 assets/gunsmithlib_std_ammo/models/item/n2_dynamite.json

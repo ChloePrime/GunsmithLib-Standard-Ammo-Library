@@ -35,6 +35,8 @@ public final class GSAItems {
             return true;
         }
     });
+    public static final Supplier<Item> ENGINEERING_PLASTIC_GRAINS = simpleItem("engineering_plastic_grains", Rarity.RARE);
+    public static final Supplier<BlockItem> ENGINEERING_PLASTIC_BLOCK = blockItem("engineering_plastic_block", Rarity.RARE, GSABlocks.ENGINEERING_PLASTIC_BLOCK);
 
     // 炼钢
     public static final Supplier<Item> STEEL_INGOT = simpleItem("steel_ingot");
@@ -90,7 +92,7 @@ public final class GSAItems {
             Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.base_slot_description"))),
             Component.translatable(Util.makeDescriptionId("item", GunsmithLibStdAmmoMod.loc("smithing_template.plastic_upgrade.additions_slot_description"))),
             List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_sniper_extended_mag_1"), GunsmithLibStdAmmoMod.loc("item/empty_slot_sniper_extended_mag_3")),
-            List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_shulker_shell"))
+            List.of(GunsmithLibStdAmmoMod.loc("item/empty_slot_grains"))
     ));
 
     // 刷怪蛋
@@ -119,6 +121,7 @@ public final class GSAItems {
     @SubscribeEvent
     public static void onCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().equals(CreativeModeTabs.BUILDING_BLOCKS)) {
+            event.accept(ENGINEERING_PLASTIC_BLOCK);
             event.accept(PURIFIED_DEBRIS);
         }
         if (event.getTabKey().equals(CreativeModeTabs.NATURAL_BLOCKS)) {
@@ -137,6 +140,7 @@ public final class GSAItems {
             event.accept(TIBERIUM_SEED);
             event.accept(GREEN_TIBERIUM_CRYSTAL);
             event.accept(BLUE_TIBERIUM_CRYSTAL);
+            event.accept(ENGINEERING_PLASTIC_GRAINS);
             event.accept(STEEL_INGOT);
             event.accept(TUNGSTEN_INGOT);
             event.accept(TIBERIUM_ALLOY_INGOT);

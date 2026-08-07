@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shulker_shell": {
+    "has_engineering_plastic_grains": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:shulker_shell"
+              "gunsmithlib_std_ammo:engineering_plastic_grains"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_shulker_shell",
+      "has_engineering_plastic_grains",
       "has_the_recipe"
     ]
   ],

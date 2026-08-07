@@ -1,7 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data.client;
 
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
-import cn.chloeprime.gunsmithlib_std_ammo.common.block.GSATntBlock;
 import cn.chloeprime.gunsmithlib_std_ammo.common.util.DatagenRegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -26,6 +25,7 @@ public class GSABlockStateProvider extends BlockStateProvider implements Datagen
     protected void registerStatesAndModels() {
         axisBlock(PURIFIED_DEBRIS.get());
         simpleBlockItem(PURIFIED_DEBRIS);
+        simpleBlockWithItem(ENGINEERING_PLASTIC_BLOCK.get(), cubeAll(ENGINEERING_PLASTIC_BLOCK.get()));
 
         simpleBlockWithItem(TIBERIUM_ORE.get(), cubeAll(TIBERIUM_ORE.get()));
         simpleBlockWithItem(DEEPSLATE_TIBERIUM_ORE.get(), cubeAll(DEEPSLATE_TIBERIUM_ORE.get()));

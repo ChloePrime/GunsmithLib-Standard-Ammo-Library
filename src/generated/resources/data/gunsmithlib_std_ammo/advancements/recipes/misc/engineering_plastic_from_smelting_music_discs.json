@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shulker_shell": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:shulker_shell"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gunsmithlib_std_ammo:engineering_plastic_from_smelting_music_discs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_shulker_shell",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gunsmithlib_std_ammo:engineering_plastic_from_smelting_music_discs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

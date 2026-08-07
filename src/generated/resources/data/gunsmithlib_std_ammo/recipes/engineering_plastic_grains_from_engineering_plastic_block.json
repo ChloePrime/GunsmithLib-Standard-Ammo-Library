@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gunsmithlib_std_ammo:engineering_plastic_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "gunsmithlib_std_ammo:engineering_plastic_grains"
+  }
+}
