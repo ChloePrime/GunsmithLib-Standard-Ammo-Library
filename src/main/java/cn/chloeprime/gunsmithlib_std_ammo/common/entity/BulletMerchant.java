@@ -6,10 +6,13 @@ import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightGoal;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightMob;
 import cn.chloeprime.gunsmithlib_std_ammo.common.item.GSABulletPriceDatabase;
+import cn.chloeprime.gunsmithlib_std_ammo.common.rpg.GSADamageTypeTags;
+import cn.chloeprime.gunsmithlib_std_ammo.common.util.CompoundUtil;
 import com.google.common.base.Suppliers;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.FireMode;
+import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -69,8 +72,16 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
         reassessWeaponGoal();
     }
 
+    public int getDespawnProtection() {
+        return despawnProtection;
+    }
+
     public boolean isPrimerVersion() {
         return this.entityData.get(IS_PRIMER_VERSION);
+    }
+
+    public void setDespawnProtection(int despawnProtection) {
+        this.despawnProtection = despawnProtection;
     }
 
     public void setIsPrimerVersion(boolean value) {
@@ -111,15 +122,66 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
 
     // Defending
 
+    public boolean shouldDodge(DamageSource source) {
+        return (getTarget() != null || source.getEntity() instanceof Player) && isMeleeAttack(source);
+    }
+
+    public void dodge(DamageSource source) {
+        var direct = source.getDirectEntity();
+        var actual = source.getEntity();
+        if (direct == null && actual == null) {
+            this.jumpControl.jump();
+            return;
+        }
+        var entity = Objects.requireNonNullElse(direct, actual);
+        var normal = entity.position().subtract(this.position()).with(Direction.Axis.Y, 0).normalize();
+        if (normal.equals(Vec3.ZERO)) {
+            this.jumpControl.jump();
+            return;
+        }
+        final double strafeStrength = 0.5;
+        this.setDeltaMovement(normal.yRot((float) ((getRandom().nextInt(2) * 2 - 1) * Math.PI / 2)).scale(strafeStrength));
+        this.jumpControl.jump();
+        if (level() instanceof ServerLevel srvLevel) {
+            srvLevel.sendParticles(ParticleTypes.POOF, getX(), getY(0.25), getZ(), 16, 0.0, 0.0, 0.0, 1.0);
+            srvLevel.playSound(null, this, GSASoundEvents.BULLET_MERCHANT_DODGE.get(), getSoundSource(), 1, getVoicePitch());
+        }
+    }
+
     @Override
     public boolean hurt(@Nonnull DamageSource source, float amount) {
+        if (source.getEntity() == this) {
+            return false;
+        }
         if (level().getDifficulty() == Difficulty.PEACEFUL) {
             if (!source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
                 return false;
             }
         }
+        if (!level().isClientSide()) {
+            // 进入战斗状态后闪避近战攻击
+            if (!source.isCreativePlayer() && !source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+                if (shouldDodge(source)) {
+                    dodge(source);
+                    return false;
+                }
+            }
+        }
         var oow = source.is(DamageTypes.FELL_OUT_OF_WORLD);
         return super.hurt(source, amount * (oow ? 25 : 1));
+    }
+
+    @SuppressWarnings("RedundantIfStatement")
+    private boolean isMeleeAttack(DamageSource source) {
+        var direct = source.getDirectEntity();
+        var actual = source.getEntity();
+        if (direct != actual || direct == null) {
+            return false;
+        }
+        if (source.is(DamageTypeTags.IS_PROJECTILE) || source.is(GSADamageTypeTags.TACZ_BULLETS)) {
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -136,6 +198,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
                             0.3, 0.5, 0.3, 0);
                 }
             }
+            tickDespawnProtection();
         }
     }
 
@@ -221,7 +284,8 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     @Override
     public void readAdditionalSaveData(@Nonnull CompoundTag compound) {
         super.readAdditionalSaveData(compound);
-        setIsPrimerVersion(compound.getBoolean("is_primer_version"));
+        CompoundUtil.optGetBoolean(compound, "is_primer_version").ifPresent(this::setIsPrimerVersion);
+        CompoundUtil.optGetInt(compound, "despawn_protection").ifPresent(this::setDespawnProtection);
         reassessWeaponGoal();
     }
 
@@ -229,6 +293,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     public void addAdditionalSaveData(@Nonnull CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putBoolean("is_primer_version", isPrimerVersion());
+        compound.putInt("despawn_protection", getDespawnProtection());
     }
 
     @Override
@@ -294,11 +359,6 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     }
 
     @Override
-    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-        return false;
-    }
-
-    @Override
     protected void rewardTradeXp(@Nonnull MerchantOffer offer) {
         if (offer.shouldRewardExp()) {
             int amount = 3 + this.random.nextInt(4);
@@ -312,11 +372,40 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
         this.addOffersFromItemListings(offers, GSABulletPriceDatabase.listings(), 5);
     }
 
+    // Despawn Control
+
+    public static final int DESPAWN_DELAY = 1200;
+    private int despawnProtection = DESPAWN_DELAY;
+
+    private void tickDespawnProtection() {
+        if (despawnProtection > 0) {
+            despawnProtection--;
+        }
+        if (despawnProtection <= DESPAWN_DELAY - 400) {
+            if (requiresCustomPersistence()) {
+                despawnProtection = DESPAWN_DELAY;
+            }
+        }
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        if (level().isClientSide()) {
+            return false;
+        }
+        return despawnProtection <= 0 && super.removeWhenFarAway(distanceToClosestPlayer);
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return isLeashed() || super.requiresCustomPersistence();
+    }
+
     // Sounds
 
     @Override
     public float getVoicePitch() {
-        return isBaby() ? super.getVoicePitch() : Mth.lerp(0.5F, super.getVoicePitch() + 0.2F, 1);
+        return isBaby() ? super.getVoicePitch() : Mth.lerp(0.75F, super.getVoicePitch() + 0.2F, 1);
     }
 
     @Override

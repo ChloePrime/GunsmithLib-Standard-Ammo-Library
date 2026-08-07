@@ -14,6 +14,7 @@ public class GSASoundEvents {
     public static final Supplier<SoundEvent> AUTOCANNON_FLAK_FIRE = register("autocannon/autocannon_flak_fire");
     public static final Supplier<SoundEvent> AUTOCANNON_SHOOT = register("autocannon/autocannon_shoot");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_AMBIENT = register("bullet_merchant_ambient");
+    public static final Supplier<SoundEvent> BULLET_MERCHANT_DODGE = register("bullet_merchant_dodge");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_TRADE = register("bullet_merchant_trade");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_HURT = register("bullet_merchant_hurt");
     public static final Supplier<SoundEvent> BULLET_MERCHANT_DEATH = register("bullet_merchant_death");

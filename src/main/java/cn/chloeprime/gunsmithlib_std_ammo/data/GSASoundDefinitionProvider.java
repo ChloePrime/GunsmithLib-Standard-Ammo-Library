@@ -28,6 +28,13 @@ public class GSASoundDefinitionProvider extends SoundDefinitionsProvider {
                 loc("entity/generic_girl/uh_huh"),
                 loc("entity/generic_girl/hrmm_0"),
                 loc("entity/generic_girl/hrmm_1"));
+        add(GSASoundEvents.BULLET_MERCHANT_DODGE, "entity", "bullet_merchant.dodge",
+                "minecraft:item/armor/equip_leather1",
+                "minecraft:item/armor/equip_leather2",
+                "minecraft:item/armor/equip_leather3",
+                "minecraft:item/armor/equip_leather4",
+                "minecraft:item/armor/equip_leather5",
+                "minecraft:item/armor/equip_leather6");
         add(GSASoundEvents.BULLET_MERCHANT_TRADE, "entity", "bullet_merchant.trade",
                 loc("entity/generic_girl/uh_huh"),
                 loc("entity/generic_girl/huh_0"),

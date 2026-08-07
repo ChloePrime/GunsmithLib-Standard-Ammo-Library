@@ -34,6 +34,17 @@
     ],
     "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.death"
   },
+  "bullet_merchant_dodge": {
+    "sounds": [
+      "item/armor/equip_leather1",
+      "item/armor/equip_leather2",
+      "item/armor/equip_leather3",
+      "item/armor/equip_leather4",
+      "item/armor/equip_leather5",
+      "item/armor/equip_leather6"
+    ],
+    "subtitle": "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.dodge"
+  },
   "bullet_merchant_hurt": {
     "sounds": [
       "gunsmithlib_std_ammo:entity/generic_girl/hurt_0",

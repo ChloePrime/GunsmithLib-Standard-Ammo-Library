@@ -85,6 +85,7 @@
   "subtitles.item.gunsmithlib_std_ammo.autocannon.flak_fire": "机关炮发射？",
   "subtitles.item.gunsmithlib_std_ammo.autocannon.shoot": "机关炮发射",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.ambient": "军火行商：喃喃自语",
+  "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.dodge": "军火行商：躲闪",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.trade": "军火行商：交易",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.hurt": "军火行商：受伤",
   "subtitles.entity.gunsmithlib_std_ammo.bullet_merchant.death": "军火行商：死亡",

@@ -1,5 +1,6 @@
 package cn.chloeprime.gunsmithlib_std_ammo.data;
 
+import cn.chloeprime.gunsmithlib_std_ammo.data.client.GSABiomeTagProvider;
 import cn.chloeprime.gunsmithlib_std_ammo.data.client.GSABlockStateProvider;
 import cn.chloeprime.gunsmithlib_std_ammo.data.client.GSAItemModelProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -23,6 +24,7 @@ public final class GSADatagen {
             generator.addProvider(true, new GSAEntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(true, new GSALootProvider(packOutput));
             generator.addProvider(true, new GSARecipeProvider(packOutput));
+            generator.addProvider(true, new GSABiomeTagProvider(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(true, new GSADamageTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(true, new GSASoundDefinitionProvider(packOutput, existingFileHelper));
         }
