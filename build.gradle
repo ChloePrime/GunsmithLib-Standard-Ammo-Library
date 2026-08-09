@@ -295,6 +295,7 @@ tasks.named('jar', Jar).configure {
 
 tasks.named('jarJar').configure {
     archiveClassifier = ''
+    finalizedBy 'reobfJarJar'
 }
 
 tasks.withType(JavaCompile).configureEach {
