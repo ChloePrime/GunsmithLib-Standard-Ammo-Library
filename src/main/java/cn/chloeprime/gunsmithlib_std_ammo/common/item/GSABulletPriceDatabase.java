@@ -10,6 +10,8 @@ import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.npc.VillagerTrades;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.OnDatapackSyncEvent;
@@ -81,7 +83,20 @@ public final class GSABulletPriceDatabase {
                 .setCount(entry.price().amount())
                 .build();
         int finalCost = Mth.floor(1e-8 + entry.price().cost() * GSACommonConfig.BM_GLOBAL_PRICE_SCALE.get());
-        return new BasicItemListing(finalCost, ammo, getMaxTrades(entry), getExp(entry));
+        if (finalCost <= 64) {
+            return new BasicItemListing(finalCost, ammo, getMaxTrades(entry), getExp(entry));
+        }
+        var coin = new ItemStack(Items.EMERALD, Items.EMERALD.getDefaultInstance().getMaxStackSize());
+        int coinMax = coin.getMaxStackSize();
+        if (finalCost <= coinMax * 2) {
+            return new BasicItemListing(coin, coin.copyWithCount(finalCost - coinMax), ammo, getMaxTrades(entry), getExp(entry), 1);
+        }
+        var block = Items.EMERALD_BLOCK.getDefaultInstance();
+        int blockMax = block.getMaxStackSize();
+        int blockValue = 9;
+        int blocks = Math.min(blockMax, finalCost / blockValue);
+        int remain = finalCost - blocks * blockValue;
+        return new BasicItemListing(block.copyWithCount(blocks), coin.copyWithCount(remain), ammo, getMaxTrades(entry), getExp(entry), 1);
     }
 
     private static int getMaxTrades(Entry entry) {
