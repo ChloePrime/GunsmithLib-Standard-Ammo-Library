@@ -2,6 +2,7 @@ package cn.chloeprime.gunsmithlib_std_ammo.common.entity;
 
 import cn.chloeprime.commons.async.TaskScheduler;
 import cn.chloeprime.gunsmithlib_std_ammo.GunsmithLibStdAmmoMod;
+import cn.chloeprime.gunsmithlib_std_ammo.common.GSACommonConfig;
 import cn.chloeprime.gunsmithlib_std_ammo.common.GSASoundEvents;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightGoal;
 import cn.chloeprime.gunsmithlib_std_ammo.common.entity.ai.GunfightMob;
@@ -77,7 +78,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
         reassessWeaponGoal();
     }
 
-    public int getDespawnProtection() {
+    public long getDespawnProtection() {
         return despawnProtection;
     }
 
@@ -85,7 +86,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
         return this.entityData.get(IS_PRIMER_VERSION);
     }
 
-    public void setDespawnProtection(int despawnProtection) {
+    public void setDespawnProtection(long despawnProtection) {
         this.despawnProtection = despawnProtection;
     }
 
@@ -301,7 +302,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     public void readAdditionalSaveData(@Nonnull CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         CompoundUtil.optGetBoolean(compound, "is_primer_version").ifPresent(this::setIsPrimerVersion);
-        CompoundUtil.optGetInt(compound, "despawn_protection").ifPresent(this::setDespawnProtection);
+        CompoundUtil.optGetLong(compound, "despawn_protection").ifPresent(this::setDespawnProtection);
         reassessWeaponGoal();
     }
 
@@ -309,7 +310,7 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
     public void addAdditionalSaveData(@Nonnull CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putBoolean("is_primer_version", isPrimerVersion());
-        compound.putInt("despawn_protection", getDespawnProtection());
+        compound.putLong("despawn_protection", getDespawnProtection());
     }
 
     @Override
@@ -407,8 +408,8 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
 
     // Despawn Control
 
-    public static final int DESPAWN_DELAY = 1200;
-    private int despawnProtection = DESPAWN_DELAY;
+    public static final long DESPAWN_DELAY = 1200;
+    private long despawnProtection = GSACommonConfig.BM_PERSIST_TIME.get();
 
     private void tickDespawnProtection() {
         if (despawnProtection > 0) {

@@ -29,6 +29,13 @@ public final class GSACommonConfig {
                     Added in version 1.1.0""")
             .defineInRange("bm_spawn_period", 24000L, 0, Long.MAX_VALUE);
 
+    public static final ForgeConfigSpec.LongValue BM_PERSIST_TIME = BUILDER
+            .comment("""
+                    Delay before bullet merchant start natural despawning.
+                    
+                    Added in version 1.1.2""")
+            .defineInRange("bm_persist_time", 12000L, 0, Long.MAX_VALUE);
+
     static {
         BUILDER.pop();
     }
