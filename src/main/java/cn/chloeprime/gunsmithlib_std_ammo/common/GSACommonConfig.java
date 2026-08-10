@@ -36,6 +36,24 @@ public final class GSACommonConfig {
                     Added in version 1.1.2""")
             .defineInRange("bm_persist_time", 12000L, 0, Long.MAX_VALUE);
 
+    public static final ForgeConfigSpec.BooleanValue BM_DISABLE_SELF_DEFENSE = BUILDER
+            .comment("""
+                    If true, prevent bullet merchant from self defending.
+                    Requires world restart to apply to existing bullet merchant entities.
+                    
+                    Added in version 1.1.2""")
+            .worldRestart()
+            .define("bm_disable_self_defense", false);
+
+    public static final ForgeConfigSpec.BooleanValue BM_DISABLE_PRE_EMPTIVE_ATTACK = BUILDER
+            .comment("""
+                    If true, prevent bullet merchant from actively searching and eliminating targets.
+                    Requires world restart to apply to existing bullet merchant entities.
+                    
+                    Added in version 1.1.2""")
+            .worldRestart()
+            .define("bm_disable_pre_emptive_attack", false);
+
     static {
         BUILDER.pop();
     }

@@ -58,6 +58,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Objects;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class BulletMerchant extends AbstractVillager implements GunfightMob {
@@ -116,14 +117,20 @@ public class BulletMerchant extends AbstractVillager implements GunfightMob {
         this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 0.35));
         this.goalSelector.addGoal(9, new InteractGoal(this, Player.class, 3, 1));
         this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8));
-        this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Zombie.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Evoker.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Vindicator.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Vex.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Pillager.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Illusioner.class, true));
-        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Zoglin.class, true));
+        if (!GSACommonConfig.BM_DISABLE_SELF_DEFENSE.get()) {
+            this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+        }
+        if (!GSACommonConfig.BM_DISABLE_PRE_EMPTIVE_ATTACK.get()) {
+            var distanceLimit = 16.0;
+            var distancePredicate = (Predicate<LivingEntity>) candidate -> candidate.distanceToSqr(this) <= distanceLimit * distanceLimit;
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Zombie.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Evoker.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Vindicator.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Vex.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Pillager.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Illusioner.class, true, distancePredicate));
+            this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Zoglin.class, true, distancePredicate));
+        }
     }
 
     // Defending
